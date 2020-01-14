@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        style="@style/margin_left_right"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_144"
+        android:layout_marginTop="@dimen/dp_10"
+        android:background="@drawable/shape_rectangle_empty_13"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/iv_goods"
+            android:layout_width="@dimen/dp_67"
+            android:layout_height="@dimen/dp_67"
+            android:layout_marginLeft="@dimen/dp_15"
+            android:layout_marginTop="@dimen/dp_15"
+            tools:src="@drawable/bg_weixin" />
+
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_92"
+            android:layout_marginRight="@dimen/dp_15"
+            android:layout_marginTop="@dimen/dp_15"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/sp_12"
+            tools:text="德国德朗士 多功能加热破壁机家用料理热破壁机家" />
+
+        <TextView
+            android:id="@+id/tv_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_92"
+            android:layout_marginTop="@dimen/dp_59"
+            android:textColor="@color/color_base"
+            android:textSize="@dimen/sp_12"
+            tools:text="￥17258.00" />
+
+        <TextView
+            android:id="@+id/tv_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/dp_15"
+            android:layout_marginTop="@dimen/dp_59"
+            android:maxLines="1"
+            android:textColor="@color/text_99"
+            android:textSize="12sp"
+            tools:text="x1" />
+
+        <TextView
+            android:id="@+id/tv_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="@dimen/dp_13"
+            android:layout_marginRight="@dimen/dp_15"
+            android:maxLines="1"
+            android:textColor="@color/color_base"
+            android:textSize="@dimen/sp_15"
+            tools:text="￥372.00" />
+
+        <TextView
+            android:id="@+id/tv_goods_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_alignBaseline="@+id/tv_money"
+            android:layout_alignTop="@+id/tv_money"
+            android:layout_marginRight="@dimen/dp_10"
+            android:layout_toLeftOf="@+id/tv_money"
+            android:text="共1件商品  小计:"
+            android:textSize="@dimen/sp_12" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_0_5"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/dp_48"
+            android:background="@color/line_ee" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

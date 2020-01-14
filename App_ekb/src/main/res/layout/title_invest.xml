@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_new"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#f2f2f2">
+
+    <LinearLayout
+        android:id="@+id/rl_neww"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30px"
+        android:background="#ffffff"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#d2d2d2" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"></LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_new_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50px"
+            android:text="新手体验"
+            android:textColor="#333333"
+            android:textSize="60px" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20px"
+            android:layout_marginTop="20px">
+
+            <TextView
+                android:id="@+id/tv_rate_new"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="--"
+                android:textColor="@color/base_red_color"
+                android:textSize="128px" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="%"
+                android:textColor="@color/base_red_color"
+                android:textSize="128px" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/tv_activity_h"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="--%"
+                    android:textColor="@color/base_red_color"
+                    android:textSize="128px"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/iv_activity_h"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="24px"
+                    android:visibility="gone"
+                    android:src="@mipmap/activity_hongb"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_deadline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="期限--天"
+                android:textColor="#666666"
+                android:textSize="40px" />
+
+            <View
+                android:layout_width="2px"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="48px"
+                android:layout_marginRight="48px"
+                android:background="#d2d2d2" />
+
+            <TextView
+                android:id="@+id/tv_leastaAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="--元起投"
+                android:textColor="#666666"
+                android:textSize="40px" />
+
+            <View
+                android:layout_width="2px"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="48px"
+                android:layout_marginRight="48px"
+                android:background="#d2d2d2" />
+
+            <TextView
+                android:id="@+id/tv_maxAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="次日计息"
+                android:textColor="#666666"
+                android:textSize="40px" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/bt_ok"
+            android:layout_width="match_parent"
+            android:layout_height="112px"
+            android:layout_marginLeft="56px"
+            android:layout_marginRight="56px"
+            android:layout_marginTop="84px"
+            android:background="@drawable/bg_btn_corner"
+            android:padding="0dp"
+            android:text="立即投资"
+            android:textColor="#ffffff" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:layout_marginTop="40px"
+            android:background="#d2d2d2" />
+    </LinearLayout>
+</LinearLayout>

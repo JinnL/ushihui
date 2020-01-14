@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.lijiankun24.shadowlayout.ShadowLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        app:shadowColor="#0c000000"
+        app:shadowDx="0dp"
+        app:shadowDy="3dp"
+        app:shadowRadius="10dp"
+        app:shadowSide="all">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_rectangle_white_6"
+            android:elevation="@dimen/dp_3"
+            android:padding="@dimen/dp_15"
+            android:translationZ="@dimen/dp_0">
+
+
+            <LinearLayout
+                android:id="@+id/linearLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:lines="1"
+                    android:maxEms="13"
+                    android:text="专享No.88"
+                    android:textColor="@color/text_black"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tv_cashcoupon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_6"
+                    android:background="@drawable/shape_rectangle_gold"
+                    android:paddingBottom="5px"
+                    android:paddingLeft="10px"
+                    android:paddingRight="10px"
+                    android:paddingTop="5px"
+                    android:text="红包"
+                    android:textColor="@color/gold"
+                    android:textSize="10sp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/tv_ratecoupon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:background="@drawable/shape_rectangle_gold"
+                    android:paddingBottom="5px"
+                    android:paddingLeft="10px"
+                    android:paddingRight="10px"
+                    android:paddingTop="5px"
+                    android:text="加息"
+                    android:textColor="@color/gold"
+                    android:textSize="10sp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/tv_doubleconpon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:background="@drawable/shape_rectangle_gold"
+                    android:paddingBottom="5px"
+                    android:paddingLeft="10px"
+                    android:paddingRight="10px"
+                    android:paddingTop="5px"
+                    android:text="翻倍"
+                    android:textColor="@color/gold"
+                    android:textSize="10sp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/tv_hot"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:background="@drawable/shape_rectangle_gold"
+                    android:paddingBottom="5px"
+                    android:paddingLeft="10px"
+                    android:paddingRight="10px"
+                    android:paddingTop="5px"
+                    android:text="热卖"
+                    android:textColor="@color/gold"
+                    android:textSize="10sp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/tv_saowei"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:background="@drawable/shape_rectangle_gold"
+                    android:paddingBottom="5px"
+                    android:paddingLeft="10px"
+                    android:paddingRight="10px"
+                    android:paddingTop="5px"
+                    android:text="扫尾"
+                    android:textColor="@color/gold"
+                    android:textSize="10sp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/tv_tag1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:background="@drawable/shape_rectangle_gold"
+                    android:paddingBottom="5px"
+                    android:paddingLeft="10px"
+                    android:paddingRight="10px"
+                    android:paddingTop="5px"
+                    android:text="活动1"
+                    android:textColor="@color/gold"
+                    android:textSize="10sp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/tv_tag2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:background="@drawable/shape_rectangle_gold"
+                    android:paddingBottom="5px"
+                    android:paddingLeft="10px"
+                    android:paddingRight="10px"
+                    android:paddingTop="5px"
+                    android:text="活动2"
+                    android:textColor="@color/gold"
+                    android:textSize="10sp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/tv_tag3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:background="@drawable/shape_rectangle_gold"
+                    android:paddingBottom="5px"
+                    android:paddingLeft="10px"
+                    android:paddingRight="10px"
+                    android:paddingTop="5px"
+                    android:text="活动3"
+                    android:textColor="@color/gold"
+                    android:textSize="10sp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/tv_reward"
+                    style="@style/layout_wrap"
+                    android:layout_marginLeft="@dimen/dp_6"
+                    android:background="@drawable/shape_rectangle_gold"
+                    android:text="限额5万元"
+                    android:textColor="@color/gold"
+                    android:textSize="10sp"
+                    android:visibility="gone" />
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
+            <TextView
+                style="@style/layout_wrap"
+                android:textColor="@color/text_black"
+                android:textSize="15sp"
+                android:visibility="gone"
+                tools:text="新人专享No.237" />
+
+            <TextView
+                android:id="@+id/tv_interest"
+                style="@style/layout_wrap"
+                android:layout_below="@+id/linearLayout1"
+                android:layout_marginTop="@dimen/dp_22"
+                android:textColor="@color/text_red"
+                android:textSize="24sp"
+                tools:text="7.2+3.6%" />
+
+            <TextView
+                android:id="@+id/tv_time"
+                style="@style/layout_wrap"
+                android:layout_alignBaseline="@+id/tv_interest"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/text_black"
+                android:textSize="17sp"
+                tools:text="60天" />
+
+            <TextView
+                android:id="@+id/tv_money"
+                style="@style/layout_wrap"
+                android:layout_alignBaseline="@+id/tv_interest"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/text_black"
+                android:textSize="17sp"
+                tools:text="297,000" />
+
+            <TextView
+                android:id="@+id/tv_month"
+                style="@style/layout_wrap"
+                android:layout_below="@+id/tv_interest"
+                android:layout_marginTop="@dimen/dp_22"
+                android:text="近3个月年化收益"
+                android:textColor="@color/text_99"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_limit"
+                style="@style/layout_wrap"
+                android:layout_below="@+id/tv_interest"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/dp_22"
+                android:text="出借期限"
+                android:textColor="@color/text_99"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_surplus"
+                style="@style/layout_wrap"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/tv_interest"
+                android:layout_marginTop="@dimen/dp_22"
+                android:text="剩余金额"
+                android:textColor="@color/text_99"
+                android:textSize="12sp" />
+
+
+        </RelativeLayout>
+    </com.lijiankun24.shadowlayout.ShadowLayout>
+    <!--<View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:paddingLeft="-24px"
+        android:layout_marginRight="-24px"
+        android:layout_alignParentBottom="true"
+        android:background="@color/red" />-->
+
+
+</RelativeLayout>

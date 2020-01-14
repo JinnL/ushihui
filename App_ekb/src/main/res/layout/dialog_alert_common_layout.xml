@@ -1,0 +1,97 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="269.33dip"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_rectangle_white"
+        android:orientation="vertical">
+        <!--    android:background="@drawable/alert_bg"-->
+        <!-- Title -->
+        <TextView
+            android:id="@+id/dialog_title_tv"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="36px"
+            android:layout_marginTop="36px"
+            android:gravity="center_horizontal"
+            android:paddingLeft="22dip"
+            android:paddingRight="22dip"
+            android:text=""
+            android:textColor="@android:color/black"
+            android:textSize="48px"
+            android:visibility="visible" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="40px"
+            android:layout_marginRight="40px"
+            android:background="#d2d2d2"
+            android:visibility="gone" />
+
+        <!-- content -->
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="52px"
+            android:layout_marginTop="52px"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/dialog_content_tv"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="22dip"
+                android:paddingRight="22dip"
+                android:text="Content"
+                android:textColor="#646464"
+                android:textSize="40px" />
+        </ScrollView>
+        <!-- button pannel -->
+        <!-- <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#b2b2b2" /> -->
+
+        <LinearLayout
+            android:id="@+id/btn_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@null"
+            android:orientation="horizontal">
+
+            <com.mcz.xhj.yz.dr_view.ButtonProgressBar
+                android:id="@+id/bpb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="6dp"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp"
+                android:visibility="gone"
+                app:text="点击更新"
+                app:textColorbpb="@android:color/white"
+                app:type="determinate" />
+
+            <TextView
+                android:id="@+id/tv_update"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/alert_btn_single_nor"
+                android:gravity="center"
+                android:paddingTop="18px"
+                android:text="更新中..."
+                android:textColor="#ffffff"
+                android:textSize="48px"
+                android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

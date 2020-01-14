@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/immersion_status"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/base_title_color"
+    android:orientation="vertical" >
+
+    <include layout="@layout/app_base_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F2F2F2"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="72px"
+                android:src="@mipmap/icon_user" />
+
+            <TextView
+                android:id="@+id/tv_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="46px"
+                android:layout_marginBottom="46px"
+                android:text="130****0000"
+                android:textColor="#666666"
+                android:textSize="40px" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#d2d2d2" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="128px"
+            android:background="#FFFFFF"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+             >
+
+            <EditText
+                android:id="@+id/et_login_psw"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="56px"
+                android:layout_weight="1"
+                android:background="#FFFFFF"
+                android:hint="请输入登录密码"
+                android:inputType="textPassword"
+                android:maxLength="18"
+                android:textColor="#333333"
+                android:textSize="48px" >
+            </EditText>
+
+            <ImageView
+                android:id="@+id/image_clean"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="56px"
+                android:src="@mipmap/icon_close"
+                android:visibility="gone" />
+
+            <CheckBox
+                android:id="@+id/image_eye"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="56px"
+                android:button="@null"
+                android:checked="false"
+                android:clickable="false"
+                android:drawableLeft="@drawable/checked_eye"
+                android:visibility="visible" >
+            </CheckBox>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#d2d2d2" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="128px"
+            android:gravity="center"
+            >
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/bt_forgetPsw"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:textSize="48px"
+                android:paddingRight="56px"
+                android:text="忘记密码"
+                android:textColor="#666666" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/bt_login"
+            android:layout_width="match_parent"
+            android:layout_height="112px"
+            android:layout_marginLeft="56px"
+            android:layout_marginRight="56px"
+            android:layout_marginTop="72px"
+            android:background="@drawable/bg_btn"
+            android:padding="0dp"
+            android:text="登录"
+            android:textColor="#ffffff" />
+    </LinearLayout>
+
+</LinearLayout>

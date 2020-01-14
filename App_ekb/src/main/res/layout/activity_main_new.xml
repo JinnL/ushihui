@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/pop_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/app_base_title"
+        android:visibility="gone" />
+
+
+    <FrameLayout
+        android:id="@+id/fragment_content"
+        android:layout_above="@+id/ll_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/mVP"
+        android:visibility="gone"
+        android:background="@color/actionsheet_gray" />
+
+    <LinearLayout
+        android:id="@+id/ll_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:background="#f23c3c3c"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:id="@+id/tv_home"
+            style="@style/viewpager_navigation_bar_tab_style"
+            android:drawableTop="@mipmap/ico_home_press"
+            android:text="发现"
+           />
+
+        <TextView
+            android:id="@+id/tv_invest"
+            style="@style/viewpager_navigation_bar_tab_style"
+            android:drawableTop="@mipmap/ico_fund"
+            android:text="投资"/>
+
+        <ImageView
+            android:id="@+id/img_activity"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@mipmap/btn_fifth"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/tv_find"
+            style="@style/viewpager_navigation_bar_tab_style"
+            android:drawableTop="@mipmap/ico_more"
+            android:text="返利"/>
+
+        <TextView
+            android:id="@+id/tv_person"
+            style="@style/viewpager_navigation_bar_tab_style"
+            android:drawableTop="@mipmap/ico_account"
+            android:text="我的"/>
+    </LinearLayout>
+
+</RelativeLayout>

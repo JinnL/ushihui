@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<in.srain.cube.views.ptr.PtrClassicFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ptr_conponsunuse"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#efefef"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#efefef" >
+
+        <ListView
+            android:id="@+id/lv_conpons_unused"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="#efefef"
+            android:padding="10dp"
+            >
+        </ListView>
+
+        <LinearLayout
+            android:id="@+id/ll_norecord"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ico_record"
+                />
+
+            <!--<TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="暂无记录" />-->
+        </LinearLayout>
+    </RelativeLayout>
+
+</in.srain.cube.views.ptr.PtrClassicFrameLayout>

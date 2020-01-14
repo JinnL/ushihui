@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:paddingTop="@dimen/dp_5"
+
+    style="@style/padding_left_right"
+    android:background="@color/white"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/dp_5">
+
+    <!-- <com.lijiankun24.shadowlayout.ShadowLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         app:shadowColor="#0c000000"
+         app:shadowDx="0dp"
+         app:shadowDy="12dp"
+         app:shadowRadius="10dp"
+         app:shadowSide="all">
+
+     </com.lijiankun24.shadowlayout.ShadowLayout>-->
+    <!-- android:layout_marginBottom="@dimen/dp_18"-->
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:src="@drawable/icon_item_find"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        style="@style/layout_wrap"
+        android:maxLines="2"
+        android:lineSpacingMultiplier="1.3"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:textColor="@color/text_black"
+        android:textSize="14sp"
+        tools:text="邀请好友赢大礼" />
+
+    <TextView
+        android:id="@+id/tv_time"
+        style="@style/layout_wrap"
+
+        android:layout_marginLeft="@dimen/dp_10"
+        android:textColor="@color/text_99"
+        android:textSize="12sp"
+        tools:text="邀请好友赚1888元现金" />
+
+    <include
+        layout="@layout/line_color_ee"
+        android:visibility="gone" />
+</LinearLayout>

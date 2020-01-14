@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="com.ekabao.oil.ui.activity.OilCardImmediateActivity">
+
+    <FrameLayout
+        android:id="@+id/fl"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_85"
+        android:layout_marginTop="@dimen/dp_19"
+        android:layout_marginBottom="@dimen/dp_18"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/ll_oilcard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/vp_overlap"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_85" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_no_oilcard"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/ib_add_oilcard"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="@dimen/dp_24"
+                android:layout_marginRight="@dimen/dp_24"
+                android:background="@drawable/shape_rectangle_f2_10" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:drawableLeft="@drawable/icon_oilcard_add"
+                android:drawablePadding="@dimen/dp_6"
+                android:text="添加油卡"
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/sp_14" />
+
+            <ImageButton
+                android:id="@+id/ib_oilcard_buy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="@dimen/dp_13"
+                android:layout_marginRight="@dimen/dp_42"
+                android:background="@null"
+                android:src="@drawable/icon_oilcard_buy"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/tv_recharge_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_13"
+        android:layout_marginBottom="@dimen/dp_20"
+        android:text="选择充值金额"
+        android:textColor="@color/text_black"
+        android:textSize="@dimen/sp_15"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/fl" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_package"
+        style="@style/padding_left_right"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_10"
+        android:paddingBottom="@dimen/dp_17"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_recharge_title" />
+
+    <LinearLayout
+        android:id="@+id/ll_discount"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_48"
+        android:background="@drawable/shape_rectangle_white_10"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/rv_package">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_14"
+            android:layout_marginRight="@dimen/dp_12"
+            android:src="@drawable/ic_discount_detail" />
+
+        <TextView
+            android:id="@+id/tv_explan"
+            style="@style/layout_width_0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dp_15"
+            android:gravity="center_vertical|left"
+            android:textColor="@color/text_gray"
+            android:textSize="@dimen/sp_13"
+            tools:text="充一个月套餐,原价 500.0 元,折扣价 490.0 元, 共为您省去 10.0 元。" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_coupon"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_48"
+        android:layout_marginTop="@dimen/dp_10"
+        android:background="@drawable/shape_rectangle_white_10"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/dp_17"
+        android:paddingRight="@dimen/dp_15"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ll_discount">
+
+        <TextView
+            style="@style/layout_width_0dp"
+            android:gravity="center_vertical"
+            android:text="优惠券"
+            android:textColor="@color/text_black"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_coupon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dp_10"
+            android:text="0张"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/sp_12" />
+
+        <ImageView
+            style="@style/layout_wrap"
+            android:src="@drawable/icon_arrow" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ll_coupon" />
+
+
+    <LinearLayout
+        android:id="@+id/ll_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_48"
+        android:background="@color/white"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/dp_17"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dp_15"
+            android:gravity="center_vertical"
+            android:text="总计"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/sp_15" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="￥"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/sp_11" />
+
+        <TextView
+            android:id="@+id/tv_all_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dp_5"
+            android:text="0.00"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/sp_18" />
+
+        <TextView
+            android:id="@+id/tv_cheaper"
+            style="@style/layout_width_0dp"
+            android:gravity="center_vertical"
+            android:text="(省0.00)"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/sp_11" />
+
+        <Button
+            android:id="@+id/bt_pay"
+            android:layout_width="@dimen/dp_135"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_base"
+            android:text="立即充值"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_15" />
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

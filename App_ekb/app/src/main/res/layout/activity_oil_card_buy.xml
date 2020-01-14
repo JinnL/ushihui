@@ -1,0 +1,443 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.ekabao.oil.ui.activity.OilCardBuyActivity">
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/app_base_title"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/rl_select_package"
+        style="@style/margin_left_right"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_48"
+        android:layout_marginTop="@dimen/dp_54"
+        android:background="@drawable/shape_rectangle_white_6"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:drawableLeft="@drawable/icon_taocan"
+            android:drawablePadding="@dimen/dp_10"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/dp_15"
+            android:text="买套餐送油卡"
+            android:textColor="@color/text44"
+            android:textSize="@dimen/sp_15" />
+
+        <TextView
+            android:id="@+id/tv_package_name"
+            style="@style/layout_width_0dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="请选择套餐"
+            android:textColor="@color/text_99"
+            android:textSize="@dimen/sp_12" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_marginRight="@dimen/dp_15"
+            android:src="@drawable/icon_arrow_gray_r" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_top"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_91"
+        android:layout_marginTop="@dimen/dp_10"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/rl_select_package">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/dp_15"
+            android:layout_marginRight="@dimen/dp_15"
+            android:background="@drawable/shape_rectangle_white_6">
+
+
+            <ImageButton
+                android:id="@+id/ib_add_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@null"
+                android:src="@drawable/icon_add_address" />
+
+            <RelativeLayout
+                android:id="@+id/rl_address"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="@dimen/dp_19"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/icon_arrow_gray_r" />
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/color_3"
+                    android:textSize="@dimen/sp_17"
+                    tools:text="张三 " />
+
+                <TextView
+                    android:id="@+id/tv_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/tv_name"
+                    android:textColor="@color/color_3"
+                    android:textSize="@dimen/sp_17"
+                    tools:text="12489999291" />
+
+                <TextView
+                    android:id="@+id/tv_address"
+                    android:layout_width="@dimen/dp_250"
+                    android:layout_height="@dimen/dp_18"
+                    android:layout_below="@+id/tv_name"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:maxLines="1"
+                    android:textColor="@color/color_3"
+                    android:textSize="@dimen/sp_12"
+                    tools:text="杭州市江干区钱江时代国际广场2号楼170" />
+
+            </RelativeLayout>
+
+        </FrameLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_card_type"
+        style="@style/margin_left_right"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_10"
+        android:background="@drawable/shape_rectangle_white_6"
+        android:padding="@dimen/dp_19"
+        android:paddingTop="@dimen/dp_14"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/rl_top">
+
+        <ImageView
+            android:id="@+id/iv_card_type_title"
+            android:layout_width="@dimen/dp_90"
+            android:layout_height="@dimen/dp_15"
+            android:src="@drawable/ic_select_card_type" />
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/cl_company1"
+            android:layout_width="@dimen/dp_140"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv_card_type_title"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_2_5"
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_marginRight="@dimen/dp_2_5"
+            android:layout_marginBottom="@dimen/dp_2_5"
+            android:background="@drawable/bg_oil_card_home_selected"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_card_type_1"
+                android:layout_width="@dimen/dp_0"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dp_5"
+                android:background="@drawable/bg_oil_package_selected"
+                android:gravity="center_horizontal"
+                android:text="中石化油卡"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_15"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_card_num_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10"
+                android:layout_marginBottom="@dimen/dp_10"
+                android:textColor="@color/color_3"
+                android:textSize="@dimen/sp_11"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_card_type_1"
+                tools:text="剩余名额：2312" />
+
+        </android.support.constraint.ConstraintLayout>
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/cl_company2"
+            android:layout_width="@dimen/dp_140"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv_card_type_title"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_2_5"
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_marginRight="@dimen/dp_2_5"
+            android:layout_marginBottom="@dimen/dp_2_5"
+            android:layout_toRightOf="@id/cl_company1"
+            android:background="@drawable/bg_oil_card_home"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_card_type_2"
+                android:layout_width="@dimen/dp_0"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dp_5"
+                android:background="@color/line_f6"
+                android:gravity="center_horizontal"
+                android:text="中石油油卡"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/sp_15"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_card_num_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10"
+                android:layout_marginBottom="@dimen/dp_10"
+                android:textColor="@color/color_3"
+                android:textSize="@dimen/sp_11"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_card_type_2"
+                tools:text="剩余名额：2312" />
+
+        </android.support.constraint.ConstraintLayout>
+
+
+    </RelativeLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/cl_order_info"
+        style="@style/margin_left_right"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_144"
+        android:layout_marginTop="@dimen/dp_10"
+        android:background="@drawable/shape_rectangle_white_6"
+        android:paddingLeft="@dimen/dp_19"
+        android:paddingRight="@dimen/dp_19"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/rl_card_type">
+
+        <ImageView
+            android:id="@+id/iv_order_info_title"
+            android:layout_width="@dimen/dp_60"
+            android:layout_height="@dimen/dp_14"
+            android:layout_marginTop="@dimen/dp_8"
+            android:src="@drawable/ic_order_info_text"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_package_money_title"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_0"
+            android:layout_marginTop="@dimen/dp_15"
+            android:gravity="center_vertical"
+            android:text="套餐金额"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/sp_13"
+            app:layout_constraintBottom_toTopOf="@id/tv_card_num_title"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/iv_order_info_title" />
+
+        <TextView
+            android:id="@+id/tv_package_money"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_0"
+            android:layout_alignParentRight="true"
+            android:gravity="center_vertical"
+            android:text="￥0.00"
+            android:textColor="@color/text_99"
+            android:textSize="@dimen/sp_14"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@id/tv_package_money_title" />
+
+        <TextView
+            android:id="@+id/tv_card_num_title"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_0"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:text="卡片"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/sp_13"
+            app:layout_constraintBottom_toTopOf="@id/tv_freight_title"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_package_money_title" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_0"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:text="1张"
+            android:textColor="@color/text_99"
+            android:textSize="@dimen/sp_13"
+            app:layout_constraintBottom_toBottomOf="@id/tv_card_num_title"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@id/tv_card_num_title" />
+
+        <TextView
+            android:id="@+id/tv_freight_title"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_0"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/dp_15"
+            android:gravity="center_vertical"
+            android:text="运费"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/sp_13"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_card_num_title" />
+
+        <TextView
+            android:id="@+id/tv_freight"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_0"
+            android:gravity="center_vertical"
+            android:text="￥0.00"
+            android:textColor="@color/text44"
+            android:textSize="@dimen/sp_13"
+            app:layout_constraintBottom_toBottomOf="@id/tv_freight_title"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@id/tv_freight_title" />
+
+        <View
+            android:id="@+id/view_card_num"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_0_5"
+            android:background="@color/line_dd"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_card_num_title" />
+
+        <View
+            android:id="@+id/view_package_money"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_0_5"
+            android:background="@color/line_dd"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_package_money_title" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/tv_rule"
+        style="@style/margin_left_right"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:gravity="right"
+        android:paddingTop="@dimen/dp_10"
+        android:paddingBottom="@dimen/dp_10"
+        android:text="查看领取规则 >"
+        android:textColor="@color/text_99"
+        android:textSize="@dimen/sp_12"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cl_order_info" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_rule" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_48"
+        android:background="@color/white"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/dp_17"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dp_15"
+            android:gravity="center_vertical"
+            android:text="总计"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/sp_15" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_20"
+
+            android:gravity="bottom"
+            android:text="￥"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/sp_11" />
+
+        <TextView
+            android:id="@+id/tv_all_money"
+            style="@style/layout_wrap"
+            android:layout_marginRight="@dimen/dp_5"
+            android:text="0.00"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/sp_18" />
+
+        <TextView
+            android:id="@+id/tv_discount"
+            style="@style/layout_width_0dp"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/sp_12" />
+
+        <TextView
+            android:id="@+id/tv_cheaper"
+            style="@style/layout_width_0dp"
+            android:gravity="center_vertical"
+            android:text="(省0.00)"
+            android:textColor="@color/primary"
+            android:textSize="@dimen/sp_11"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/bt_buy"
+            android:layout_width="@dimen/dp_135"
+            android:layout_height="match_parent"
+            android:background="@color/primary"
+            android:text="立即领取"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_15" />
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

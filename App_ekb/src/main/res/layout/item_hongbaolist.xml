@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <ImageView
+        android:layout_width="357px"
+        android:layout_height="473px"
+        app:srcCompat="@mipmap/bg_xinshou"
+        android:id="@+id/imageView5"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="--元"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="180px"
+        android:id="@+id/tv_red_money"
+        android:layout_alignTop="@+id/imageView5"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:textSize="80px"
+        android:gravity="center"
+        android:textColor="#fffba5"
+        />
+
+    <TextView
+        android:text="现金红包"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="50px"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:layout_below="@+id/tv_red_money"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20px"
+        />
+
+    <TextView
+        android:text="续投--天"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_hongbao_day"
+        android:textSize="48px"
+        android:layout_below="@+id/imageView5"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40px"
+        />
+</RelativeLayout>

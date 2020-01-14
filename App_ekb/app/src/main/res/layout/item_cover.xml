@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_background"
+    android:layout_width="match_parent"
+
+    android:layout_height="@dimen/dp_192">
+
+    <ImageView
+        android:id="@+id/iv_background"
+        android:layout_width="match_parent"
+        android:scaleType="fitXY"
+        android:clickable="true"
+        android:layout_height="@dimen/dp_192"
+        android:src="@drawable/bg_person" />
+   <ImageView
+        android:id="@+id/iv_campany"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_30"
+        android:layout_marginTop="@dimen/dp_20"
+        android:src="@drawable/icon_zhongshihua" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_58"
+        android:layout_marginTop="@dimen/dp_19"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_15"
+        tools:text="中石油 油卡" />
+
+    <TextView
+        android:id="@+id/tv_card"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dp_63"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_18"
+        tools:text="1000 1137 0000 6801" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/dp_40"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            style="@style/layout_width_0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/dp_29">
+
+            <TextView
+                android:id="@+id/tv_money1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_15"
+                tools:text="￥800.00" />
+
+            <TextView
+                android:id="@+id/tv_time1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/dp_2"
+                android:textColor="#FFCEB3"
+                android:textSize="@dimen/sp_12"
+                tools:text="最新充值(2018.11.12)" />
+
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/line"
+            android:layout_width="@dimen/dp_0_5"
+            android:layout_height="@dimen/dp_24"
+            android:visibility="gone"
+            android:layout_gravity="center_vertical"
+            android:background="@color/line_ee" />
+
+        <LinearLayout
+            style="@style/layout_width_0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/dp_12">
+
+            <TextView
+                android:id="@+id/tv_money2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_15"
+                android:layout_gravity="center_horizontal"
+                tools:text="￥800.00" />
+
+            <TextView
+                android:id="@+id/tv_time2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/dp_2"
+                android:layout_gravity="center_horizontal"
+                android:textColor="#FFCEB3"
+                android:textSize="@dimen/sp_12"
+                tools:text="下次充值(2018.12.12)" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/image_cover"
+        android:layout_width="@dimen/dp_300"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:clickable="true"
+        android:scaleType="centerCrop"
+        android:visibility="gone" />
+
+</RelativeLayout>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@color/base_title_color"
+    style="@style/immersion_status"
+    >
+    <include layout="@layout/app_base_title"/>
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#f2f2f2"
+        >
+    <LinearLayout
+        android:id="@+id/popview"
+        android:layout_width="match_parent"
+        android:layout_height="112px" 
+        android:gravity="center_vertical"
+        android:weightSum="3"
+        >
+
+        <TextView
+            android:id="@+id/tv_type"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="回款金额(元)"
+            android:textSize="48px"
+            android:textColor="#333333"
+            android:layout_marginLeft="56px"
+            android:layout_weight="1"
+            android:gravity="center"
+             />
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="48px"
+            android:textColor="#333333"
+            android:text="回款日期" 
+            android:layout_weight="1"
+            android:gravity="center"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="状态" 
+            android:layout_marginRight="56px"
+            android:textSize="48px"
+            android:textColor="#333333"
+            android:layout_weight="1"
+            android:paddingLeft="30px"
+            android:gravity="center"
+            />
+
+    </LinearLayout>
+    <View 
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#d2d2d2"
+        />
+	</LinearLayout>
+	<LinearLayout 
+	    android:id="@+id/ptr_mydetail"
+	    android:layout_width="match_parent"
+	   android:layout_height="0dp"
+	   android:orientation="vertical" 
+	   android:layout_weight="1"
+	   android:background="#f2f2f2"
+	   >
+    <ListView
+        android:id="@+id/lv_mydetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:background="#ffffff"
+        >
+    </ListView>
+
+	</LinearLayout >
+
+</LinearLayout>

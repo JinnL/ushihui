@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.ekabao.oil.ui.activity.me.OilCardDetailsActivity">
+
+    <include layout="@layout/app_base_title" />
+
+    <RelativeLayout
+        android:id="@+id/rl_background"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_202"
+        android:layout_marginTop="@dimen/dp_29"
+        android:background="@drawable/bg_person">
+<!--bg_company1-->
+        <ImageView
+            android:id="@+id/iv_campany"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_34"
+            android:layout_marginTop="@dimen/dp_20"
+            android:src="@drawable/icon_zhongshihua" />
+
+        <TextView
+            android:id="@+id/tv_company"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_63"
+            android:layout_marginTop="@dimen/dp_19"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_15"
+            tools:text="中石油 油卡" />
+
+        <TextView
+            android:id="@+id/tv_card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dp_63"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_18"
+            tools:text="1000 1137 0000 6801" />
+
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_34"
+            android:layout_marginTop="@dimen/dp_117"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_12"
+            tools:text="持卡人   张亮" />
+
+        <TextView
+            android:id="@+id/tv_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_name"
+            android:layout_marginLeft="@dimen/dp_34"
+            android:layout_marginTop="@dimen/dp_5"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_12"
+            tools:text="手机号   158****6647" />
+
+        <ImageView
+            android:id="@+id/iv_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="@dimen/dp_35"
+            android:layout_marginRight="@dimen/dp_24"
+            android:padding="@dimen/dp_10"
+            android:src="@drawable/icon_oil_delete" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_158"
+        android:background="@color/white"
+        android:paddingLeft="@dimen/dp_34">
+
+        <View
+            android:id="@+id/line"
+            android:layout_width="@dimen/dp_0_5"
+            android:layout_height="@dimen/dp_48"
+            android:layout_centerHorizontal="true"
+            android:layout_marginRight="@dimen/dp_34"
+            android:layout_marginTop="@dimen/dp_28"
+            android:background="@color/line_ee" />
+
+        <View
+            android:layout_width="@dimen/dp_0_5"
+            android:layout_height="@dimen/dp_48"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/dp_34"
+            android:background="@color/line_ee" />
+
+        <TextView
+            android:id="@+id/tv_all_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_19"
+            android:textColor="#FF6571"
+            android:textSize="@dimen/sp_18"
+            tools:text="¥2500.00" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_all_money"
+            android:layout_marginTop="@dimen/dp_5"
+            android:textColor="@color/text_99"
+            android:textSize="@dimen/sp_12"
+            android:text="套餐充值累计(元)" />
+
+        <TextView
+            android:id="@+id/tv_immediate_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_19"
+            android:layout_toRightOf="@+id/line"
+            android:textColor="#FF6571"
+            android:textSize="@dimen/sp_18"
+            tools:text="¥200.00" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_immediate_money"
+            android:layout_marginTop="@dimen/dp_5"
+            android:layout_toRightOf="@+id/line"
+            android:textColor="@color/text_99"
+            android:textSize="@dimen/sp_12"
+            android:text="即时充值累计(元)" />
+
+
+        <TextView
+            android:id="@+id/tv_new_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/dp_21"
+            android:layout_marginTop="@dimen/dp_5"
+            android:textColor="@color/text_99"
+            android:textSize="@dimen/sp_12"
+            tools:text="最新充值(2018.10.30)" />
+
+        <TextView
+            android:id="@+id/tv_new_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/tv_new_time"
+            android:layout_marginTop="@dimen/dp_19"
+            android:textColor="#FF6571"
+            android:textSize="@dimen/sp_18"
+            tools:text="¥200.00" />
+
+        <TextView
+            android:id="@+id/tv_next_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/tv_new_time"
+            android:layout_toRightOf="@+id/line"
+            android:textColor="#FF6571"
+            android:textSize="@dimen/sp_18"
+            tools:text="¥200.00" />
+
+        <TextView
+            android:id="@+id/tv_next_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/dp_21"
+            android:layout_marginTop="@dimen/dp_5"
+            android:layout_toRightOf="@+id/line"
+            android:textColor="@color/text_99"
+            android:textSize="@dimen/sp_12"
+            tools:text="下次充值(2018.11.30)" />
+
+    </RelativeLayout>
+
+</LinearLayout>

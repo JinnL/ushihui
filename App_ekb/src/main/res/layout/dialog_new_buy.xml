@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    style="@style/immersion_status"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#b5555555"
+    android:orientation="vertical"
+
+    >
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/iv_act_xutou"
+        android:layout_width="580px"
+        android:layout_height="750px"
+        fresco:failureImage="@mipmap/logo_default"
+        fresco:failureImageScaleType="centerInside"
+        fresco:actualImageScaleType="fitXY"
+        fresco:placeholderImage="@mipmap/logo_default"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        />
+    <!--<ImageView-->
+        <!--android:id="@+id/iv_act_xutou"-->
+        <!--android:layout_width="833px"-->
+        <!--android:layout_height="1152px"-->
+        <!--android:src="@mipmap/activity_xutou"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:layout_centerHorizontal="true" -->
+        <!--/>-->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="130px"
+        android:layout_alignBottom="@+id/iv_act_xutou"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/tv_queren" />
+
+    <TextView
+        android:id="@+id/iv_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        android:drawableRight="@mipmap/cancel_iv"
+        android:layout_marginRight="184px"
+        android:layout_marginEnd="164px"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="138dp" />
+
+</RelativeLayout>

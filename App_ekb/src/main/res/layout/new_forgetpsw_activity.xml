@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/immersion_status"
+    android:background="#EFEFEF"
+    android:orientation="vertical">
+
+    <include layout="@layout/app_base_title"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="手机号"
+                android:textSize="14sp"
+                android:textColor="@color/textColor3"/>
+
+            <EditText
+                android:id="@+id/et_phonenumber"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:layout_marginLeft="19dp"
+                android:hint="请输入您的手机号"
+                android:inputType="number"
+                android:maxLength="11"
+                android:singleLine="true"
+                android:textColorHint="#FFAFB0B7"
+                android:textSize="14sp"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:background="#AFB0B7"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="15dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="短信验证码"
+                android:textSize="14sp"
+                android:textColor="@color/textColor3"/>
+
+            <EditText
+                android:id="@+id/et_yzm"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:layout_marginLeft="19dp"
+                android:hint="请输入验证码"
+                android:inputType="number"
+                android:maxLength="4"
+                android:singleLine="true"
+                android:textColorHint="#FFAFB0B7"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:id="@+id/tv_getyzm"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:layout_marginRight="14dp"
+                android:background="@drawable/bg_corner_kong_blue"
+                android:gravity="center"
+                android:text="获取验证码"
+                android:textColor="@drawable/textcolor_msg"
+                android:textSize="14sp"
+                android:visibility="visible"></TextView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp">
+
+        <TextView
+            android:id="@+id/tv_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@mipmap/bg_button"
+            android:gravity="center"
+            android:text="下一步"
+            android:textSize="18sp"
+            android:textColor="@color/white"/>
+    </RelativeLayout>
+
+</LinearLayout>

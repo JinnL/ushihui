@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/immersion_status"
+    xmlns:android_custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/base_title_color"
+    android:orientation="vertical" >
+
+    <include layout="@layout/app_base_title" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/lv_code_pass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="70px"
+            android:gravity="center"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="短信验证码已发送至"
+                android:textColor="#666666"
+                android:textSize="40px" />
+
+            <TextView
+                android:id="@+id/tv_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="130****0000"
+                android:textColor="#333333"
+                android:textSize="54px"
+                android:layout_marginTop="20px"
+                />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            android:layout_marginTop="70px"
+            >
+
+            <EditText
+                android:id="@+id/code_et"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:hint="请输入短信验证码"
+                android:inputType="number"
+                android:maxLength="4"
+                android:singleLine="true"
+                android:textColor="#333333"
+                android:textSize="44px"
+                android:gravity="center"
+                android:textCursorDrawable="@null"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true">
+                <requestFocus />
+            </EditText>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/code_et"
+                android:layout_toEndOf="@+id/code_et"
+                android:layout_marginLeft="180px"
+                android:layout_marginStart="180px">
+                <TextView
+                    android:id="@+id/tv_getsmg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="重新获取"
+                    android:textSize="36px"
+                    android:textColor="@color/base_red_color"
+                    android:visibility="gone"
+                    />
+                <com.mcz.xhj.yz.dr_view.CircleTextProgressbar
+                    android:id="@+id/tv_red_progress_text"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:onClick="onClick"
+                    />
+            </LinearLayout>
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#d2d2d2"
+            android:layout_marginLeft="100px"
+            android:layout_marginRight="100px"
+            android:layout_marginTop="20px"
+            ></View>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="128px"
+            android:background="#FFFFFF"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_marginTop="130px"
+            >
+
+            <EditText
+                android:id="@+id/et_login_psw"
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:paddingLeft="40px"
+                android:layout_weight="1"
+                android:background="#FFFFFF"
+                android:hint="请设置登录密码(6-16位数字、字母)"
+                android:inputType="textPassword"
+                android:maxLength="16"
+                android:textColor="#333333"
+                android:textSize="44px" >
+            </EditText>
+            <LinearLayout
+                android:layout_width="120px"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_marginRight="30px"
+                >
+            <CheckBox
+                android:id="@+id/image_eye"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:checked="false"
+                android:clickable="false"
+                android:drawableLeft="@drawable/checked_eye_reg"
+                android:gravity="center"
+                android:textSize="0sp"
+                >
+            </CheckBox>
+            </LinearLayout>
+        </LinearLayout>
+		<View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#d2d2d2"
+            android:layout_marginLeft="40px"
+            android:layout_marginRight="40px"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="128px"
+            android:background="#FFFFFF"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            >
+
+            <EditText
+                android:id="@+id/et_login_pic"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="40px"
+                android:layout_weight="1"
+                android:hint="请输入图形验证码"
+                android:maxLength="18"
+                android:textColor="#333333"
+                android:textSize="44px"
+                android:background="#FFFFFF"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                >
+            </EditText>
+
+            <com.mcz.xhj.yz.dr_view.VerificationCodeView
+                android:id="@+id/verifycodeview"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true" />
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#d2d2d2"
+            android:layout_marginLeft="40px"
+            android:layout_marginRight="40px"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="128px"
+            android:background="#FFFFFF"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            >
+
+            <EditText
+                android:id="@+id/et_login_referrer"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="40px"
+                android:layout_weight="1"
+                android:hint="推荐人手机号码"
+                android:maxLength="18"
+                android:textColor="#333333"
+                android:textSize="44px"
+                android:background="#FFFFFF"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                >
+            </EditText>
+
+            <CheckBox
+                android:id="@+id/check_tuijian"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/tv_Gesture"
+                android:layout_alignBottom="@+id/tv_Gesture"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="40px"
+                android:button="@null"
+                android:drawableRight="@drawable/checked_rb"
+                android:gravity="right"
+                android:textColor="#999999"
+                android:textSize="48px" />
+
+        </LinearLayout>
+		<View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#d2d2d2"
+            android:layout_marginLeft="40px"
+            android:layout_marginRight="40px"
+            />
+
+        <Button
+            android:id="@+id/bt_login"
+            android:layout_width="match_parent"
+            android:layout_height="122px"
+            android:layout_marginLeft="40px"
+            android:layout_marginRight="40px"
+            android:layout_marginTop="104px"
+            android:background="@drawable/bg_corner_gray"
+            android:padding="0dp"
+            android:text="注册"
+            android:textColor="#ffffff" />
+    </LinearLayout>
+</LinearLayout>

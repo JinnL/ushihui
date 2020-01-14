@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#33000000"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/back"
+        android:clickable="true"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+      />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginLeft="@dimen/dp_12"
+        android:layout_marginRight="@dimen/dp_12"
+        android:background="@drawable/shape_rectangle_white_6"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/tv_baidu"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/dp_60"
+            android:gravity="center"
+            android:text="百度地图"
+            android:textColor="@color/title_black"
+            android:textSize="@dimen/sp_16" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/dp_0_5"
+            android:background="@color/line_ee" />
+
+        <TextView
+            android:id="@+id/tv_gaode"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/dp_60"
+            android:gravity="center"
+            android:text="高德地图"
+            android:textColor="@color/title_black"
+            android:textSize="@dimen/sp_16" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/dp_0_5"
+            android:background="@color/line_ee" />
+
+        <TextView
+            android:id="@+id/tv_tx"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/dp_60"
+            android:gravity="center"
+            android:text="腾讯地图"
+            android:textColor="@color/title_black"
+            android:textSize="@dimen/sp_16" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="@dimen/dp_12"
+        android:layout_marginRight="@dimen/dp_12"
+        android:layout_marginTop="@dimen/dp_12"
+        android:background="@drawable/shape_rectangle_white_6"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/btn_cancel"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:text="取消"
+            android:textColor="@color/title_black"
+            android:textSize="@dimen/sp_16" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

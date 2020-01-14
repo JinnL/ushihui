@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_125"
+  >
+
+    <com.jude.rollviewpager.RollPagerView
+        android:id="@+id/rpv_banner"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/dp_12"
+        android:layout_marginRight="@dimen/dp_12"
+        app:rollviewpager_hint_paddingBottom="26dp" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_9"
+        android:visibility="gone"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/bg_mall_banner" />
+
+</RelativeLayout>

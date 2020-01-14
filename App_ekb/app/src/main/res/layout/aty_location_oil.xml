@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/app_base_title" />
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/refreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <!-- 第一部分:CoordinatorLayout -->
+        <android.support.design.widget.CoordinatorLayout
+
+            android:id="@+id/scrollview"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:background="#ffffff">
+
+
+            <!-- 第二部分:缩放控件-->
+            <android.support.design.widget.AppBarLayout
+                android:id="@+id/id_appbarlayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <android.support.design.widget.CollapsingToolbarLayout
+                    android:id="@+id/collapsing_tool_bar_test_ctl"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fitsSystemWindows="true"
+                    app:contentScrim="?attr/colorPrimary"
+                    app:expandedTitleMarginEnd="64dp"
+                    app:expandedTitleMarginStart="48dp"
+                    app:layout_scrollFlags="scroll">
+
+
+                    <RelativeLayout
+                        android:id="@+id/userScroreRe"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_99"
+                        android:background="@color/white"
+                        app:layout_scrollFlags="enterAlwaysCollapsed">
+
+                        <TextView
+                            android:id="@+id/tv_location"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_above="@+id/tv_buy_oil"
+                            android:layout_marginLeft="@dimen/dp_24"
+                            android:layout_marginRight="@dimen/dp_15"
+                            android:layout_marginTop="@dimen/dp_10"
+                            android:drawableLeft="@drawable/icon_location"
+                            android:drawablePadding="@dimen/dp_5"
+                            android:maxLines="1"
+                            android:text="天安门广场"
+                            android:textColor="@color/view_black"
+                            android:textSize="@dimen/sp_20" />
+
+                        <TextView
+                            android:id="@+id/tv_buy_oil"
+                            android:layout_width="@dimen/dp_90"
+                            android:layout_height="@dimen/dp_20"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginBottom="@dimen/dp_6"
+                            android:layout_marginLeft="@dimen/dp_24"
+                            android:layout_marginTop="@dimen/dp_10"
+                            android:background="@drawable/shape_location_gray"
+                            android:drawableRight="@drawable/icon_buy_oil"
+                            android:gravity="center"
+                            android:paddingRight="@dimen/dp_5"
+                            android:text="立即充油费"
+                            android:textColor="@color/text_black"
+                            android:textSize="@dimen/sp_13" />
+
+                    </RelativeLayout>
+                </android.support.design.widget.CollapsingToolbarLayout>
+
+
+                <!--悬浮的-->
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/dp_55"
+                        android:layout_marginLeft="@dimen/dp_24"
+                        android:gravity="center">
+
+                        <RelativeLayout
+                            android:id="@+id/rl_oil"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/tv_oil_choose"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="90#汽油"
+                                android:textColor="@color/bt"
+                                android:textSize="@dimen/sp_14" />
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/dp_12"
+                                android:layout_toRightOf="@+id/tv_oil_choose"
+                                android:src="@drawable/icon_oil_choose" />
+
+                        </RelativeLayout>
+
+
+                        <TextView
+                            android:id="@+id/tv_disance"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="@dimen/dp_90"
+                            android:text="距离最近"
+                            android:textColor="@color/view_black"
+                            android:textSize="@dimen/sp_14" />
+
+                        <TextView
+                            android:id="@+id/tv_price"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="@dimen/dp_24"
+                            android:text="价格最低"
+                            android:textColor="@color/text_bb"
+                            android:textSize="@dimen/sp_14" />
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <View
+                            android:id="@+id/view_distance"
+                            android:layout_width="@dimen/dp_24"
+                            android:layout_height="@dimen/dp_3"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="@dimen/dp_105"
+                            android:background="@color/view_black" />
+
+                        <View
+                            android:id="@+id/view_price"
+                            android:layout_width="@dimen/dp_24"
+                            android:layout_height="@dimen/dp_3"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="@dimen/dp_40"
+                            android:background="@color/view_black"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+
+                    <RadioGroup
+                        android:id="@+id/radioGroup"
+                        android:layout_width="fill_parent"
+                        android:layout_height="50dip"
+                        android:gravity="center"
+                        android:orientation="horizontal" />
+
+
+                </LinearLayout>
+            </android.support.design.widget.AppBarLayout>
+
+            <!-- 第三部分:Your Scroll View-->
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:overScrollMode="always"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+
+
+        </android.support.design.widget.CoordinatorLayout>
+
+
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+</LinearLayout>

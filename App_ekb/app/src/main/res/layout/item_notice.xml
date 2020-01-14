@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_40"
+        android:gravity="center"
+        android:textColor="@color/text_bb"
+        android:textSize="12sp"
+        tools:text="- 2018/06/11 16:00 -" />
+
+    <LinearLayout
+        style="@style/margin_left_right"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_rectangle_white_10"
+        android:orientation="vertical"
+        android:layout_marginBottom="@dimen/dp_5"
+        android:paddingLeft="@dimen/dp_19"
+        android:paddingRight="@dimen/dp_19">
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_15"
+            android:textColor="@color/text_black"
+            android:textSize="15sp"
+            tools:text="关于2018年端午假期运营安排公告" />
+
+        <TextView
+            android:id="@+id/tv_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dp_12"
+            android:layout_marginTop="@dimen/dp_10"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="@color/text_99"
+            android:textSize="12sp"
+            tools:text="端午佳节期间充值、提现、出借、回款等服务安排" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/app_base_title" />
+
+    <LinearLayout
+        style="@style/padding_left_right"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/layout_wrap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_18"
+            android:text="项目信息"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/sp_14" />
+
+
+        <RelativeLayout
+            style="@style/layout_wrap"
+            android:layout_marginTop="@dimen/dp_13">
+
+            <TextView
+                style="@style/layout_wrap"
+                android:layout_centerVertical="true"
+                android:text="预期年化"
+                android:textColor="@color/text_99"
+                android:textSize="@dimen/sp_14" />
+
+            <TextView
+                android:id="@+id/tv_nianhuashouyi"
+                style="@style/layout_wrap"
+                android:layout_marginLeft="@dimen/dp_90"
+                android:text="--"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/sp_14"
+                tools:text="11.60%" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            style="@style/layout_wrap"
+            android:layout_marginTop="@dimen/dp_13">
+
+            <TextView
+                style="@style/layout_wrap"
+                android:layout_centerVertical="true"
+                android:text="出借期限"
+                android:textColor="@color/text_99"
+                android:textSize="@dimen/sp_14" />
+
+            <TextView
+                android:id="@+id/tv_touziqixian"
+                style="@style/layout_wrap"
+                android:layout_marginLeft="@dimen/dp_90"
+                android:text="--"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/sp_14"
+                tools:text="30天" />
+        </RelativeLayout>
+
+        <RelativeLayout
+
+            style="@style/layout_wrap"
+            android:layout_marginTop="@dimen/dp_13">
+
+            <TextView
+                style="@style/layout_wrap"
+                android:layout_centerVertical="true"
+                android:text="出借金额"
+                android:textColor="@color/text_99"
+                android:textSize="@dimen/sp_14" />
+
+            <TextView
+                android:id="@+id/tv_touzijine"
+                style="@style/layout_wrap"
+                android:layout_marginLeft="@dimen/dp_90"
+                android:text="--元"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/sp_14" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            style="@style/layout_wrap"
+            android:layout_marginTop="@dimen/dp_13">
+
+            <TextView
+                style="@style/layout_wrap"
+                android:layout_centerVertical="true"
+                android:text="出借时间"
+                android:textColor="@color/text_99"
+                android:textSize="@dimen/sp_14" />
+
+            <TextView
+                android:id="@+id/tv_touzidate"
+                style="@style/layout_wrap"
+                android:layout_marginLeft="@dimen/dp_90"
+                android:text="--"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/sp_14" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="@dimen/dp_18"
+            android:background="@color/line_ee" />
+
+        <TextView
+            style="@style/layout_wrap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_18"
+            android:text="还款信息"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/sp_14" />
+
+        <RelativeLayout
+            style="@style/layout_wrap"
+            android:layout_marginTop="@dimen/dp_13">
+
+            <TextView
+                style="@style/layout_wrap"
+                android:layout_centerVertical="true"
+                android:text="计息日期"
+                android:textColor="@color/text_99"
+                android:textSize="@dimen/sp_14" />
+
+            <TextView
+                android:id="@+id/tv_jixidate"
+                style="@style/layout_wrap"
+                android:layout_marginLeft="@dimen/dp_90"
+                android:text="--"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/sp_14" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            style="@style/layout_wrap"
+            android:layout_marginTop="@dimen/dp_13">
+
+            <TextView
+                style="@style/layout_wrap"
+                android:layout_centerVertical="true"
+                android:text="回款日期"
+                android:textColor="@color/text_99"
+                android:textSize="@dimen/sp_14" />
+
+            <TextView
+                android:id="@+id/tv_huikuandate"
+                style="@style/layout_wrap"
+                android:layout_marginLeft="@dimen/dp_90"
+                android:text="--"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/sp_14" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            style="@style/layout_wrap"
+            android:layout_marginTop="@dimen/dp_13">
+
+            <TextView
+                style="@style/layout_wrap"
+                android:layout_centerVertical="true"
+                android:text="应收本金"
+                android:textColor="@color/text_99"
+                android:textSize="@dimen/sp_14" />
+
+            <TextView
+                android:id="@+id/tv_yingshoubenjin"
+                style="@style/layout_wrap"
+                android:layout_marginLeft="@dimen/dp_90"
+                android:text="--元"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/sp_14" />
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            style="@style/layout_wrap"
+            android:layout_marginTop="@dimen/dp_13">
+
+            <TextView
+                style="@style/layout_wrap"
+                android:layout_centerVertical="true"
+                android:text="应收利息"
+                android:textColor="@color/text_99"
+                android:textSize="@dimen/sp_14" />
+
+            <TextView
+                android:id="@+id/tv_yingshoulixi"
+                style="@style/layout_wrap"
+                android:layout_marginLeft="@dimen/dp_90"
+                android:text="--元"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/sp_14" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            style="@style/layout_wrap"
+            android:layout_marginTop="@dimen/dp_13"
+            android:visibility="gone">
+
+            <TextView
+                style="@style/layout_wrap"
+                android:layout_centerVertical="true"
+                android:text="还款方式"
+                android:textColor="@color/text_99"
+                android:textSize="@dimen/sp_14" />
+
+            <TextView
+                android:id="@+id/tv_huankuanfangshi"
+                style="@style/layout_wrap"
+                android:layout_marginLeft="@dimen/dp_90"
+                android:text="到期还本利息"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/sp_14" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_0_5"
+            android:layout_marginTop="@dimen/dp_18"
+            android:background="@color/line_ee" />
+
+        <TextView
+            style="@style/layout_wrap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_18"
+            android:text="其他资料"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/sp_14" />
+
+        <RelativeLayout
+            style="@style/layout_wrap"
+            android:layout_marginTop="@dimen/dp_13">
+
+            <TextView
+                style="@style/layout_wrap"
+                android:layout_centerVertical="true"
+                android:text="借款合同"
+                android:textColor="@color/text_99"
+                android:textSize="@dimen/sp_14" />
+
+            <TextView
+                android:id="@+id/tv_loan_contract"
+                style="@style/layout_wrap"
+                android:layout_marginLeft="@dimen/dp_90"
+                android:text="查看"
+                android:clickable="true"
+                android:textColor="@color/text_blue"
+                android:textSize="@dimen/sp_14" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            style="@style/layout_wrap"
+            android:layout_marginTop="@dimen/dp_13">
+
+            <TextView
+                style="@style/layout_wrap"
+                android:layout_centerVertical="true"
+                android:text="项目详情"
+                android:textColor="@color/text_99"
+                android:textSize="@dimen/sp_14" />
+
+            <TextView
+                android:id="@+id/tv_info_details"
+                style="@style/layout_wrap"
+                android:layout_marginLeft="@dimen/dp_90"
+                android:text="查看"
+                android:clickable="true"
+                android:textColor="@color/text_blue"
+                android:textSize="@dimen/sp_14" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/rl_youhuijuan"
+            style="@style/layout_wrap"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tv_juanname"
+                style="@style/layout_wrap"
+                android:layout_centerVertical="true"
+                android:text="优惠券"
+                android:textColor="@color/text_99"
+                android:textSize="@dimen/sp_14" />
+
+            <TextView
+                android:id="@+id/tv_youhuiquan"
+                style="@style/layout_wrap"
+                android:layout_marginLeft="@dimen/dp_90"
+                android:text="--"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/sp_14" />
+
+            <TextView
+                style="@style/layout_wrap"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="34dp"
+                android:drawableRight="@drawable/icon_arrow"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/sp_14" />
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/tv_huikuanjilu"
+            style="@style/layout_wrap"
+            android:layout_below="@+id/ll_xinxi"
+            android:layout_centerVertical="true"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:text="查看回款记录"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/sp_14"
+            android:visibility="gone" />
+
+    </LinearLayout>
+</LinearLayout>

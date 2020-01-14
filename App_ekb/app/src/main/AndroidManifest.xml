@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:uses-permissionandroid="http://schemas.android.com/apk/res-auto"
+    package="com.ekabao.oil">
+    <!-- 读写SD卡权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" /> <!-- 拨打电话 -->
+    <uses-permission android:name="android.permission.CALL_PHONE" /> <!-- 相机权限 -->
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" /> <!-- 悬浮框权限 -->
+    <!-- <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/> -->
+    <!-- 发送短信 -->
+    <!-- <uses-permission android:name="android.permission.SEND_SMS" /> -->
+    <!-- <uses-permission android:name="android.permission.READ_SMS" /> -->
+    <!-- <uses-permission android:name="android.permission.WRITE_SMS" /> -->
+    <!-- 网络访问权限 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" /> <!-- 友盟需要的权限 -->
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.SET_DEBUG_APP" /> <!-- <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" /> -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" /> <!-- 云闪付 -->
+    <uses-permission android:name="android.permission.NFC" />
+
+    <uses-feature android:name="android.hardware.nfc.hce" />
+
+    <uses-permission android:name="org.simalliance.openmobileapi.SMARTCARD" />
+
+
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+
+    <application
+        android:name=".global.LocalApplication"
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:allowBackup">
+        <activity android:name=".ui.activity.MallActivity"></activity>
+        <activity android:name=".ui.activity.ProtocolActivity" />
+
+        <meta-data
+            android:name="design_width"
+            android:value="720" />
+        <meta-data
+            android:name="design_height"
+            android:value="1280" />
+
+        <activity
+            android:name=".ui.activity.WellcomeAct"
+            android:theme="@style/WellcomeActivityTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <!--
+            在启动的activity加入以下代码，其中scheme很重要，短信启动App的标识吧
+            android:host="android"
+            -->
+            <intent-filter android:autoVerify="true">
+
+                <!--
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+                -->
+
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="middleman"
+                    android:path="/Wellcome"
+                    android:port="6666"
+                    android:scheme="http" />
+                <data
+                    android:host="m.middleman.cn"
+                    android:pathPattern=".*"
+                    android:scheme="https" />
+                <data
+                    android:host="m.middleman.cn"
+                    android:pathPattern=".*"
+                    android:scheme="http" />
+                <!-- <data android:scheme="baozi" /> -->
+            </intent-filter>
+        </activity>
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.ushihui.oil.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+        <activity
+            android:name=".ui.activity.MainActivity"
+            android:theme="@style/PrimaryActivityTheme" /> <!--  -->
+        <!--主页-->
+        <activity
+            android:name=".ui.activity.MainOilActivity"
+            android:theme="@style/PrimaryActivityTheme" /> <!--  -->
+        <!-- 友盟推送正式  5a0baaecb27b0a1e69000087  c0dd805d16b36c4f68aa8d630bf2b263 -->
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="5e0db1d1570df3bf9e00010e" />
+        <meta-data
+            android:name="UMENG_MESSAGE_SECRET"
+            android:value="789cd17412a343aa33d78c1e43a18fbf" />
+        <!--<meta-data-->
+            <!--android:name="UMENG_APPKEY"-->
+            <!--android:value="5d073e483fc1954f7100093c" />-->
+        <!--<meta-data-->
+            <!--android:name="UMENG_MESSAGE_SECRET"-->
+            <!--android:value="979efd299ad6e0e05f5edf71c286c646" />-->
+        <!--
+    推送测试
+    <meta-data android:value="58f57fa3aed17946af002132" android:name="UMENG_APPKEY"></meta-data>
+    <meta-data android:name="UMENG_MESSAGE_SECRET" android:value="e3a9bf80a294d1cecadf8fed928b20ff"></meta-data>
+        -->
+        <!-- <meta-data android:value="101yyb" android:name="UMENG_CHANNEL"/> -->
+        <!-- <meta-data android:value="maopao" android:name="UMENG_CHANNEL"/> -->
+        <!-- <meta-data android:value="toutiao" android:name="UMENG_CHANNEL"/> -->
+        <!-- 友盟多渠道  用的360 这里不需要了 -->
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="${UMENG_CHANNEL_VALUE}" /> <!-- 友盟需要的activity -->
+        <activity
+            android:name="com.umeng.qq.tencent.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="tencent1109434094" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.umeng.qq.tencent.AssistActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity android:name=".ui.activity.WebViewActivity" />
+        <activity android:name=".ui.activity.LogAct" />
+        <activity android:name=".ui.activity.AdverActivity" />
+        <activity android:name=".ui.activity.GestureEditActivity" />
+        <activity android:name=".ui.activity.ProductActivity" />
+        <activity android:name=".ui.activity.ProductDetailActivity" />
+        <activity
+            android:name=".ui.activity.ScoreboardActivity"
+            android:theme="@style/FruitActivityTheme" />
+        <activity android:name=".ui.activity.LoginActivity" />
+        <activity android:name=".ui.activity.RegisterActivity" />
+        <activity android:name=".ui.activity.InvestActivity" />
+        <activity android:name=".ui.activity.NoticeActivity" />
+        <activity android:name=".ui.activity.TaskCenterActivity" />
+        <activity android:name=".ui.activity.InviteFriendsActivity" />
+        <activity android:name=".ui.activity.NewsActivity" />
+        <activity android:name=".ui.activity.me.AssetsAnalysisActivity" />
+        <activity android:name=".ui.activity.me.MyInvestmentActivity" />
+        <activity android:name=".ui.activity.me.MyInvestDetailsActivity" />
+        <activity android:name=".ui.activity.CapitaldetailsActivity" />
+        <activity android:name=".ui.activity.me.SettingActivity" />
+        <activity android:name=".ui.activity.me.AddressManageActivity" />
+        <activity android:name=".ui.activity.me.AddAddressActivity" />
+        <activity android:name=".ui.activity.me.RealNameActivity" />
+        <activity android:name=".ui.activity.me.FourPartActivity" />
+        <activity android:name=".ui.activity.me.BankLimitActivity" />
+        <activity android:name=".ui.activity.me.FourPartCashinActivity" />
+        <activity android:name=".ui.activity.me.MeWelfareActivity" />
+        <activity android:name=".ui.activity.PayResultActivity" />
+        <activity android:name=".ui.activity.ForgetPswActivity" />
+        <activity android:name=".ui.activity.SetPswActivity" />
+        <activity android:name=".ui.activity.HistoryProjectActivity" />
+        <activity android:name=".ui.activity.me.MeBankActivity" />
+        <activity android:name=".ui.activity.me.NewQuestionActivity" />
+        <activity android:name=".ui.activity.me.CouponsUsedActivity" />
+        <activity android:name=".ui.activity.me.SetTradePswActivity" />
+        <activity android:name=".ui.activity.me.CashInActivity" />
+        <activity android:name=".ui.activity.me.CashOutActivity" />
+        <activity android:name=".ui.activity.me.CashInEndActivity" />
+        <activity android:name=".ui.activity.me.ModifyPswActivity" />
+
+        <service android:name=".service.UpdateService">
+            <intent-filter>
+                <action android:name="com.middleman.ymc.service.UpdateService" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name="com.awen.photo.photopick.ui.PhotoPickActivity"
+            android:theme="@style/PhoAppTheme.AppTheme" />
+        <activity
+            android:name="com.awen.photo.photopick.ui.PhotoPreviewActivity"
+            android:theme="@style/PhoAppTheme.AppTheme" />
+        <activity
+            android:name="me.iwf.photopicker.PhotoPickerActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name="me.iwf.photopicker.PhotoPagerActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".icbcPay.PayResultHandler"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name=".CcbPayResultActivity"
+            android:theme="@android:style/Theme.NoTitleBar">
+            <intent-filter>
+
+                <!-- 替换你的THIRDAPPINFO comccbpay105290073990607+15位商户号 加2位序列号 -->
+                <action android:name="comccbpay1052900739906070003310F154716201" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.activity.me.CashResultActivity" />
+        <activity android:name=".ui.activity.me.OilCardDetailsActivity" />
+        <activity android:name=".ui.activity.me.MyOrderDetailsActivity" />
+        <activity android:name=".ui.activity.me.AboutActivity" />
+        <activity android:name=".ui.activity.OilCardPackageActivity" />
+        <activity android:name=".ui.activity.OilCardImmediateActivity" />
+        <activity android:name=".ui.activity.me.AddOilCardActivity" />
+        <activity android:name=".ui.activity.OilCardPayActivity" />
+        <activity android:name=".ui.activity.me.OilCardActivity" />
+        <activity android:name=".ui.activity.me.OrderActivity" />
+        <activity android:name=".ui.activity.NoviceRegisterActivity" /> <!-- android:theme="@style/FruitActivityTheme" -->
+        <!-- 微信支付 -->
+        <activity
+            android:name=".wxapi.WXPayEntryActivity"
+            android:exported="true"
+            android:launchMode="singleTop">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:scheme="wx8ac0cabd077d3552" />
+            </intent-filter>
+        </activity>
+
+        <uses-library
+            android:name="org.simalliance.openmobileapi"
+            android:required="false" />
+
+        <activity
+            android:name="com.unionpay.uppay.PayActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:excludeFromRecents="true"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="com.unionpay.UPPayWapActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity android:name=".ui.activity.OilCardBuyActivity" />
+        <activity
+            android:name=".ui.activity.PhoneBillActivity"
+            android:theme="@style/PrimaryActivityTheme" />
+        <activity android:name=".ui.activity.me.OilCardOrderActivity" />
+        <activity android:name=".ui.activity.me.MyOilCardBuyDetailsActivity" />
+        <activity
+            android:name=".ui.activity.PhoneRechargeActivity"
+            android:theme="@style/PrimaryActivityTheme"
+            android:windowSoftInputMode="stateHidden|stateUnchanged" />
+        <activity android:name=".ui.activity.me.CustomerServiceActivity" />
+        <activity android:name=".ui.activity.me.MeAboutActivity" />
+        <activity android:name=".ui.activity.me.FeedbackActivity" />
+        <activity
+            android:name=".ui.activity.me.MallOrderDetailsActivity"
+            android:theme="@style/FruitActivityTheme" />
+        <activity android:name=".ui.activity.MallClassifyActivity" />
+        <activity android:name=".ui.activity.MallHomeActivity" />
+        <activity android:name=".ui.activity.MallDetailsActivity" />
+        <activity android:name=".ui.activity.MallOrderSureActivity" />
+        <activity android:name=".ui.activity.me.MallOrderActivity" />
+        <activity android:name=".ui.activity.me.OrderSelectActivity" />
+        <activity android:name=".ui.activity.find.AtyLocationOil" />
+        <activity android:name=".ui.activity.find.AtyCarBreak" />
+        <activity android:name=".ui.activity.find.AtyAddCar" />
+        <activity android:name=".ui.activity.find.AtyCarDetail" />
+        <activity android:name=".ui.activity.find.AtyOilCity" />
+
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="GZGDaGc0VQYc3XhH4GAQ2fEj2zpvIqsm" />
+
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" />
+
+        <activity
+            android:name=".ui.activity.me.MeBalanceActivity"
+            android:theme="@style/FruitActivityTheme" />
+        <activity android:name=".ui.activity.OilCardBuyPackageActivity" />
+        <activity
+            android:name=".ui.activity.me.CallCenterActivity"
+            android:theme="@style/PrimaryActivityTheme" />
+        <activity
+            android:name=".service.MipushTestActivity"
+            android:exported="true"
+            android:launchMode="singleTask" />
+
+        <meta-data
+            android:name="com.huawei.hms.client.appid"
+            android:value="appid=100508055" />
+    </application>
+
+</manifest>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#efefef"
+    android:orientation="vertical">
+
+    <ListView
+        android:id="@+id/lv_platform_message"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+
+        android:background="#ffffff"></ListView>
+
+    <RelativeLayout
+        android:id="@+id/rl_no_nomessage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F8F8F8"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/no_nomessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="暂无记录"
+            android:textSize="35px" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/no_nomessage"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="11dp"
+            android:src="@mipmap/ico_record" />
+    </RelativeLayout>
+
+</LinearLayout>

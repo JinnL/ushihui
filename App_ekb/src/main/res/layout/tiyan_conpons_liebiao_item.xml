@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="36px"
+        android:paddingRight="36px"
+        android:background="@drawable/bg_corner_white">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="168px">
+            <ImageView
+                android:id="@+id/iv_xiaohongbao"
+                android:layout_width="108px"
+                android:layout_height="108px"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/tiyan_xiaohongbao"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="36px"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/iv_xiaohongbao"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/tv_amount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="体验金88888"
+                    android:textSize="54px"/>
+
+                <TextView
+                    android:id="@+id/tv_jihuo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12px"
+                    android:textColor="#999999"
+                    android:text="投资≥5000元"
+                    android:textSize="36px"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_use"
+                android:layout_width="226px"
+                android:layout_height="108px"
+                android:text="使用"
+                android:textSize="42px"
+                android:gravity="center"
+                android:layout_centerVertical="true"
+                android:textColor="@color/white"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/bg_corner_red"/>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#f2f2f2"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="88px"
+            android:gravity="center_vertical">
+            <TextView
+                android:id="@+id/tv_laiyuan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="来源：新用户注册"
+                android:textColor="#BEBEBE"
+                android:textSize="42px"/>
+            <TextView
+                android:id="@+id/tv_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2016-12-12 获得"
+                android:layout_alignParentRight="true"
+                android:textColor="#BEBEBE"
+                android:textSize="42px"/>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    style="@style/immersion_status"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/base_title_color"
+    android:orientation="vertical">
+
+    <include layout="@layout/app_base_title" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/checked_linearcolor"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#d2d2d2" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center_horizontal">
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:id="@+id/gift_pic"
+                    android:layout_width="match_parent"
+                    android:layout_height="580px"
+                    fresco:actualImageScaleType="fitCenter"
+                    fresco:failureImage="@mipmap/logo_default"
+                    fresco:failureImageScaleType="centerInside"
+                    fresco:placeholderImage="@mipmap/logo_default"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_prize_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24px"
+                    android:textSize="52px"/>
+                <TextView
+                    android:id="@+id/tv_prize_simplename"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24px"
+                    android:layout_marginBottom="24px"
+                    android:textSize="42px"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#d2d2d2" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="120px"
+                android:layout_marginTop="36px"
+                android:background="#ffffff" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/tv_cashin"
+                    android:layout_alignBottom="@+id/tv_cashin"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="56px"
+                    android:text="投资金额"
+                    android:textColor="#787878"
+                    android:textSize="48px" />
+
+                <TextView
+                    android:id="@+id/tv_amount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="12px"
+                    android:layout_toLeftOf="@+id/tv_cashin"
+                    android:textColor="@color/base_red_color"
+                    android:textSize="48px" />
+
+                <TextView
+                    android:id="@+id/tv_cashin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="56px"
+                    android:layout_alignParentRight="true"
+                    android:layout_toLeftOf="@+id/imageView1"
+                    android:text="元"
+                    android:textColor="#333333"
+                    android:textSize="48px" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="120px"
+                android:background="#ffffff" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/tv_cashin2"
+                    android:layout_alignBottom="@+id/tv_cashin2"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="56px"
+                    android:text="预计收益"
+                    android:textColor="#787878"
+                    android:textSize="48px" />
+
+                <TextView
+                    android:id="@+id/tv_shouyi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="12px"
+                    android:layout_toLeftOf="@+id/tv_cashin2"
+                    android:textColor="@color/base_red_color"
+                    android:textSize="48px" />
+
+                <TextView
+                    android:id="@+id/tv_cashin2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="56px"
+                    android:layout_alignParentRight="true"
+                    android:layout_toLeftOf="@+id/imageView1"
+                    android:text="元"
+                    android:textColor="#333333"
+                    android:textSize="48px" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="120px"
+                android:layout_marginLeft="56px"
+                android:text="预约后您的专属客服将会在下期活动上线时通知您"
+                android:gravity="center_vertical"
+                android:textColor="@color/base_title_color"
+                android:textSize="36px"/>
+         </LinearLayout>
+        <Button
+            android:id="@+id/reservation_bt_ok"
+            android:layout_width="match_parent"
+            android:layout_height="128px"
+            android:background="@drawable/bg_btn_corner"
+            android:layout_alignParentBottom="true"
+            android:text="确认预约"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:textSize="48px"
+            />
+
+    </RelativeLayout>
+
+</LinearLayout>

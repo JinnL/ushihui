@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F2F2F2"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/tv_winMeasure"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:lineSpacingMultiplier="1.5"
+        android:paddingBottom="72px"
+        android:paddingLeft="80px"
+        android:paddingRight="80px"
+        android:paddingTop="72px"
+        android:text=""
+        android:textColor="#666666"
+        android:textScaleX="1.2"
+        android:textSize="40px" />
+
+</LinearLayout>

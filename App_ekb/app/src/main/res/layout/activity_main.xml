@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ekabao.oil.ui.activity.MainActivity">
+
+
+
+    <FrameLayout
+        android:id="@+id/fragment_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/line"
+        />
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_48"
+        android:layout_above="@+id/ll_bottom"
+        android:background="@color/white"
+        android:layout_alignParentBottom="true" />
+
+    <LinearLayout
+        android:id="@+id/ll_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_74"
+        android:layout_alignParentBottom="true"
+        android:gravity="bottom"
+        android:background="@color/transparent"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_home"
+            style="@style/viewpager_navigation_bar_tab_style"
+            android:layout_height="@dimen/dp_48"
+            android:layout_gravity="bottom"
+            android:drawableTop="@drawable/icon_main_home_press"
+            android:paddingTop="@dimen/dp_10"
+            android:text="首页" />
+
+        <TextView
+            android:id="@+id/tv_invest"
+            style="@style/viewpager_navigation_bar_tab_style"
+            android:layout_height="@dimen/dp_48"
+            android:layout_gravity="bottom"
+            android:textColor="@color/text_99"
+            android:drawableTop="@drawable/icon_main_fund"
+            android:text="加油" />
+
+        <ImageView
+            android:id="@+id/img_activity"
+            android:layout_width="@dimen/dp_70"
+            android:layout_height="@dimen/dp_70"
+            android:visibility="gone"
+            android:layout_marginBottom="@dimen/dp_4"
+            android:src="@drawable/icon_main_fifth" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_48"
+            android:layout_gravity="bottom"
+            android:padding="@dimen/dp_3"
+            android:visibility="gone">
+
+            <View
+                android:id="@+id/main_red_circle"
+                android:layout_width="@dimen/dp_7"
+                android:layout_height="@dimen/dp_7"
+                android:layout_marginLeft="@dimen/dp_m_5"
+                android:layout_marginTop="@dimen/dp_m_2"
+                android:background="@drawable/shape_circle_red"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_find"
+            style="@style/viewpager_navigation_bar_tab_style"
+            android:layout_height="@dimen/dp_48"
+            android:layout_centerHorizontal="true"
+            android:drawableTop="@drawable/icon_main_more"
+            android:text="发现"
+            android:textColor="@color/text_99"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/tv_person"
+            style="@style/viewpager_navigation_bar_tab_style"
+            android:layout_height="@dimen/dp_48"
+            android:layout_gravity="bottom"
+            android:textColor="@color/text_99"
+            android:drawableTop="@drawable/icon_main_account"
+            android:text="我的" />
+    </LinearLayout>
+
+</RelativeLayout>

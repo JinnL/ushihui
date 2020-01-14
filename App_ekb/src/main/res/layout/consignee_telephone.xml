@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/immersion_status"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f2f2f2"
+    android:orientation="vertical">
+
+    <include layout="@layout/app_base_title" />
+
+    <RelativeLayout
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_marginTop="36px"
+        android:gravity="center_vertical"
+        android:layout_height="60dp">
+        <EditText
+            android:id="@+id/ev_edit"
+            android:layout_marginLeft="56px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="56px"
+            android:maxLength="11"
+            android:textColor="#333333"
+            android:background="@null"/>
+
+        <ImageView
+            android:id="@+id/iv_clear"
+            android:layout_marginRight="56px"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/icon_close"/>
+    </RelativeLayout>
+
+</LinearLayout>

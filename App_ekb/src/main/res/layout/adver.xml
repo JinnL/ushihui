@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+    <ImageView
+        android:id="@+id/img_adver"
+        android:scaleType="fitXY"
+        android:fitsSystemWindows="true"
+        android:layout_width="match_parent"
+        android:clickable="true"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:id="@+id/ll_time"
+        android:layout_width="50dp"
+        android:layout_height="22dp"
+        android:orientation="horizontal"
+        android:background="@drawable/shape_rectangle_bantouming"
+        android:gravity="center"
+        android:layout_marginTop="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_gravity="top|right">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="跳过"
+            android:textSize="14sp"
+            android:textColor="@color/white"
+            />
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3"
+            android:textSize="14sp"
+            android:textColor="@color/white"
+            />
+    </LinearLayout>
+
+
+
+</FrameLayout>
+

@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+    tools:context="com.ekabao.oil.ui.activity.InviteFriendsActivity">
+
+    <include layout="@layout/app_base_title" />
+
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/refreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        app:srlAccentColor="@android:color/white"
+        app:srlEnableHeaderTranslationContent="true"
+        app:srlEnableLoadMore="false"
+        app:srlPrimaryColor="@color/colorPrimary">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ScrollView
+                android:id="@+id/scrollView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <!--     android:background="@drawable/shape_rectangle_yellowwish"
+    -->
+                        <com.facebook.drawee.view.SimpleDraweeView
+                            android:id="@+id/invitaion_iv"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/banner_treble_gift" />
+
+                        <ImageView
+                            android:id="@+id/iv_bg_profit"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="@dimen/dp_226"
+                            android:src="@drawable/bg_profit" />
+
+                        <ImageButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true"
+                            android:background="@null"
+                            android:paddingBottom="@dimen/dp_45"
+                            android:src="@drawable/icon_invite_bt1" />
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="32dp"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:visibility="gone">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="累计获得返现"
+                                android:textColor="@color/white"
+                                android:textSize="14dp" />
+
+                            <TextView
+                                android:id="@+id/tv_leiji"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:padding="5dp"
+                                android:text="0.00"
+                                android:textColor="@color/white"
+                                android:textSize="24dp" />
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                    <!--1重好礼-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_free_oil"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <ImageButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="@dimen/dp_85"
+                            android:background="@null"
+                            android:src="@drawable/icon_invite_bt1" />
+
+                        <ListView
+                            android:id="@+id/lv_jichu"
+                            android:layout_width="match_parent"
+                            android:layout_height="123dp"
+                            android:layout_marginBottom="36px"
+                            android:layout_marginTop="36px"
+                            android:divider="@null"
+                            android:dividerHeight="12px"
+                            android:visibility="gone" />
+
+
+
+                    </LinearLayout>
+
+                    <!--2重好礼-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_invite_list"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/dp_39"
+                            android:layout_marginLeft="@dimen/dp_36"
+                            android:layout_marginRight="@dimen/dp_36"
+                            android:layout_marginTop="@dimen/dp_180"
+                            android:background="@drawable/shape_rectangle_textview_13"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="排行榜"
+                                android:textColor="@color/white"
+                                android:textSize="12dp" />
+
+                            <View
+                                android:layout_width="@dimen/dp_1"
+                                android:layout_height="match_parent"
+                                android:background="#F45A4E" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1.9"
+                                android:gravity="center"
+                                android:text="手机号"
+                                android:textColor="@color/white"
+                                android:textSize="12dp" />
+                            <View
+                                android:layout_width="@dimen/dp_1"
+                                android:layout_height="match_parent"
+                                android:background="#F45A4E" />
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1.15"
+                                android:gravity="center"
+                                android:text="邀友数量"
+                                android:textColor="@color/white"
+                                android:textSize="12dp" />
+                            <View
+                                android:layout_width="@dimen/dp_1"
+                                android:layout_height="match_parent"
+                                android:background="#F45A4E" />
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1.65"
+                                android:gravity="center"
+                                android:text="奖励"
+                                android:textColor="@color/white"
+                                android:textSize="12dp" />
+
+                        </LinearLayout>
+
+                        <ListView
+                            android:id="@+id/lv_jinjie"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/dp_400"
+                            android:layout_marginLeft="@dimen/dp_36"
+                            android:layout_marginRight="@dimen/dp_36"
+                            android:divider="@null"
+                            android:dividerHeight="12px" />
+
+                    </LinearLayout>
+
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/bg_invite_bottom" />
+                    <!--3重好礼-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_invite_bottom"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical"
+                        android:visibility="gone"
+                        android:weightSum="1">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="2dp"
+                            android:layout_marginTop="10dp"
+                            android:text="油实惠：三重礼"
+                            android:textColor="@color/white"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="10dp"
+                            android:gravity="center"
+                            android:text="在每个自然月内，老用户通过邀请好友注册并出借满1w元 （不含新手标、体验标）达到5位后，即可获得一 次性奖励388元。奖励将于次月的第一天发放至账户余额。"
+                            android:textColor="@color/white"
+                            android:textSize="12dp" />
+
+                        <LinearLayout
+                            android:id="@+id/ll_no_board"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="7dp"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:src="@drawable/img_no_third" />
+
+                            <TextView
+                                android:id="@+id/tv_rank_third"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20dp"
+                                android:text="您还未上榜，马上邀请冲榜！"
+                                android:textColor="@color/white"
+                                android:textSize="12dp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/dp_10"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="6dp"
+                            android:layout_weight="0.20"
+                            android:background="@drawable/shape_rectangle_white"
+                            android:gravity="center_horizontal"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="17dp"
+                                android:layout_marginBottom="6dp"
+                                android:layout_marginLeft="18dp"
+                                android:layout_marginRight="18dp"
+                                android:layout_marginTop="9dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:text="排名"
+                                    android:textColor="@color/text_99"
+                                    android:textSize="12dp" />
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:text="用户"
+                                    android:textColor="@color/text_99"
+                                    android:textSize="12dp" />
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="2"
+                                    android:gravity="center_vertical|right"
+                                    android:text="好友累积年化收益（元）"
+                                    android:textColor="@color/text_99"
+                                    android:textSize="12dp" />
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="1px"
+                                android:layout_marginLeft="18dp"
+                                android:layout_marginRight="18dp"
+                                android:background="#999999" />
+
+                            <ListView
+                                android:id="@+id/lv_third"
+                                android:layout_width="wrap_content"
+                                android:layout_height="123dp"
+                                android:layout_marginTop="36px"
+                                android:divider="@null"
+                                android:dividerHeight="12px"
+                                android:visibility="gone" />
+
+                            <ImageView
+                                android:id="@+id/iv_third_nojilu"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginBottom="56dp"
+                                android:layout_marginTop="56dp"
+                                android:src="@drawable/invit_no_jilu" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </ScrollView>
+
+            <ImageButton
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="@dimen/dp_300"
+                android:background="@null"
+                android:src="@drawable/icon_activity_rule" />
+        </RelativeLayout>
+
+
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/invitation_btn"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_48"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/select_bt_large"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="立即邀请"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_18" />
+        <!--    android:layout_marginBottom="@dimen/dp_22"-->
+    </LinearLayout>
+</LinearLayout>

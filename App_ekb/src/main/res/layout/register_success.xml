@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/immersion_status"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <include layout="@layout/app_base_title" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="258dp"
+        android:background="@mipmap/bg_register_success">
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/tv_real_authentification"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/bg_button"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="41dp"
+        android:gravity="center"
+        android:text="前往实名认证"
+        android:textColor="#ffffffff"
+        android:textSize="18dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/tv_invest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:gravity="center"
+            android:text="跳过，先逛逛"
+            android:textColor="#ff2da9fa"
+            android:textSize="12dp"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

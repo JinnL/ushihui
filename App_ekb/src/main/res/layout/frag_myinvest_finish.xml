@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<in.srain.cube.views.ptr.PtrClassicFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="#f2f2f2"
+    android:id="@+id/ptr_yi"
+    >
+	
+    <LinearLayout 
+	    android:layout_width="match_parent"
+	   android:layout_height="match_parent"
+	   android:orientation="vertical" 
+	   >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="278px"
+        android:layout_marginTop="40px"
+        android:background="@drawable/bg_corner_zhi"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:paddingLeft="56px" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="已回款总金额   (元)"
+            android:textColor="#a0a0a0"
+            android:textSize="40px" />
+
+        <TextView
+            android:id="@+id/tv_amount_yi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40px"
+            android:text="000,000"
+            android:textColor="@color/base_title_color"
+            android:textSize="72px" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="190px"
+        android:background="#ffffff"
+        android:gravity="center_vertical" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="56px"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="已回款本金(元)"
+                android:textColor="#a0a0a0"
+                android:textSize="32px" />
+
+            <TextView
+                android:id="@+id/tv_benjin_yi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24px"
+                android:text="000,000"
+                android:textColor="#333333"
+                android:textSize="40px" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="106px"
+            android:background="#d2d2d2" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="56px"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="已回款利息(元)"
+                android:textColor="#a0a0a0"
+                android:textSize="32px" />
+
+            <TextView
+                android:id="@+id/tv_lixi_yi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24px"
+                android:text="000,000"
+                android:textColor="#333333"
+                android:textSize="40px" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#d2d2d2" />
+	
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#d2d2d2" 
+        android:layout_marginTop="40px"
+        />
+    <ExpandableListView
+        android:id="@+id/lv_myinvest_yi"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="#d2d2d2"
+        android:dividerHeight="1px"
+        android:groupIndicator="@null" >
+    </ExpandableListView>
+
+</LinearLayout>
+</in.srain.cube.views.ptr.PtrClassicFrameLayout>

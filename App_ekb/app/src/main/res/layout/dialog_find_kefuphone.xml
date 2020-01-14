@@ -1,0 +1,100 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="@dimen/dp_270"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_rectangle_empty_13"
+
+        android:orientation="vertical">
+        <!-- Title -->
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_22"
+            android:gravity="center_horizontal"
+            android:text="拨打客服电话"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/sp_22"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/tv_telPhone"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_13"
+            android:gravity="center_horizontal"
+            android:text=""
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/sp_20"
+            android:visibility="visible" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_13"
+            android:gravity="center_horizontal"
+            android:text="热线服务时间：09:00-17:00"
+            android:textColor="#646464"
+
+            android:textSize="@dimen/sp_18"
+            android:visibility="visible" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_13"
+            android:gravity="center_horizontal"
+            android:text="  周末节假日：09:00-18:00"
+            android:textColor="#646464"
+            android:textSize="@dimen/sp_18"
+            android:visibility="gone" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="@dimen/dp_19"
+            android:background="@color/line_e6" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_43"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_cacel"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="取消"
+                android:textColor="#646464"
+                android:textSize="@dimen/sp_17" />
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:background="@color/line_e6" />
+
+            <TextView
+                android:id="@+id/tv_boda"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="拨打"
+                android:textColor="@color/text_red"
+                android:textSize="@dimen/sp_17" />
+        </LinearLayout>
+
+        <!-- button pannel -->
+        <!-- <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#b2b2b2" /> -->
+    </LinearLayout>
+</LinearLayout>

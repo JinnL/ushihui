@@ -1,0 +1,111 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+    <!--标题-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/topbar_height"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/title_centertextview"
+            style="@style/layout_wrap"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="设置手势"
+            android:textColor="@color/text_99"
+            android:textSize="56px" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_marginTop="@dimen/dp_100"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="@dimen/dp_48"
+        android:layout_height="@dimen/dp_48"
+        android:src="@drawable/icon_person_default_login" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_24"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:padding="16px"
+            android:text="请绘制解锁图案"
+            android:textColor="#F98F12"
+            android:textSize="@dimen/sp_14"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/text_tip"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="绘制解锁图案"
+            android:textColor="@color/text_99"
+            android:textSize="@dimen/sp_14" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/gesture_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/dp_62">
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_125"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_other_user"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="暂不设置"
+            android:textColor="@color/text_99"
+            android:textSize="@dimen/sp_14"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/tv_phone_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="144px"
+            android:layout_weight="1"
+            android:background="#FFFFFF"
+            android:gravity="center_horizontal"
+            android:text="使用账号登录"
+            android:textColor="@color/text_99"
+            android:textSize="@dimen/sp_14"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_forget_psw"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="重新绘制"
+            android:textColor="@color/text_99"
+            android:textSize="@dimen/sp_14"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</LinearLayout>

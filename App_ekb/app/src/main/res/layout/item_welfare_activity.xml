@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingBottom="0px">
+
+    <!-- <com.lijiankun24.shadowlayout.ShadowLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         app:shadowColor="#0c000000"
+         app:shadowDx="0dp"
+         app:shadowDy="12dp"
+         app:shadowRadius="10dp"
+         app:shadowSide="all">
+
+     </com.lijiankun24.shadowlayout.ShadowLayout>-->
+    <!-- android:layout_marginBottom="@dimen/dp_18"-->
+    <RelativeLayout
+        style="@style/margin_left_right"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_144"
+        android:layout_marginBottom="@dimen/dp_15"
+        android:background="@drawable/shape_rectangle_white_10">
+
+        <ImageView
+            android:id="@+id/iv_picture"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/shape_rectangle_white_10"
+            android:scaleType="fitXY"
+            android:src="@drawable/bg_activity_fail" />
+
+        <TextView
+            android:id="@+id/tv_state"
+            android:layout_width="@dimen/dp_67"
+            android:layout_height="@dimen/dp_24"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/dp_10"
+
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            tools:text="已结束" />
+
+        <View
+            android:id="@+id/view_fail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#7fffffff"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/tv_title"
+        style="@style/layout_wrap"
+        android:layout_marginLeft="45px"
+        android:textColor="@color/text_black"
+        android:textSize="15sp"
+        android:visibility="gone"
+        tools:text="邀请好友赢大礼" />
+
+    <TextView
+        android:id="@+id/tv_content"
+        style="@style/layout_wrap"
+        android:layout_marginBottom="@dimen/dp_10"
+        android:layout_marginLeft="@dimen/dp_22"
+        android:layout_marginTop="@dimen/dp_10"
+        android:textColor="@color/text_99"
+        android:textSize="12sp"
+        android:visibility="gone"
+        tools:text="邀请好友赚1888元现金" />
+
+    <include
+        layout="@layout/line_color_ee"
+        android:visibility="gone" />
+</LinearLayout>

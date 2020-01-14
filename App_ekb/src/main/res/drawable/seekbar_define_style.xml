@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+	<!--  背景  -->
+	<item android:id="@android:id/background">
+		<shape xmlns:android="http://schemas.android.com/apk/res/android"
+			android:shape="line" >
+			<stroke
+				android:dashGap="3dp"
+				android:dashWidth="3dp"
+				android:width="2dp"
+				android:color="#ffa4a0" />
+			<!-- 虚线的高度 -->
+			<size android:height="1dp" />
+		</shape>
+	</item>
+	<item android:id="@android:id/progress">
+		<clip >
+		<shape xmlns:android="http://schemas.android.com/apk/res/android"
+			android:shape="line" >
+			<stroke
+				android:dashGap="0dp"
+				android:dashWidth="3dp"
+				android:width="2dp"
+				android:color="#ffdbd9" />
+			<!-- 虚线的高度 -->
+			<size android:height="2dp" />
+		</shape>
+		</clip>
+	</item>
+</layer-list>

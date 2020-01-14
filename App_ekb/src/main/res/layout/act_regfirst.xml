@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:android_custom="http://schemas.android.com/apk/res-auto"
+    style="@style/immersion_status"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/base_title_color"
+    android:orientation="vertical"
+    >
+
+    <include layout="@layout/app_base_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        >
+            <EditText
+                android:id="@+id/et_phonenumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:hint="请输入您的手机号"
+                android:inputType="number"
+                android:maxLength="11"
+                android:singleLine="true"
+                android:textColor="#333333"
+                android:textSize="48px"
+                android:gravity="center"
+                android:textCursorDrawable="@null"
+                android:layout_marginTop="200px"
+                >
+                <requestFocus />
+            </EditText>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#d2d2d2"
+            android:layout_marginLeft="80px"
+            android:layout_marginRight="80px"
+            android:layout_marginTop="40px"
+            ></View>
+        <TextView
+            android:id="@+id/tv_tip_limit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="30px"
+            android:textColor="@color/base_red_color"
+            android:layout_marginTop="20px"
+            />
+        <Button
+            android:id="@+id/bt_reg"
+            android:layout_width="match_parent"
+            android:layout_height="112px"
+            android:layout_marginLeft="56px"
+            android:layout_marginRight="56px"
+            android:layout_marginTop="130px"
+            android:background="@drawable/bg_corner_gray"
+            android:padding="0dp"
+            android:text="下一步"
+            android:textColor="#ffffff"
+            android:textSize="48px"
+            />
+        <LinearLayout
+            android:id="@+id/ll_xieyi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_marginTop="50px"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8px"
+                android:singleLine="true"
+                android:text="点击下一步代表您已阅读并同意"
+                android:textColor="#666666"
+                android:textSize="12sp" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/tv_agreement_user"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="《小行家注册协议》"
+                android:textColor="@color/base_red_color"
+                android:textSize="12sp" >
+            </TextView>
+
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginBottom="32dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="已有账号，请"
+            android:textSize="14sp"
+            android:textColor="#666666"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="登录"
+            android:textColor="@color/base_red_color"
+            android:textSize="14sp"
+            />
+
+    </LinearLayout>
+</LinearLayout>

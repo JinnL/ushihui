@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:id="@+id/footViewLayout"
+    >
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/iv_offline"
+        android:layout_width="964px"
+        android:layout_height="500px"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10dp"
+        fresco:actualImageScaleType="fitXY"
+        fresco:failureImage="@mipmap/logo_default"
+        fresco:failureImageScaleType="centerInside"
+        fresco:placeholderImage="@mipmap/logo_default" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="964px"
+        android:layout_height="160px"
+        android:text="聚胜财富投资人开放日"
+        android:textSize="48px"
+        android:textColor="#333333"
+        android:gravity="center"
+        android:background="#ffffff"
+        />
+</LinearLayout>

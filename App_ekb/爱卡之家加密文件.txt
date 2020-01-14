@@ -1,0 +1,37 @@
+密码：akzj666.
+Alias:akzj666.
+　　Validity(years):25
+　　Certificate:证书
+　　　　First and Last Name：akzj
+　　　　Organization Unit：HangzhouGuyuNetworkTechnology
+　　　　Organization：Software development group
+　　　　City or Locality：Hangzhou
+　　　　State or Province：Zhejiang
+　　　　Country Code(XX)：86
+
+
+com.akzj.oil
+
+Variant: akzjRelease
+Config: release
+Store: E:\android\Oil_3.0\App_akzj\app\akzj.jks
+Alias: akzj
+MD5: 62:C3:31:41:0D:A3:48:E0:38:04:72:6A:6F:75:C0:A9
+SHA1: B5:B5:DF:5F:DE:B3:59:3E:DF:29:8A:34:CD:3A:7B:09:F2:4C:96:79
+Valid until: 2044年3月6日 星期日
+
+发布者: CN=akzj, OU=HangzhouGuyuNetworkTechnology, O=Software development group, L=Hangzhou, ST=Zhejiang, C=86
+序列号: 73686dd0
+有效期为 Wed Mar 13 11:16:07 CST 2019 至 Sun Mar 06 11:16:07 CST 2044
+证书指纹:
+         MD5:  62:C3:31:41:0D:A3:48:E0:38:04:72:6A:6F:75:C0:A9
+         SHA1: B5:B5:DF:5F:DE:B3:59:3E:DF:29:8A:34:CD:3A:7B:09:F2:4C:96:79
+         SHA256: 0C:74:BD:95:7F:42:D4:9B:24:94:94:87:B4:A9:86:0E:85:77:C4:42:06:CE:1E:8F:26:C4:5E:BD:29:9B:01:56
+签名算法名称: SHA256withRSA
+主体公共密钥算法: 2048 位 RSA 密钥
+
+////////////////////////////////////////
+
+
+com.akzj.oil
+akzj666.

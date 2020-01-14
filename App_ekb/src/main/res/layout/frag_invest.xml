@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/immersion_status"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroud"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:background="#f2f2f2"
+        android:visibility="gone" />
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/app_base_title" />
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="1px"
+        android:background="#d2d2d2"/>
+
+    <!--in.srain.cube.views.ptr.PtrClassicFrameLayout-->
+    <in.srain.cube.views.ptr.PtrClassicFrameLayout
+        android:id="@+id/ptr_invest"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="#f2f2f2"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:id="@+id/sc_scroll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="56px"
+                android:background="#f2f2f2"
+                android:orientation="vertical">
+
+                <!--新手专享标-->
+                <LinearLayout
+                    android:id="@+id/ll_newhand"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#ffffff"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#FFEFEFEF"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:visibility="visible">
+
+                        <TextView
+                            android:layout_width="64dp"
+                            android:layout_height="24dp"
+                            android:layout_marginLeft="10dp"
+                            android:background="@drawable/shape_rectangle_red"
+                            android:gravity="center"
+                            android:text="新手专享"
+                            android:textColor="@color/white"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/tv_title_newhand"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="11dp"
+                            android:layout_marginLeft="9dp"
+                            android:layout_marginTop="12dp"
+                            android:drawablePadding="30px"
+                            android:text="新人福利,仅限一次"
+                            android:textColor="#999999"
+                            android:textSize="12sp" />
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="7dp"
+                            android:gravity="bottom"
+                            android:textColor="#999999"
+                            android:textSize="10dp" />
+                    </LinearLayout>
+
+                    <com.mcz.xhj.yz.dr_view.ListInScroll
+                        android:id="@+id/lv_newhand"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2px"
+                        android:background="@color/Grey"
+                        android:divider="#00000000"
+                        android:dividerHeight="10dp"
+                        android:scrollbars="none" />
+
+                </LinearLayout>
+
+                <!--智盈宝-->
+                <LinearLayout
+                    android:id="@+id/ll_is_selling"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#FFEFEFEF"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="64dp"
+                        android:layout_height="24dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/shape_rectangle_red"
+                        android:gravity="center"
+                        android:text="行家优选"
+                        android:textColor="@color/white"
+                        android:textSize="12sp" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="11dp"
+                        android:layout_marginLeft="9dp"
+                        android:layout_marginTop="12dp"
+                        android:drawablePadding="30px"
+                        android:text="稳定收益,周期可控"
+                        android:textColor="@color/text257"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+                <com.mcz.xhj.yz.dr_view.ListInScroll
+                    android:id="@+id/lv_invest"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2px"
+                    android:background="@color/Grey"
+                    android:divider="#00000000"
+                    android:dividerHeight="10dp"
+                    android:scrollbars="none" />
+
+
+                <!--预售计划-->
+                <LinearLayout
+                    android:id="@+id/ll_presell_plan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-10dp"
+                    android:background="#FFEFEFEF"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="24dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="@mipmap/img_presell"
+                        android:gravity="center"
+                        android:text="预售计划"
+                        android:textColor="@color/white"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="11dp"
+                        android:layout_marginLeft="9dp"
+                        android:layout_marginTop="12dp"
+                        android:drawablePadding="30px"
+                        android:text="稳健收益,周期可控"
+                        android:textColor="#999999"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+                <com.mcz.xhj.yz.dr_view.ListInScroll
+                    android:id="@+id/lv_presell_plan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2px"
+                    android:background="@color/Grey"
+                    android:divider="#00000000"
+                    android:dividerHeight="10dp"
+                    android:scrollbars="none" />
+
+                <LinearLayout
+                    android:id="@+id/ll_raised_repayed"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/empty"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_raised_repayed"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="13dp"
+                        android:drawablePadding="-50dp"
+                        android:drawableRight="@mipmap/icon_rightto"
+                        android:gravity="center"
+                        android:paddingRight="60dp"
+                        android:text="已售罄**个项目，已还款**个项目"
+                        android:textColor="@color/textred"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="13dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center"
+                        android:text="市场有风险，投资需谨慎"
+                        android:textColor="@color/text257"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </ScrollView>
+    </in.srain.cube.views.ptr.PtrClassicFrameLayout>
+</LinearLayout>

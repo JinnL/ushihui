@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/immersion_status"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/base_title_color"
+    android:orientation="vertical">
+
+    <include layout="@layout/app_base_title" />
+
+    <!--in.srain.cube.views.ptr.PtrClassicFrameLayout-->
+    <in.srain.cube.views.ptr.PtrClassicFrameLayout
+        android:id="@+id/ptr_do"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#f2f2f2"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/ll_head"
+                android:layout_width="match_parent"
+                android:layout_height="240px"
+                android:layout_marginTop="1px"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="在投资产（元）"
+                        android:textSize="42px" />
+
+                    <TextView
+                        android:id="@+id/tv_zichan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="42px"
+                        android:text="--"
+                        android:textColor="@color/red"
+                        android:textSize="72px" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="1px"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="66px"
+                    android:layout_marginTop="66px"
+                    android:background="#F1F1F1" />
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical"
+                    android:paddingLeft="56px">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="待收本金（元）"
+                        android:textColor="#999999"
+                        android:textSize="42px" />
+
+                    <TextView
+                        android:id="@+id/tv_benjin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="36px"
+                        android:text="--"
+                        android:textColor="@color/red"
+                        android:textSize="56px" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="1px"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="66px"
+                    android:layout_marginTop="66px"
+                    android:background="#F1F1F1" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical"
+                    android:paddingLeft="56px">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="待收总利息（元）"
+                        android:textColor="#999999"
+                        android:textSize="42px" />
+
+                    <TextView
+                        android:id="@+id/tv_zonglixi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="36px"
+                        android:text="--"
+                        android:textColor="@color/red"
+                        android:textSize="56px" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <ListView
+                android:id="@+id/lv_touzi"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/ll_ll"
+                android:layout_below="@+id/ll_head"
+                android:layout_marginTop="36px"
+                android:divider="#f2f2f2"
+                android:dividerHeight="36px" />
+
+            <LinearLayout
+                android:id="@+id/ll_ll"
+                android:layout_width="match_parent"
+                android:layout_height="168px"
+                android:layout_alignParentBottom="true"
+                android:background="@color/white"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/tv_lishijilu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:drawableLeft="@mipmap/me_history_record"
+                    android:gravity="center"
+                    android:text="  查看历史记录"
+                    android:textSize="48px" />
+            </LinearLayout>
+
+        </RelativeLayout>
+    </in.srain.cube.views.ptr.PtrClassicFrameLayout>
+</LinearLayout>

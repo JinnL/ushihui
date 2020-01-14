@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.ekabao.oil.ui.activity.ProductActivity">
+
+    <include layout="@layout/app_base_title" />
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/refreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        app:srlAccentColor="@android:color/white"
+        app:srlEnableHeaderTranslationContent="true"
+        app:srlEnableLoadMore="false"
+        app:srlPrimaryColor="@color/colorPrimary">
+
+        <com.scwang.smartrefresh.header.BezierCircleHeader
+            android:id="@+id/refreshLayout_head"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fadeScrollbars="false"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:orientation="vertical">
+
+                <com.jude.rollviewpager.RollPagerView
+                    android:id="@+id/rpv_banner"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_336"
+                    app:rollviewpager_hint_paddingBottom="@dimen/dp_10" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_56"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_retailPrice"
+                        style="@style/layout_wrap"
+                        android:layout_marginLeft="@dimen/dp_15"
+                        android:textColor="@color/color_base"
+                        android:textSize="@dimen/sp_19"
+                        tools:text="￥372.00" />
+
+                    <TextView
+                        android:id="@+id/tv_marketPrice"
+                        style="@style/layout_wrap"
+                        android:layout_marginLeft="@dimen/dp_12"
+                        android:textColor="@color/text_99"
+                        android:textSize="@dimen/sp_10"
+                        tools:text="￥372.00" />
+
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_0_5"
+                    android:background="@color/line_ee" />
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    style="@style/layout_wrap"
+                    android:layout_marginLeft="@dimen/dp_15"
+                    android:layout_marginRight="@dimen/dp_15"
+                    android:layout_marginTop="@dimen/dp_15"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/sp_13"
+                    tools:text="德国德朗士 多功能加热破壁机家用料理机 " />
+
+                <TextView
+                    android:id="@+id/tv_summary"
+                    style="@style/layout_wrap"
+                    android:layout_marginBottom="@dimen/dp_15"
+                    android:layout_marginLeft="@dimen/dp_15"
+                    android:layout_marginRight="@dimen/dp_15"
+                    android:layout_marginTop="@dimen/dp_5"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:textColor="@color/text_99"
+                    android:textSize="@dimen/sp_11"
+                    tools:text="德国德朗士 多功能加热破壁机家用料理机 " />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_10"
+                    android:background="@color/windowBackground" />
+
+
+                <LinearLayout
+                    android:id="@+id/ll_select"
+                    style="@style/padding_left_right"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_48"
+                    android:background="@color/white"
+                    android:clickable="true"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/layout_width_0dp"
+                        android:gravity="center_vertical"
+                        android:text="请选择规格数量"
+                        android:textColor="@color/text_black"
+                        android:textSize="@dimen/sp_13" />
+
+                    <TextView
+                        style="@style/layout_wrap"
+                        android:layout_marginRight="12px"
+                        android:text="前0名瓜分0元现金"
+                        android:textColor="@color/text_black"
+                        android:textSize="14sp"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        style="@style/layout_wrap"
+                        android:src="@drawable/icon_arrow" />
+                </LinearLayout>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_10"
+                    android:background="@color/windowBackground" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_48"
+                    android:gravity="center"
+                    android:text="— 商品详情 —"
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/sp_15" />
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scrollbars="none"
+                    android:orientation="vertical">
+
+                    <WebView
+                        android:id="@+id/wv_content"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </ScrollView>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_10"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:background="@color/windowBackground" />
+
+                <LinearLayout
+                    style="@style/padding_left_right"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp_15"
+                        android:text="售后说明"
+                        android:textColor="@color/text_black"
+                        android:textSize="@dimen/sp_15" />
+
+                    <TextView
+                        android:id="@+id/tv_deadline"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp_12"
+                        android:lineSpacingExtra="@dimen/dp_3"
+                        android:text="1、售后说明售后说明售后说明售后说明售后说明售后说明售后说明售后说明售后说明售后说明。 "
+                        android:textColor="@color/text_99"
+                        android:textSize="@dimen/sp_13" />
+
+                    <TextView
+                        android:id="@+id/tv_info_condition"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp_6"
+                        android:lineSpacingExtra="@dimen/dp_3"
+                        android:visibility="gone"
+                        android:text="2、售后说明售后说明售后说明售后说明售后说明售后说明售后说明售后说明售后说明售后说明售后说明售后说明售后说明。"
+                        android:textColor="@color/text_99"
+
+                        android:textSize="@dimen/sp_13" />
+
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_10"
+                    android:layout_marginTop="@dimen/dp_15"
+                    android:background="@color/windowBackground" />
+
+            </LinearLayout>
+        </ScrollView>
+
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+    <!--底部按钮布局-->
+
+    <Button
+        android:id="@+id/bt_buy"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_48"
+        android:background="@drawable/bg_base"
+        android:gravity="center"
+        android:text="立即购买"
+        android:textColor="@color/white"
+        android:textSize="15sp" />
+</LinearLayout>

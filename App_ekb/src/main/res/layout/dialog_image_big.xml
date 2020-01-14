@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="#b5555555"
+     >
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/iv_regist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        fresco:failureImageScaleType="centerInside"
+        fresco:actualImageScaleType="fitXY"
+        fresco:placeholderImage="@mipmap/logo_default"
+        />
+    <!-- 
+<com.facebook.drawee.view.SimpleDraweeView
+    android:id="@+id/my_image_view"
+    android:layout_width="20dp"   // 不支持wrap_content 如果要设置宽高比, 需要在Java代码中指定setAspectRatio(1.33f);
+    android:layout_height="20dp"    // 不支持wrap_content 
+    fresco:fadeDuration="300"
+    fresco:actualImageScaleType="focusCrop"
+ // 设置图片缩放. 通常使用focusCrop,该属性值会通过算法把人头像放在中间
+    fresco:placeholderImage="@color/wait_color"
+ // 下载成功之前显示的图片
+    fresco:placeholderImageScaleType="fitCenter"
+ 
+    fresco:failureImage="@drawable/error"
+// 加载失败的时候显示的图片
+    fresco:failureImageScaleType="centerInside"
+    fresco:retryImage="@drawable/retrying"
+// 加载失败,提示用户点击重新加载的图片(会覆盖failureImage的图片)
+    fresco:retryImageScaleType="centerCrop"
+    fresco:progressBarImage="@drawable/progress_bar"// 提示用户正在加载,和加载进度无关
+    fresco:progressBarImageScaleType="centerInside"
+    fresco:progressBarAutoRotateInterval="1000"
+    fresco:backgroundImage="@color/blue"
+    fresco:overlayImage="@drawable/watermark"
+    fresco:pressedStateOverlayImage="@color/red"
+    fresco:roundAsCircle="false"
+// 是不是设置圆圈
+    fresco:roundedCornerRadius="1dp"
+// 圆角角度,180的时候会变成圆形图片
+    fresco:roundTopLeft="true"
+    fresco:roundTopRight="false"
+    fresco:roundBottomLeft="false"
+    fresco:roundBottomRight="true"
+    fresco:roundWithOverlayColor="@color/corner_color"
+    fresco:roundingBorderWidth="2dp"
+    fresco:roundingBorderColor="@color/border_color"
+  />
+     -->
+</LinearLayout>

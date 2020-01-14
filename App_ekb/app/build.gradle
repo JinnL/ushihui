@@ -1,0 +1,178 @@
+apply plugin: 'com.android.application'
+
+android {
+
+    compileSdkVersion 26
+    buildToolsVersion '27.0.3'
+    defaultConfig {
+        applicationId "com.ushihui.oil"
+        minSdkVersion 16
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0.0"
+        // testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        //添加如下配置就OK了
+        javaCompileOptions { annotationProcessorOptions { includeCompileClasspath = true } }
+        flavorDimensions "versionCode"
+        multiDexEnabled true
+
+    }
+    signingConfigs {
+        release {
+            keyAlias 'ushihui'
+            storeFile file('../app/ushihui.jks')
+            storePassword 'dydy168'
+            keyPassword 'dydy168'
+        }
+        debug {
+            storeFile file('../app/ushihui.jks')
+//            storePassword "ekabao666"
+            storePassword "dydy168"
+            keyAlias "ushihui"
+            keyPassword "dydy168"
+            v2SigningEnabled false
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+            shrinkResources true
+            zipAlignEnabled true
+            debuggable = true
+            jniDebuggable = true
+            signingConfig signingConfigs.release
+//            debuggable true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            minifyEnabled false
+            zipAlignEnabled true
+            signingConfig signingConfigs.release
+        }
+
+    }
+    productFlavors {
+        bbd {}
+        yyb {}
+        ekabao {}
+        oppo {}
+        vivo {}
+        alibaba {}
+        anzhi {}
+        huawei {}
+        "360" {}
+        lenovo {}
+        meizu {}
+        samsung {}
+        sougou {}
+        qq {}
+        xiaomi {}
+        shiyong {}
+        baidu {}
+        "2toutiao" {}
+        "11yy" {}
+        "22kk" {}
+        "33bb" {}
+        "44jj" {}
+        "5uu" {}
+        productFlavors.all { flavor ->
+            flavor.manifestPlaceholders = [UMENG_CHANNEL_VALUE: name]
+        }
+    }
+    sourceSets {
+        main
+                {
+                    jniLibs.srcDirs = ['libs']
+                    assets.srcDirs = ['src/main/assets', 'src/main/assets/']
+                }
+    }
+
+    repositories {
+        flatDir {
+            dirs 'libs' // this way we can find the .aar file in libs folder 到libs文件夹下寻找.aar包
+        }
+    }
+
+}
+
+//apply plugin: 'com.neenbedankt.android-apt'
+//apply plugin: 'com.jakewharton.butterknife'
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestImplementation('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    //1.1.0 API改动过大，老用户升级需谨慎 下拉刷新
+    //没有使用特殊Header，可以不加这行
+    //compile 'com.android.support:appcompat-v7:25.3.1'//版本 23以上（必须）
+    //指示器
+    implementation project(':magicindicator')
+    //implementation project(':PushSDK')
+    implementation project(':sku')
+    //PushSDK
+    //implementation 'com.umeng.sdk:push:4.2.0'
+    implementation 'com.umeng.umsdk:push:5.0.2'
+    implementation 'com.umeng.sdk:common:1.5.3'
+//PushSDK必须依赖utdid库，所以需要加入对应依赖
+    implementation 'com.umeng.sdk:utdid:1.1.5.3'
+
+    implementation 'com.umeng.sdk:common:latest.integration'
+    implementation 'com.umeng.sdk:analytics:latest.integration'
+
+    //鸿洋适配
+    //mainactivity 用到了
+    //首页轮播图
+    //1.1.0 API改动过大，老用户升级需谨慎
+    //没有使用特殊Header，可以不加这行
+    implementation 'com.scwang.smartrefresh:SmartRefreshLayout:1.1.0-alpha-5'
+    implementation 'com.scwang.smartrefresh:SmartRefreshHeader:1.1.0-alpha-5'
+    implementation 'com.scwang.smartrefresh:SmartRefreshLayout:1.1.0-alpha-5'
+    implementation 'com.scwang.smartrefresh:SmartRefreshHeader:1.1.0-alpha-5'
+    implementation 'com.android.support:appcompat-v7:26.1.0'
+    implementation 'com.android.support:design:26.1.0'
+
+    implementation 'com.android.support:cardview-v7:26.1.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+    implementation 'com.android.support:recyclerview-v7:26.1.0'
+    implementation 'com.squareup.okhttp3:okhttp:3.4.2'
+    implementation 'com.google.code.gson:gson:2.7'
+    implementation 'com.zhy:autolayout:1.4.5'
+    implementation 'com.github.bumptech.glide:glide:3.7.0'
+    implementation 'de.hdodenhof:circleimageview:2.2.0'
+    implementation 'com.github.niezhiyang:NGallery:v1.0.1'
+    implementation 'com.jude:rollviewpager:1.4.5'
+    //implementation 'com.alibaba:fastjson:1.2.47'
+    implementation 'com.alibaba:fastjson:1.1.70.android'
+    //testImplementation 'junit:junit:4.12'
+    implementation 'com.jakewharton:butterknife:8.5.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.5.1'
+    implementation 'com.github.PhilJay:MPAndroidChart:v3.0.1'
+    implementation 'com.github.Awent:PhotoPick-Master:v1.092'
+    //阴影
+    implementation 'com.github.Hitomis:CrazyShadow:v1.0.1'
+    implementation(name: 'fuiou_bank_sdk_1.0.0', ext: 'aar')
+    implementation 'com.lijiankun24:shadowlayout:1.1.0'
+    // 支付宝
+    implementation(name: 'alipaySdk-15.5.7-20181023110930-noUtdid', ext: 'aar')
+    //微信
+    implementation 'com.tencent.mm.opensdk:wechat-sdk-android-with-mta:+'
+
+    implementation 'com.android.support:multidex:1.0.0'
+
+    implementation files('libs/UPPayAssistEx.jar')
+    implementation files('libs/UPPayPluginExPro.jar')
+//百度地图
+    implementation files('libs/BaiduLBS_Android.jar')
+
+    implementation 'pub.devrel:easypermissions:0.4.2'
+    //  implementation 'org.greenrobot:eventbus:3.1.1'
+
+    //小米Push通道
+    implementation 'com.umeng.umsdk:xiaomi-push:3.6.9'
+    implementation 'com.umeng.umsdk:xiaomi-umengaccs:1.0.9'
+    //华为Push通道
+    // implementation 'com.umeng.umsdk:huawei-basetb:2.6.0.301'
+    // implementation 'com.umeng.umsdk:huawei-pushtb:2.6.0.301'
+    // implementation 'com.umeng.umsdk:huawei-umengaccs:1.1.3'
+}

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    style="@style/immersion_status"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/base_title_color"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:id="@+id/rl_title"
+        android:layout_width="match_parent"
+        android:layout_height="130px"
+        android:background="@color/base_title_color"
+        >
+        <ImageView
+            android:id="@+id/title_leftimageview"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/login_fanhui"
+            android:paddingLeft="56px"
+            />
+
+       <LinearLayout
+           android:layout_width="512px"
+           android:layout_height="88px"
+           android:layout_centerHorizontal="true"
+           android:layout_centerVertical="true"
+           android:orientation="horizontal"
+           android:background="@drawable/bg_corner_kong_yellow">
+           <TextView
+               android:id="@+id/tv_assets"
+               android:layout_width="0dp"
+               android:layout_height="match_parent"
+               android:layout_weight="1"
+               android:gravity="center"
+               android:textSize="42px"
+               android:background="@drawable/bg_corner_kong_yellow"
+               android:textColor="@color/base_yellow_color"
+               android:text="总资产"/>
+           <TextView
+               android:id="@+id/tv_income"
+               android:layout_width="0dp"
+               android:layout_height="match_parent"
+               android:layout_weight="1"
+               android:gravity="center"
+               android:textColor="@color/white"
+               android:textSize="42px"
+               android:background="@drawable/bg_color_yellow"
+               android:text="累计收益"/>
+       </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/title_righttextview"
+            style="@style/layout_wrap"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingRight="56px"
+            android:text="明细"
+            android:textColor="#676767"
+            android:textSize="48px"
+            />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_details"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#ffffff"
+        android:orientation="vertical"
+        ></LinearLayout>
+</LinearLayout>

@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/immersion_status"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/base_title_color"
+    android:orientation="vertical" >
+
+    <include layout="@layout/app_base_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#f2f2f2"
+        android:orientation="vertical" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="20px"
+            android:background="#d2d2d2" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="148px"
+            android:background="#ffffff"
+            android:gravity="center" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="56px"
+                android:text="手机号"
+                android:textColor="#999999"
+                android:textSize="48px" />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/tv_phonenum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="56px"
+                android:button="@null"
+                android:text="xxx****xxxx"
+                android:textColor="#666666"
+                android:textSize="40px" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="56px"
+            android:background="#d2d2d2" />
+
+        <LinearLayout
+            android:id="@+id/ll_name"
+            android:layout_width="match_parent"
+            android:layout_height="148px"
+            android:background="#ffffff"
+            android:gravity="center" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="56px"
+                android:text="姓名"
+                android:textColor="#999999"
+                android:textSize="48px" />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="148px"
+                android:layout_marginRight="56px"
+                android:background="#ffffff"
+                android:gravity="center" >
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="未认证"
+                    android:textColor="#666666"
+                    android:textSize="40px" />
+
+                <ImageView
+                    android:id="@+id/tv_name_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20px"
+                    android:src="@mipmap/icon_rightto"
+                    android:visibility="visible" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="56px"
+            android:background="#d2d2d2" />
+
+        <LinearLayout
+            android:id="@+id/ll_num"
+            android:layout_width="match_parent"
+            android:layout_height="148px"
+            android:background="#ffffff"
+            android:gravity="center" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="56px"
+                android:text="身份证号"
+                android:textColor="#999999"
+                android:textSize="48px" />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="148px"
+                android:layout_marginRight="56px"
+                android:background="#ffffff"
+                android:gravity="center" >
+
+                <TextView
+                    android:id="@+id/tv_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@null"
+                    android:text="未认证"
+                    android:textColor="#666666"
+                    android:textSize="40px" />
+
+                <ImageView
+                    android:id="@+id/tv_num_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20px"
+                    android:src="@mipmap/icon_rightto" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#d2d2d2"
+            android:layout_marginLeft="56px"
+            />
+
+        <LinearLayout
+            android:id="@+id/ll_card"
+            android:layout_width="match_parent"
+            android:layout_height="148px"
+            android:background="#ffffff"
+            android:gravity="center" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="56px"
+                android:text="银行卡"
+                android:textColor="#999999"
+                android:textSize="48px" />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                />
+
+            <LinearLayout
+                android:id="@+id/ll_bank"
+                android:layout_width="wrap_content"
+                android:layout_height="148px"
+                android:layout_marginRight="56px"
+                android:background="#ffffff"
+                android:gravity="center" >
+
+                <ImageView
+                    android:id="@+id/iv_bank"
+                    android:layout_width="300px"
+                    android:layout_height="100px"
+                    android:visibility="gone"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_card"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@null"
+                    android:text="未认证"
+                    android:textColor="#666666"
+                    android:textSize="40px" />
+
+                <ImageView
+                    android:id="@+id/tv_card_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20px"
+                    android:src="@mipmap/icon_rightto" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="20px"
+            android:background="#d2d2d2" />
+
+        <RelativeLayout
+            android:id="@+id/rl_gesture"
+            android:layout_width="match_parent"
+            android:layout_height="148px"
+            android:background="#ffffff"
+            android:visibility="gone" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="56px"
+                android:text="设置手势密码"
+                android:textColor="#999999"
+                android:textSize="48px" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="56px"
+                android:src="@mipmap/icon_rightto" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_login_next"
+            android:layout_width="match_parent"
+            android:layout_height="148px"
+            android:background="#ffffff" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="56px"
+                android:text="重置登录密码"
+                android:textColor="#999999"
+                android:textSize="48px" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="56px"
+                android:src="@mipmap/icon_rightto" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="56px"
+            android:background="#d2d2d2" />
+
+        <RelativeLayout
+            android:id="@+id/rl_forget_psw"
+            android:layout_width="match_parent"
+            android:layout_height="148px"
+            android:background="#ffffff" >
+
+            <TextView
+                android:id="@+id/tv_Setting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="56px"
+                android:text="重置交易密码"
+                android:textColor="#999999"
+                android:textSize="48px" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="56px"
+                android:src="@mipmap/icon_rightto" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="56px"
+            android:background="#d2d2d2" />
+
+        <RelativeLayout
+            android:id="@+id/rl_Gesture_psw"
+            android:layout_width="match_parent"
+            android:layout_height="148px"
+            android:background="#ffffff" >
+
+            <TextView
+                android:id="@+id/tv_Gesture"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="56px"
+                android:text="开启手势密码"
+                android:textColor="#999999"
+                android:textSize="48px" />
+
+            <CheckBox
+                android:id="@+id/check_Gesture"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/tv_Gesture"
+                android:layout_alignBottom="@+id/tv_Gesture"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="56px"
+                android:button="@null"
+                android:drawableRight="@drawable/checked_kaiguan"
+                android:gravity="right"
+                android:textColor="#999999"
+                android:textSize="48px" />
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/bt_ok"
+            android:layout_width="match_parent"
+            android:layout_height="112px"
+            android:layout_marginLeft="56px"
+            android:layout_marginRight="56px"
+            android:layout_marginTop="104px"
+            android:background="@drawable/bg_btn_corner"
+            android:padding="0dp"
+            android:text="安全退出"
+            android:textColor="#ffffff" />
+    </LinearLayout>
+
+</LinearLayout>

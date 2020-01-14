@@ -1,0 +1,472 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/immersion_status"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#efefef"
+    android:orientation="vertical">
+
+    <include layout="@layout/app_base_title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_title"
+        android:scrollbars="none">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rl_change_avatar"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/bg_ll_person"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginBottom="@dimen/jieju"
+                    android:layout_marginLeft="@dimen/jieju"
+                    android:layout_marginTop="@dimen/jieju"
+                    android:drawablePadding="30px"
+                    android:gravity="center"
+                    android:text="头像"
+                    android:textColor="#FF333333"
+                    android:textSize="14sp" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/img_avatar"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="30dp"
+                    android:src="@mipmap/avatar_default2" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="@dimen/jieju"
+                    android:layout_marginRight="@dimen/jieju"
+                    android:layout_marginTop="@dimen/jieju"
+                    android:drawableRight="@mipmap/icon_rightto"
+                    android:text=""
+                    android:textColor="#999999"
+                    android:textSize="40px" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#efefef" />
+
+            <LinearLayout
+                android:id="@+id/ll_identity_verify"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/bg_ll_person"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/jieju"
+                    android:layout_marginLeft="@dimen/jieju"
+                    android:layout_marginTop="@dimen/jieju"
+                    android:drawablePadding="30px"
+                    android:gravity="center"
+                    android:text="实名认证"
+                    android:textColor="#FF333333"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tv_status_verify"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/jieju"
+                    android:layout_weight="1"
+                    android:drawablePadding="10dp"
+                    android:drawableRight="@mipmap/icon_rightto"
+                    android:gravity="right"
+                    android:text="去设置"
+                    android:textColor="#FFFF8347"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#efefef" />
+
+            <LinearLayout
+                android:id="@+id/ll_bind_phonenum"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/bg_ll_person"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/jieju"
+                    android:layout_marginLeft="@dimen/jieju"
+                    android:layout_marginTop="@dimen/jieju"
+                    android:drawablePadding="30px"
+                    android:gravity="center"
+                    android:text="绑定手机"
+                    android:textColor="#FF333333"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tv_phonenum"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/jieju"
+                    android:layout_weight="1"
+                    android:drawablePadding="10dp"
+                    android:drawableRight="@mipmap/icon_rightto"
+                    android:gravity="right"
+                    android:text="152****2449"
+                    android:textColor="#FFAFB0B7"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#efefef" />
+
+            <LinearLayout
+                android:id="@+id/ll_receive_address"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/bg_ll_person"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/jieju"
+                    android:layout_marginLeft="@dimen/jieju"
+                    android:layout_marginTop="@dimen/jieju"
+                    android:drawablePadding="30px"
+                    android:gravity="center"
+                    android:text="收货地址"
+                    android:textColor="#FF333333"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tv_status_address"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/jieju"
+                    android:layout_weight="1"
+                    android:drawablePadding="10dp"
+                    android:drawableRight="@mipmap/icon_rightto"
+                    android:gravity="right"
+                    android:text="未设置"
+                    android:textColor="#FFAFB0B7"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="#efefef" />
+
+            <LinearLayout
+                android:id="@+id/ll_banks_manage"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/bg_ll_person"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/jieju"
+                    android:layout_marginLeft="@dimen/jieju"
+                    android:layout_marginTop="@dimen/jieju"
+                    android:drawablePadding="30px"
+                    android:gravity="center"
+                    android:text="银行卡管理"
+                    android:textColor="#FF333333"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tv_status_banks"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/jieju"
+                    android:layout_weight="1"
+                    android:drawablePadding="10dp"
+                    android:drawableRight="@mipmap/icon_rightto"
+                    android:gravity="right"
+                    android:text="去添加"
+                    android:textColor="#FFAFB0B7"
+                    android:textSize="12sp"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#efefef" />
+
+            <LinearLayout
+                android:id="@+id/ll_login_password"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/bg_ll_person"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/jieju"
+                    android:layout_marginLeft="@dimen/jieju"
+                    android:layout_marginTop="@dimen/jieju"
+                    android:drawablePadding="30px"
+                    android:gravity="center"
+                    android:text="登录密码"
+                    android:textColor="#FF333333"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tv_status_loginPsw"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/jieju"
+                    android:layout_weight="1"
+                    android:drawablePadding="10dp"
+                    android:drawableRight="@mipmap/icon_rightto"
+                    android:gravity="right"
+                    android:text="未修改"
+                    android:textColor="#FFAFB0B7"
+                    android:textSize="12sp"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#efefef" />
+
+            <LinearLayout
+                android:id="@+id/ll_pay_password"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/bg_ll_person"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/jieju"
+                    android:layout_marginLeft="@dimen/jieju"
+                    android:layout_marginTop="@dimen/jieju"
+                    android:drawablePadding="30px"
+                    android:gravity="center"
+                    android:text="交易密码"
+                    android:textColor="#FF333333"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tv_status_payPsw"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/jieju"
+                    android:layout_weight="1"
+                    android:drawablePadding="10dp"
+                    android:drawableRight="@mipmap/icon_rightto"
+                    android:gravity="right"
+                    android:text="未设置"
+                    android:textColor="#FFAFB0B7"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#efefef" />
+
+            <RelativeLayout
+                android:id="@+id/rl_Gesture_psw"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#ffffff" >
+
+                <TextView
+                    android:id="@+id/tv_Gesture"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="12dp"
+                    android:text="手势密码"
+                    android:textColor="#FF333333"
+                    android:textSize="14sp" />
+
+                <CheckBox
+                    android:id="@+id/check_Gesture"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/tv_Gesture"
+                    android:layout_alignBottom="@+id/tv_Gesture"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="12dp"
+                    android:button="@null"
+                    android:drawableRight="@drawable/checked_kaiguan"
+                    android:gravity="right|center_vertical"
+                    android:textColor="#999999"
+                    android:textSize="12sp" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="#efefef" />
+
+            <LinearLayout
+                android:id="@+id/ll_push"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/bg_ll_person"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/jieju"
+                    android:layout_marginLeft="@dimen/jieju"
+                    android:layout_marginTop="@dimen/jieju"
+                    android:drawablePadding="30px"
+                    android:text="接受推送消息"
+                    android:textColor="#FF333333"
+                    android:textSize="14sp"
+                    android:layout_weight="1"
+                     />
+
+                <ImageView
+                    android:id="@+id/iv_kaiguan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="12dp"
+                    android:clickable="true"
+                    android:layout_alignParentRight="true"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="#efefef" />
+
+            <LinearLayout
+                android:id="@+id/ll_clear_cache"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/bg_ll_person"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/jieju"
+                    android:layout_marginLeft="@dimen/jieju"
+                    android:layout_marginTop="@dimen/jieju"
+                    android:drawablePadding="30px"
+                    android:gravity="center"
+                    android:text="清理本地缓存"
+                    android:textColor="#FF333333"
+                    android:textSize="14sp"/>
+
+                <TextView
+                    android:id="@+id/tv_cache"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/jieju"
+                    android:layout_weight="1"
+                    android:drawablePadding="10dp"
+                    android:drawableRight="@mipmap/icon_rightto"
+                    android:gravity="right"
+                    android:text="17.54 MB"
+                    android:textColor="#FFAFB0B7"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#efefef" />
+
+            <LinearLayout
+                android:id="@+id/ll_version"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/bg_ll_person"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/jieju"
+                    android:layout_marginLeft="@dimen/jieju"
+                    android:layout_marginTop="@dimen/jieju"
+                    android:drawablePadding="30px"
+                    android:gravity="center"
+                    android:text="版本号"
+                    android:textColor="#FF333333"
+                    android:textSize="14sp"/>
+
+                <TextView
+                    android:id="@+id/tv_version"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/jieju"
+                    android:layout_weight="1"
+                    android:drawablePadding="10dp"
+                    android:drawableRight="@mipmap/icon_rightto"
+                    android:gravity="right"
+                    android:text="2.0.1"
+                    android:textColor="#FFAFB0B7"
+                    android:textSize="12sp"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="16dp"
+                android:layout_marginBottom="50dp"
+                android:background="#efefef" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+    <TextView
+        android:id="@+id/btn_exit"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="#ffffff"
+        android:gravity="center"
+        android:text="安全退出"
+        android:textColor="#FF5111"
+        android:textSize="14sp" />
+
+</RelativeLayout>

@@ -1,0 +1,613 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    style="@style/immersion_status"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/base_title_color"
+    android:orientation="vertical">
+
+    <include layout="@layout/app_base_title" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/base_title_color"
+        android:orientation="vertical">
+
+        <!--in.srain.cube.views.ptr.PtrClassicFrameLayout-->
+        <in.srain.cube.views.ptr.PtrClassicFrameLayout
+            android:id="@+id/ptr_invest"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/invitation_btn"
+            android:layout_weight="1"
+            android:background="@color/base_title_color"
+            android:orientation="vertical">
+
+            <ScrollView
+                android:id="@+id/scrollView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <com.facebook.drawee.view.SimpleDraweeView
+                        android:id="@+id/invitaion_iv"
+                        android:layout_width="match_parent"
+                        android:layout_height="320px"
+                        fresco:actualImageScaleType="fitXY" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="56px"
+                        android:layout_marginRight="56px"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="56px">
+
+                            <TextView
+                                android:id="@+id/tv_leijijiangjin"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="累计任务奖金："
+                                android:textColor="#666666"
+                                android:textSize="42px" />
+
+                            <TextView
+                                android:layout_toRightOf="@+id/tv_leijijiangjin"
+                                android:layout_marginLeft="96px"
+                                android:id="@+id/tv_leiji"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:text="0元"
+                                android:textColor="#666666"
+                                android:textSize="42px" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/rl_lingqu"
+                            android:layout_width="match_parent"
+                            android:layout_height="88px"
+                            android:layout_marginTop="36px"
+                            android:visibility="gone"
+                            >
+
+                            <TextView
+                                android:id="@+id/tv_weilingquwenzi"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:text="未领取奖金："
+                                android:textColor="#666666"
+                                android:textSize="42px" />
+
+                            <LinearLayout
+                                android:layout_toRightOf="@+id/tv_weilingquwenzi"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="136px"
+                                android:layout_centerVertical="true"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/tv_weilingqu"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="0"
+                                    android:textColor="@color/red"
+                                    android:textSize="42px" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="12px"
+                                    android:text="元"
+                                    android:textColor="#666666"
+                                    android:textSize="42px" />
+                            </LinearLayout>
+
+
+                            <Button
+                                android:id="@+id/btn_lingqu"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="24px"
+                                android:background="@drawable/bg_corner_red"
+                                android:text="立即领取"
+                                android:textColor="@color/white"
+                                android:textSize="36px"
+                                android:visibility="visible" />
+                        </RelativeLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="42px"
+                            android:layout_marginTop="56px"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="4px"
+                                android:layout_height="match_parent"
+                                android:layout_marginTop="14px"
+                                android:background="@color/red" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="24px"
+                                android:text="一重礼"
+                                android:textSize="42px"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="36px"
+                                android:gravity="center_vertical"
+                                android:text="每邀请一位好友首投≥10000元，可获得18元返现"
+                                android:textColor="#666666"
+                                android:textSize="32px" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="88px"
+                            android:layout_marginTop="56px"
+                            android:background="#F9F9F9"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center_vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="24px"
+                                    android:text="邀请好友人数总计"
+                                    android:textColor="#666666"
+                                    android:textSize="36px" />
+
+                                <TextView
+                                    android:id="@+id/tv_leijirenshu"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="48px"
+                                    android:text="0"
+                                    android:textColor="#666666"
+                                    android:textSize="36px" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="12px"
+                                    android:text="位"
+                                    android:textColor="#666666"
+                                    android:textSize="36px" />
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_width="1px"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="48px"
+                                android:background="#666666"
+                                android:textSize="36px" />
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center_vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="48px"
+                                    android:text="完成首投的好友"
+                                    android:textColor="#666666"
+                                    android:textSize="36px" />
+
+                                <TextView
+                                    android:id="@+id/tv_endshoutou"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="48px"
+                                    android:text="0"
+                                    android:textColor="@color/red"
+                                    android:textSize="36px" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="12px"
+                                    android:text="位"
+                                    android:textColor="#666666"
+                                    android:textSize="36px" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="1px"
+                            android:layout_marginTop="24px"
+                            android:background="#999999" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="88px"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="我的好友"
+                                android:textColor="#666666"
+                                android:textSize="36px" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="投资金额（元）"
+                                android:textColor="#666666"
+                                android:textSize="36px" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1.5"
+                                android:gravity="center_vertical|right"
+                                android:text="我的返利奖金（元）"
+                                android:textColor="#666666"
+                                android:textSize="36px" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="1px"
+                            android:background="#999999" />
+
+                        <ListView
+                            android:id="@+id/lv_jichu"
+                            android:layout_width="wrap_content"
+                            android:layout_height="168px"
+                            android:layout_marginBottom="36px"
+                            android:layout_marginTop="36px"
+                            android:visibility="gone"
+                            android:divider="@null"
+                            android:dividerHeight="12px" />
+
+                        <ImageView
+                            android:id="@+id/iv_jichu_nojilu"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="56px"
+                            android:layout_marginTop="56px"
+                            android:layout_gravity="center_horizontal"
+                            android:src="@mipmap/invit_no_jilu" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="1px"
+                            android:background="#999999" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="80px"
+                            android:layout_marginTop="56px"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="4px"
+                                android:layout_height="match_parent"
+                                android:layout_marginTop="14px"
+                                android:background="@color/red" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="24px"
+                                android:text="二重礼"
+                                android:textSize="42px"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="36px"
+                                android:gravity="center_vertical"
+                                android:text="用户在获得一重礼之后，邀请人可获取好友后续一年内每笔投资收益20%的现金返现"
+                                android:textColor="#666666"
+                                android:textSize="32px" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="88px"
+                            android:layout_marginTop="56px"
+                            android:background="#F9F9F9"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center_vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="24px"
+                                    android:text="邀请好友人数总计"
+                                    android:textColor="#666666"
+                                    android:textSize="36px" />
+
+                                <TextView
+                                    android:id="@+id/tv_leijirenshu_jinjie"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="48px"
+                                    android:text="0"
+                                    android:textColor="#666666"
+                                    android:textSize="36px" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="12px"
+                                    android:text="位"
+                                    android:textColor="#666666"
+                                    android:textSize="36px" />
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_width="1px"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="48px"
+                                android:background="#666666"
+                                android:textSize="36px" />
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center_vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="48px"
+                                    android:text="完成复投的好友"
+                                    android:textColor="#666666"
+                                    android:textSize="36px" />
+
+                                <TextView
+                                    android:id="@+id/tv_endfutou"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="48px"
+                                    android:text="0"
+                                    android:textColor="@color/red"
+                                    android:textSize="36px" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="12px"
+                                    android:text="位"
+                                    android:textColor="#666666"
+                                    android:textSize="36px" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="1px"
+                            android:layout_marginTop="24px"
+                            android:background="#999999" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="88px"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="我的好友"
+                                android:textColor="#666666"
+                                android:textSize="36px" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1.5"
+                                android:gravity="center"
+                                android:text="投资金额(元)"
+                                android:textColor="#666666"
+                                android:textSize="36px" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1.5"
+                                android:gravity="center"
+                                android:text="我的返利奖金(元)"
+                                android:textColor="#666666"
+                                android:textSize="36px" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="1px"
+                            android:background="#999999" />
+
+                        <ListView
+                            android:id="@+id/lv_jinjie"
+                            android:layout_width="wrap_content"
+                            android:layout_height="168px"
+                            android:layout_marginBottom="36px"
+                            android:layout_marginTop="36px"
+                            android:divider="@null"
+                            android:visibility="gone"
+                            android:dividerHeight="12px" />
+
+                        <ImageView
+                            android:id="@+id/iv_jinjie_nojilu"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="56px"
+                            android:layout_marginTop="56px"
+                            android:layout_gravity="center_horizontal"
+                            android:src="@mipmap/invit_no_jilu" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="1px"
+                            android:background="#999999" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="80px"
+                            android:layout_marginTop="56px"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="4px"
+                                android:layout_height="match_parent"
+                                android:layout_marginTop="14px"
+                                android:background="@color/red" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="24px"
+                                android:text="三重礼"
+                                android:textSize="42px"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="36px"
+                                android:gravity="center_vertical"
+                                android:text="在每个自然月周期内，老用户通过邀请好友新增交易用户累计满5位后，即可获得一次性现金奖励300元"
+                                android:textColor="#666666"
+                                android:textSize="32px" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="56px"
+                            android:gravity="center_horizontal"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:id="@+id/ll_haspaiming"
+                                android:layout_width="wrap_content"
+                                android:layout_height="88px"
+                                android:background="#F9F9F9"
+                                android:gravity="center"
+                                android:visibility="gone"
+                                android:orientation="horizontal"
+                                >
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="您的当前排名    第"
+                                    android:paddingLeft="108px"
+                                    android:textColor="#666666"
+                                    android:textSize="42px" />
+
+                                <TextView
+                                    android:id="@+id/tv_paiming"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="12px"
+                                    android:layout_marginRight="12px"
+                                    android:text="1"
+                                    android:textColor="@color/red"
+                                    android:textSize="42px" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="位"
+                                    android:paddingRight="108px"
+                                    android:textColor="#666666"
+                                    android:textSize="42px" />
+                            </LinearLayout>
+
+                            <TextView
+                                android:id="@+id/tv_no_paiming"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="#F9F9F9"
+                                android:paddingLeft="108px"
+                                android:paddingRight="108px"
+                                android:text="您当前的排名暂时无法上榜"
+                                android:visibility="visible" />
+
+                            <ImageView
+                                android:id="@+id/iv_shangbang"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@mipmap/no_mingci"
+                                android:layout_marginTop="56px" />
+
+                            <TextView
+                                android:id="@+id/tv_bottom"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="108px"
+                                android:layout_marginTop="56px"
+                                android:text="@string/invint_no_paiming"
+                                android:textColor="#666666"
+                                android:textSize="42px" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </ScrollView>
+        </in.srain.cube.views.ptr.PtrClassicFrameLayout>
+
+        <Button
+            android:id="@+id/invitation_btn"
+            android:layout_width="match_parent"
+            android:layout_height="128px"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="40px"
+            android:layout_marginLeft="40px"
+            android:layout_marginRight="40px"
+            android:background="@drawable/bg_color_yellow"
+            android:gravity="center"
+            android:padding="0dp"
+            android:text="立即邀请好友"
+            android:textColor="#ffffff"
+            android:textSize="48px" />
+    </RelativeLayout>
+
+</LinearLayout>

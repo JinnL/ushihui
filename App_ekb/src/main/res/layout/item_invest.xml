@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:android_custom="http://schemas.android.com/apk/res-auto"
+    xmlns:fun="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f2f2f2"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:id="@+id/rl_new"
+    >
+
+    <!--新手专享标-->
+    <LinearLayout
+        android:id="@+id/ll_newHand"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24px"
+        android:background="#ffffff"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18dp"
+            android:background="@drawable/bg_ll_person"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:visibility="visible">
+
+            <ImageView
+                android:id="@+id/iv_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/pro_youxuan"
+                android:visibility="gone"
+                />
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="新手专享"
+                android:textColor="#333333"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7dp"
+                android:gravity="bottom"
+                android:text="首投专享,丰盈回报"
+                android:textColor="#999999"
+                android:textSize="10dp" />
+            <TextView
+                android:id="@+id/tv_cashcoupon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24px"
+                android:text="红包"
+                android:textSize="24px"
+                android:background="@drawable/bg_corner_blackline_gray"
+                android:paddingBottom="10px"
+                android:paddingLeft="20px"
+                android:paddingTop="10px"
+                android:paddingRight="20px"
+                android:textColor="@color/gray"
+                android:visibility="gone"
+                />
+            <TextView
+                android:id="@+id/tv_ratecoupon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="14px"
+                android:text="加息券"
+                android:textSize="24px"
+                android:background="@drawable/bg_corner_blackline_gray"
+                android:paddingBottom="10px"
+                android:paddingLeft="20px"
+                android:paddingTop="10px"
+                android:paddingRight="20px"
+                android:textColor="@color/gray"
+                android:visibility="gone"
+                />
+            <TextView
+                android:id="@+id/tv_doubleconpon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="14px"
+                android:text="翻倍券"
+                android:textSize="24px"
+                android:background="@drawable/bg_corner_blackline_gray"
+                android:paddingBottom="10px"
+                android:paddingLeft="20px"
+                android:paddingTop="10px"
+                android:paddingRight="20px"
+                android:textColor="@color/gray"
+                android:visibility="gone"
+                />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                ></View>
+            <ImageView
+                android:id="@+id/iv_tui"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/icon_label_gray"
+                android:paddingBottom="40px"
+                android:visibility="gone"
+                />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#f2f2f2"></View>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="28dp"
+                android:layout_marginRight="27dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="33dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/rate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="***"
+                            android:textColor="@color/base_red_color"
+                            android:textSize="24sp" />
+
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="年化收益率"
+                        android:textColor="@color/textColor"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/deadline"
+                        android:layout_width="wrap_content"
+                        android:layout_height="33dp"
+                        android:gravity="bottom"
+                        android:text="28天"
+                        android:textColor="@color/base_red_color"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="金服期限"
+                        android:textColor="@color/textColor"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_qitou"
+                        android:layout_width="wrap_content"
+                        android:layout_height="33dp"
+                        android:gravity="bottom"
+                        android:text="1000元起"
+                        android:textColor="@color/base_red_color"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="起投金额"
+                        android:textColor="@color/textColor"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <com.mcz.xhj.yz.dr_view.HorizontalProgressBarWithNumberGray
+            android:id="@+id/progressbar"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            fun:progressBar_text_color="#cccccc"
+            fun:progressBar_text_size="12sp"
+            fun:progress_circle_color="#cccccc"
+            fun:progress_reached_color="#cccccc"
+            fun:progress_reached_bar_height="3dp"
+            fun:progress_unreached_bar_height="3dp"
+            fun:progress_unreached_color="#f1f1f1" />
+
+    </LinearLayout>
+
+</LinearLayout>

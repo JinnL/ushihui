@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/windowBackground"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/app_base_title" />
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+           >
+
+            <ListView
+                android:id="@+id/lv_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:background="#efefef"
+                android:divider="#00000000"
+                android:dividerHeight="10dp"
+                android:scrollbars="none">
+
+            </ListView>
+
+            <LinearLayout
+                android:id="@+id/ll_norecord"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/bg_nodata" />
+
+                <!--<TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="暂无记录" />-->
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+    <Button
+        android:id="@+id/tv_add_address"
+        style="@style/bt_large_match"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/shape_rectangle_red_88px"
+        android:text="添加新地址" />
+   <!-- <TextView
+        android:id="@+id/bt_save_address"
+        style="@style/bt_large_match"
+  android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_42"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="@dimen/dp_49"
+        android:layout_marginRight="@dimen/dp_47"
+        android:layout_marginTop="@dimen/dp_33"
+        android:background="@drawable/shape_rectangle_red_88px"
+        android:gravity="center"
+        android:layout_marginTop="27dp"
+        android:gravity="center"
+        android:text="确认添加" />-->
+</LinearLayout>

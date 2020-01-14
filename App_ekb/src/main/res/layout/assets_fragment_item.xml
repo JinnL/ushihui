@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="128px">
+        <TextView
+            android:id="@+id/tv_colour"
+            android:layout_width="36px"
+            android:layout_height="36px"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="56px"
+            android:background="@drawable/oval_yellow"
+            />
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/tv_colour"
+            android:text="待收本金"
+            android:textSize="56px"
+            android:layout_marginLeft="36px"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="56px"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:textSize="56px"
+            android:text="500.00"/>
+    </RelativeLayout>
+    
+</LinearLayout>

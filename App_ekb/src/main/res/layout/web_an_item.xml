@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+    <LinearLayout 
+        android:layout_height="128px"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="48px"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="32px"
+        android:layout_marginBottom="32px"
+        android:gravity="center_vertical"
+        android:layout_toLeftOf="@+id/r_tv"
+        android:layout_marginRight="12px"
+        android:orientation="vertical">
+        <TextView 
+            android:id="@+id/title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="48px"
+            android:lines="1"
+            android:singleLine="true"
+            android:textColor="#333333"
+            android:text="--"/>
+        <TextView 
+            android:id="@+id/create_time_tv"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="2016-11-9"
+            android:layout_marginTop="24px"
+            android:textSize="38px"/>
+    </LinearLayout>
+    
+    <TextView 
+        android:id="@+id/r_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="48px"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:drawableRight="@mipmap/icon_rightto"
+        android:textSize="38px"
+        />
+
+</RelativeLayout>

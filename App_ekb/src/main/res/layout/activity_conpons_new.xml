@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/immersion_status"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="130px"
+        android:background="#ffffff">
+
+        <ImageView
+            android:id="@+id/title_leftimageview"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="56px"
+            android:src="@mipmap/login_fanhui"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/title_centertextview"
+            style="@style/layout_wrap"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="优惠券"
+            android:textColor="#333333"
+            android:textSize="18sp" />
+
+
+        <TextView
+            android:id="@+id/title_righttextview"
+            style="@style/layout_wrap"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingRight="9dp"
+            android:text="去投资"
+            android:textColor="#666666"
+            android:textSize="14sp"
+            android:visibility="visible" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:background="#cccccc" />
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="bottom"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_above="@+id/ll_pro_detail"
+        android:background="#ffffff">
+
+        <ImageView
+            android:id="@+id/img_back_conpons"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="18dp"
+            android:paddingRight="18dp"
+            android:src="@mipmap/img_back" />
+
+        <TextView
+            android:id="@+id/tv_youhuijuan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="选择优惠券"
+            android:textColor="@color/textColor3"
+            android:textSize="18sp" />
+
+        <RelativeLayout
+            android:id="@+id/rl_notUse_tiyanjin"
+            android:layout_width="wrap_content"
+            android:layout_height="100px"
+            android:layout_marginRight="10dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="不使用"
+                android:textColor="@color/textColor3"
+                android:textSize="14sp"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/lv_act_coupons"
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        android:background="#d2d2d2"
+        android:scrollbars="none"
+        android:divider="@null"
+        android:padding="10dp"
+        android:paddingTop="20px"></ListView>
+
+</LinearLayout>

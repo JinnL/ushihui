@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="#b5555555"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/root"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipChildren="false"
+        >
+        <!--是否限制子View在其范围内，我们将其值设置为false后那么当子控件的高度高于父控件时也会完全显示,而不会被压缩-->
+        <com.nie.ngallerylibrary.GalleryViewPager
+            android:id="@+id/viewpager"
+            android:layout_width="200dp"
+            android:layout_height="260dp"
+            android:layout_centerInParent="true"
+            android:clipChildren="false"
+            android:overScrollMode="never"/>
+    </RelativeLayout>
+
+</LinearLayout>

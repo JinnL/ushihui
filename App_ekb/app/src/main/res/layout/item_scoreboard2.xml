@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/layout_padding_24"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_44"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        style="@style/layout_width_0dp"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="@dimen/dp_0_5"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="33px"
+            android:textColor="@color/text_black"
+            android:textSize="14sp"
+            tools:text="1" />
+
+        <TextView
+            android:id="@+id/tv_phone"
+            style="@style/layout_width_0dp"
+            android:layout_marginLeft="58px"
+            android:textColor="@color/text_66"
+            android:textSize="12sp"
+            tools:text="131****8888" />
+
+        <TextView
+            android:id="@+id/tv_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="75px"
+            android:textColor="@color/text_66"
+            android:textSize="12sp"
+            tools:text="00元" />
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="12px"
+            android:textColor="@color/text_66"
+            android:textSize="10sp"
+            tools:text="1" />
+    </LinearLayout>
+
+    <include layout="@layout/line_color_ee" />
+</LinearLayout>

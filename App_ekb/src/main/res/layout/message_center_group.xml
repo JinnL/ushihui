@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="138px"
+        android:layout_marginLeft="56px"
+        android:layout_marginRight="56px">
+
+        <ImageView
+            android:id="@+id/iv_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/find_callcenter_shou" />
+
+        <TextView
+            android:id="@+id/tv_group_name"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="36px"
+            android:layout_toRightOf="@+id/iv_arrow"
+            android:gravity="center_vertical"
+            android:text="购买成功后什么时间开始计息？"
+            android:textColor="#333333"
+            android:textSize="42px" />
+
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="12-01"
+            android:textSize="42px"
+            android:textColor="#666666"
+            />
+
+    </RelativeLayout>
+</LinearLayout>

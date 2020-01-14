@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_201"
+    android:background="@color/white"
+    android:orientation="horizontal"
+    android:paddingLeft="@dimen/dp_8"
+    android:paddingRight="@dimen/dp_15">
+
+    <!--油卡套餐-->
+    <ImageButton
+        android:id="@+id/ib_oilcard_package"
+        android:layout_width="@dimen/dp_162"
+        android:layout_height="match_parent"
+        android:background="@null"
+        android:scaleType="fitXY"
+        android:src="@drawable/bg_oilcard_package" />
+
+
+    <!-- <ImageButton
+         android:id="@+id/ib_package_1"
+         android:layout_width="@dimen/dp_82"
+         android:layout_height="@dimen/dp_89"
+         android:layout_marginLeft="@dimen/dp_3"
+         android:layout_marginTop="@dimen/dp_5"
+         android:layout_toRightOf="@+id/ib_oilcard_package"
+         android:background="@null"
+         android:scaleType="fitXY"
+         tools:src="@drawable/bg_oilcard_package1" />-->
+
+    <RelativeLayout
+        android:id="@+id/rl_package_1"
+        android:layout_width="@dimen/dp_82"
+        android:layout_height="@dimen/dp_89"
+        android:layout_marginLeft="@dimen/dp_3"
+        android:layout_marginTop="@dimen/dp_5"
+        android:layout_toRightOf="@+id/ib_oilcard_package"
+        tools:background="@drawable/bg_oilpackage_hot"
+        android:clickable="true">
+
+        <TextView
+            android:id="@+id/tv_deadline_1"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_17"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/dp_6"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_11"
+            tools:text="12个月" />
+
+
+        <TextView
+            android:id="@+id/tv_leastaAmount_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dp_29"
+            android:textColor="#8A6161"
+            android:textSize="@dimen/sp_15"
+            tools:text="￥500/月" />
+
+        <TextView
+            android:id="@+id/tv_rate_money_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dp_48"
+            android:textColor="@color/primary"
+            android:textSize="@dimen/sp_11"
+            tools:text="折扣价:8280元" />
+
+        <TextView
+            android:id="@+id/tv_rate_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/dp_7"
+            android:layout_marginTop="@dimen/dp_29"
+            android:textColor="@color/primary"
+            android:textSize="@dimen/sp_11"
+            tools:text="8.0折" />
+
+    </RelativeLayout>
+
+    <!--油卡直冲-->
+    <!--<ImageButton
+        android:id="@+id/ib_package_2"
+        android:layout_width="@dimen/dp_82"
+        android:layout_height="@dimen/dp_89"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/dp_5"
+        android:background="@null"
+        android:scaleType="fitXY"
+        tools:src="@drawable/bg_oilcard_package1" />-->
+
+    <RelativeLayout
+        android:id="@+id/rl_package_2"
+        android:layout_width="@dimen/dp_82"
+        android:layout_height="@dimen/dp_89"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/dp_5"
+        tools:background="@drawable/bg_oilpackage_hot"
+        android:clickable="true">
+
+        <TextView
+            android:id="@+id/tv_deadline_2"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_17"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/dp_6"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_11"
+            tools:text="12个月" />
+
+
+        <TextView
+            android:id="@+id/tv_leastaAmount_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dp_29"
+            android:textColor="#8A6161"
+            android:textSize="@dimen/sp_15"
+            tools:text="￥500/月" />
+
+        <TextView
+            android:id="@+id/tv_rate_money_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dp_48"
+            android:textColor="@color/primary"
+            android:textSize="@dimen/sp_11"
+            tools:text="折扣价:8280元" />
+
+        <TextView
+            android:id="@+id/tv_rate_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/dp_7"
+            android:layout_marginTop="@dimen/dp_29"
+            android:textColor="@color/primary"
+            android:textSize="@dimen/sp_11"
+            tools:text="8.0折" />
+
+    </RelativeLayout>
+
+
+    <!--领取油卡-->
+    <!-- <ImageButton
+         android:id="@+id/ib_package_3"
+         android:layout_width="@dimen/dp_82"
+         android:layout_height="@dimen/dp_89"
+         android:layout_alignParentBottom="true"
+         android:layout_below="@+id/ll_card"
+         android:layout_marginBottom="@dimen/dp_8"
+         android:layout_marginLeft="@dimen/dp_3"
+         android:layout_toRightOf="@+id/ib_oilcard_package"
+         android:background="@null"
+         android:scaleType="fitXY"
+         tools:src="@drawable/bg_oilcard_package1" />-->
+    <RelativeLayout
+        android:id="@+id/rl_package_3"
+        android:layout_width="@dimen/dp_82"
+        android:layout_height="@dimen/dp_89"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/ll_card"
+        android:layout_marginBottom="@dimen/dp_8"
+        android:layout_marginLeft="@dimen/dp_3"
+        android:layout_toRightOf="@+id/ib_oilcard_package"
+        tools:background="@drawable/bg_oilpackage_hot"
+        android:clickable="true">
+
+        <TextView
+            android:id="@+id/tv_deadline_3"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_17"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/dp_6"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_11"
+            tools:text="12个月" />
+
+
+        <TextView
+            android:id="@+id/tv_leastaAmount_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dp_29"
+            android:textColor="#8A6161"
+            android:textSize="@dimen/sp_15"
+            tools:text="￥500/月" />
+
+        <TextView
+            android:id="@+id/tv_rate_money_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dp_48"
+            android:textColor="@color/primary"
+            android:textSize="@dimen/sp_11"
+            tools:text="折扣价:8280元" />
+
+        <TextView
+            android:id="@+id/tv_rate_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/dp_7"
+            android:layout_marginTop="@dimen/dp_29"
+            android:textColor="@color/primary"
+            android:textSize="@dimen/sp_11"
+            tools:text="8.0折" />
+
+
+    </RelativeLayout>
+    <!-- <ImageButton
+         android:id="@+id/ib_package_4"
+         android:layout_width="@dimen/dp_82"
+         android:layout_height="@dimen/dp_89"
+         android:layout_alignLeft="@+id/ib_package_2"
+         android:layout_alignStart="@+id/ib_package_2"
+         android:layout_alignTop="@+id/ib_package_3"
+         android:background="@null"
+         android:scaleType="fitXY"
+         android:visibility="gone"
+         tools:src="@drawable/bg_oilcard_package1" />-->
+
+
+    <RelativeLayout
+        android:id="@+id/rl_package_4"
+        android:layout_width="@dimen/dp_82"
+        android:layout_height="@dimen/dp_89"
+        android:layout_alignLeft="@+id/rl_package_2"
+        android:layout_alignStart="@+id/rl_package_2"
+        android:layout_alignTop="@+id/rl_package_3"
+        tools:background="@drawable/bg_oilpackage_hot"
+        android:clickable="true">
+
+        <TextView
+            android:id="@+id/tv_deadline_4"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_17"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/dp_6"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_11"
+            tools:text="12个月" />
+
+
+        <TextView
+            android:id="@+id/tv_leastaAmount_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dp_29"
+            android:textColor="#8A6161"
+            android:textSize="@dimen/sp_15"
+            tools:text="￥500/月" />
+
+        <TextView
+            android:id="@+id/tv_rate_money_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dp_48"
+            android:textColor="@color/primary"
+            android:textSize="@dimen/sp_11"
+            tools:text="折扣价:8280元" />
+
+        <TextView
+            android:id="@+id/tv_rate_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/dp_7"
+            android:layout_marginTop="@dimen/dp_29"
+            android:textColor="@color/primary"
+            android:textSize="@dimen/sp_11"
+            tools:text="8.0折" />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,135 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/pop_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#d2d2d2"
+    android:orientation="vertical">
+
+    <!-- style="@style/immersion_status" -->
+
+    <include
+        layout="@layout/app_base_title"
+        android:visibility="gone" />
+
+
+    <com.mcz.xhj.yz.dr_adapter.APSTSViewPager
+        android:id="@+id/mVP"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/mAPSTS" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/mVP"
+        android:background="@color/actionsheet_gray" />
+
+    <com.lhh.apst.library.AdvancedPagerSlidingTabStrip
+        android:id="@+id/mAPSTS"
+        style="@style/pagertab_icon_style"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:fillViewport="false" />
+
+    <!--<com.lhh.apst.library.AdvancedPagerSlidingTabStrip-->
+    <!--android:id="@+id/mAPSTS"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="55dp"-->
+    <!--style="@style/pagertab_icon_style"-->
+    <!--android:layout_alignParentBottom="true"-->
+    <!--android:fillViewport="false"/>-->
+
+    <!--<com.lhh.apst.advancedpagerslidingtabstrip.APSTSViewPager-->
+    <!--android:id="@+id/mVP"-->
+    <!--android:layout_width="fill_parent"-->
+    <!--android:layout_height="fill_parent"-->
+    <!--android:layout_above="@id/mAPSTS"/>-->
+    <!--<FrameLayout-->
+    <!--android:id="@+id/fl_main"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="0dp"-->
+    <!--android:layout_weight="1"-->
+    <!--android:background="#f2f2f2" >-->
+    <!--</FrameLayout>-->
+
+    <!--<View-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="3px"-->
+    <!--android:background="#d2d2d2" />-->
+
+    <!--<RadioGroup-->
+    <!--android:id="@+id/rg_main"-->
+    <!--android:layout_width="fill_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:background="#ffffff"-->
+    <!--android:gravity="center"-->
+    <!--android:orientation="horizontal"-->
+    <!--android:weightSum="4" >-->
+
+    <!--<RadioButton-->
+    <!--android:id="@+id/rd_home"-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_weight="1"-->
+    <!--android:button="@null"-->
+    <!--android:checked="true"-->
+    <!--android:drawableTop="@drawable/bg_mainicon_home"-->
+    <!--android:gravity="center"-->
+    <!--android:textSize="0sp"-->
+    <!--android:layout_marginTop="10px"-->
+    <!--android:layout_marginBottom="10px"-->
+    <!--/>-->
+
+    <!--<RadioButton-->
+    <!--android:id="@+id/rd_invest"-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_weight="1"-->
+    <!--android:button="@null"-->
+    <!--android:drawableTop="@drawable/bg_mainicon_invest"-->
+    <!--android:gravity="center"-->
+    <!--android:text="@null"-->
+    <!--android:textSize="0sp"-->
+    <!--android:layout_marginTop="10px"-->
+    <!--android:layout_marginBottom="10px"-->
+    <!--/>-->
+
+    <!--<RadioButton-->
+    <!--android:id="@+id/rd_person"-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_weight="1"-->
+    <!--android:button="@null"-->
+    <!--android:drawableTop="@drawable/bg_mainicon_person"-->
+    <!--android:gravity="center"-->
+    <!--android:textSize="0sp"-->
+    <!--android:layout_marginTop="10px"-->
+    <!--android:layout_marginBottom="10px"-->
+    <!--/>-->
+
+    <!--<RadioButton-->
+    <!--android:id="@+id/rd_more"-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_weight="1"-->
+    <!--android:button="@null"-->
+    <!--android:drawableTop="@drawable/bg_mainicon_more"-->
+    <!--android:gravity="center"-->
+    <!--android:textSize="0sp"-->
+    <!--android:layout_marginTop="10px"-->
+    <!--android:layout_marginBottom="10px"-->
+    <!--/>-->
+    <!--</RadioGroup>-->
+    <!--
+         <ImageView
+	    android:id="@+id/bg"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:background="@drawable/huodong"
+	        />
+    -->
+
+</RelativeLayout>

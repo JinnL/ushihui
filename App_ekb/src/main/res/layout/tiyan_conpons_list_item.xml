@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:orientation="vertical"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:paddingTop="36px"
+        android:paddingLeft="36px"
+        android:paddingRight="36px"
+        android:background="@mipmap/bg_tiyanjin">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="36px"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/iv_xiaohongbao"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/tv_amount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="2dp"
+                    android:text="体验金88888元"
+                    android:textColor="#333333"
+                    android:textSize="15sp"/>
+
+                <TextView
+                    android:id="@+id/tv_jihuo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="2dp"
+                    android:layout_marginTop="12px"
+                    android:textColor="#999999"
+                    android:text="投资≥5000元"
+                    android:textSize="12sp"/>
+
+                <TextView
+                    android:id="@+id/tv_laiyuan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12px"
+                    android:padding="2dp"
+                    android:text="xxx"
+                    android:textColor="#999999"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="226px"
+                android:layout_height="108px"
+                android:layout_marginRight="46dp"
+                android:gravity="center"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:src="@mipmap/xiao_yuanbao"
+                />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="15px"
+            android:layout_marginLeft="36px"
+            android:layout_marginRight="36px"
+            android:layout_marginTop="10dp"
+            android:layerType="software"
+            android:background="@drawable/bg_dash_line"/>
+
+        <RelativeLayout
+            android:layout_width="270dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="15dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/bg_color_yellow"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@id/tv_use"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textSize="14sp"
+                android:textColor="#ffffff"
+                android:text="立即激活"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

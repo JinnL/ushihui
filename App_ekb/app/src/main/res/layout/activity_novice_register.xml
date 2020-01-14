@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.ekabao.oil.ui.activity.NoviceRegisterActivity">
+
+    <include layout="@layout/app_base_title"/>
+    <ScrollView
+        style="@style/layout_width_0dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fb623f"
+            android:orientation="vertical">
+
+            <!-- android:fitsSystemWindows="true"-->
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:scaleType="fitXY"
+                android:src="@drawable/bg_novice_register_1" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_24"
+                android:layout_marginRight="@dimen/dp_24"
+                android:background="@drawable/shape_rectangle_empty_bottom"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/dp_15">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_12"
+                    android:layout_marginRight="@dimen/dp_12"
+                    android:layout_marginTop="@dimen/dp_15"
+                    android:background="@drawable/bg_novice_register_10" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_12"
+                    android:layout_marginRight="@dimen/dp_12"
+                    android:layout_marginTop="@dimen/dp_15"
+                    android:background="@drawable/bg_novice_register_15" />
+
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_12"
+                    android:layout_marginRight="@dimen/dp_12"
+                    android:layout_marginTop="@dimen/dp_15"
+                    android:background="@drawable/bg_novice_register_25" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_12"
+                    android:layout_marginRight="@dimen/dp_12"
+                    android:layout_marginTop="@dimen/dp_15"
+                    android:background="@drawable/bg_novice_register_30" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_12"
+                    android:layout_marginRight="@dimen/dp_12"
+                    android:layout_marginTop="@dimen/dp_15"
+                    android:background="@drawable/bg_novice_register_28" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dp_15"
+                android:layout_marginLeft="@dimen/dp_24"
+                android:layout_marginRight="@dimen/dp_24"
+                android:layout_marginTop="@dimen/dp_29"
+                android:background="@drawable/shape_rectangle_empty_13"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/dp_15">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/dp_14"
+                    android:src="@drawable/bg_novice_register_3" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_14"
+                    android:layout_marginRight="@dimen/dp_14"
+                    android:layout_marginTop="@dimen/dp_16"
+                    android:text="	1.	新用户注册成功后即可立即领取1088元红包，每个手机号可领取一次；用户可通过我的“优惠券”中查看红包发放情况。
+\n
+	2.	活动发放的注册红包为抵扣红包，红包金额可在用户进行油卡充值时直接抵扣。
+\n
+	3.	红包仅限于购买对应月份套餐使用。不同金额红包的使用规则不同，用户可在我的“优惠券”中查看红包使用规则。
+\n
+	4.	红包只可由本用户使用，不支持提现与转让；
+\n
+	5.	对于活动如有其他疑问，可拨打客服电话：400-665-8575
+\n
+	6.	本次活动解释权归油实惠所有。"
+
+                    android:textColor="@color/primary"
+                    android:textSize="@dimen/sp_12" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/bt_register"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_48"
+        android:background="#FFC62B"
+        android:gravity="center"
+        android:text="立即注册"
+        android:textColor="@color/primary"
+        android:textSize="@dimen/sp_15" />
+</LinearLayout>

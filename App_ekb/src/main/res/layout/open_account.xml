@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/immersion_status"
+    android:background="@color/base_title_color"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/app_base_title" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="88px"
+        android:textColor="#999999"
+        android:textSize="38px"
+        android:gravity="center_vertical"
+        android:paddingLeft="56px"
+        android:background="#f2f2f2"
+        android:text="资金存管机构:恒丰银行股份有限公司杭州分行（简称:恒丰银行）"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="56px"
+        android:layout_marginRight="56px"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:gravity="center_vertical"
+            android:layout_height="128px">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="真实姓名"
+                android:textSize="46px"
+                android:textColor="#666666"/>
+
+            <EditText
+                android:id="@+id/ev_name"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="128px"
+                android:textSize="46px"
+                android:hint="请输入持卡人姓名"
+                android:background="@null"
+                android:textColor="#999999"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#f0f0f0"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:gravity="center_vertical"
+            android:layout_height="128px">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="证件号码"
+                android:textColor="#666666"
+                android:textSize="46px" />
+
+            <EditText
+                android:id="@+id/ev_zhengjian"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="128px"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:hint="请输入身份证号码"
+                android:textColor="#999999"
+                android:textSize="46px" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#f0f0f0"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:gravity="center_vertical"
+            android:layout_height="128px">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="手机号码"
+                android:textColor="#666666"
+                android:textSize="46px" />
+
+            <TextView
+                android:id="@+id/ev_phone"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="128px"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:textColor="#999999"
+                android:textSize="46px" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#f0f0f0"/>
+
+        <Button
+            android:id="@+id/btn_open"
+            android:layout_width="match_parent"
+            android:layout_height="128px"
+            android:textSize="48px"
+            android:textColor="@color/white"
+            android:layout_marginTop="256px"
+            android:text="开通存管账户"
+            android:background="@drawable/bg_corner_red"
+            />
+
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,137 @@
+[ {
+	"areaname" : "北京",
+	"id" : 110000,
+	"parentid" : 0
+}, {
+	"areaname" : "天津",
+	"id" : 120000,
+	"parentid" : 0
+}, {
+	"areaname" : "河北省",
+	"id" : 130000,
+	"parentid" : 0
+}, {
+	"areaname" : "山西省",
+	"id" : 140000,
+	"parentid" : 0
+}, {
+	"areaname" : "内蒙古自治区",
+	"id" : 150000,
+	"parentid" : 0
+}, {
+	"areaname" : "辽宁省",
+	"id" : 210000,
+	"parentid" : 0
+}, {
+	"areaname" : "吉林省",
+	"id" : 220000,
+	"parentid" : 0
+}, {
+	"areaname" : "黑龙江省",
+	"id" : 230000,
+	"parentid" : 0
+}, {
+	"areaname" : "上海",
+	"id" : 310000,
+	"parentid" : 0
+}, {
+	"areaname" : "江苏省",
+	"id" : 320000,
+	"parentid" : 0
+}, {
+	"areaname" : "浙江省",
+	"id" : 330000,
+	"parentid" : 0
+}, {
+	"areaname" : "安徽省",
+	"id" : 340000,
+	"parentid" : 0
+}, {
+	"areaname" : "福建省",
+	"id" : 350000,
+	"parentid" : 0
+}, {
+	"areaname" : "江西省",
+	"id" : 360000,
+	"parentid" : 0
+}, {
+	"areaname" : "山东省",
+	"id" : 370000,
+	"parentid" : 0
+}, {
+	"areaname" : "河南省",
+	"id" : 410000,
+	"parentid" : 0
+}, {
+	"areaname" : "湖北省",
+	"id" : 420000,
+	"parentid" : 0
+}, {
+	"areaname" : "湖南省",
+	"id" : 430000,
+	"parentid" : 0
+}, {
+	"areaname" : "广东省",
+	"id" : 440000,
+	"parentid" : 0
+}, {
+	"areaname" : "广西壮族自治区",
+	"id" : 450000,
+	"parentid" : 0
+}, {
+	"areaname" : "海南省",
+	"id" : 460000,
+	"parentid" : 0
+}, {
+	"areaname" : "重庆",
+	"id" : 500000,
+	"parentid" : 0
+}, {
+	"areaname" : "四川省",
+	"id" : 510000,
+	"parentid" : 0
+}, {
+	"areaname" : "贵州省",
+	"id" : 520000,
+	"parentid" : 0
+}, {
+	"areaname" : "云南省",
+	"id" : 530000,
+	"parentid" : 0
+}, {
+	"areaname" : "西藏自治区",
+	"id" : 540000,
+	"parentid" : 0
+}, {
+	"areaname" : "陕西省",
+	"id" : 610000,
+	"parentid" : 0
+}, {
+	"areaname" : "甘肃省",
+	"id" : 620000,
+	"parentid" : 0
+}, {
+	"areaname" : "青海省",
+	"id" : 630000,
+	"parentid" : 0
+}, {
+	"areaname" : "宁夏回族自治区",
+	"id" : 640000,
+	"parentid" : 0
+}, {
+	"areaname" : "新疆维吾尔自治区",
+	"id" : 650000,
+	"parentid" : 0
+}, {
+	"areaname" : "台湾",
+	"id" : 710000,
+	"parentid" : 0
+}, {
+	"areaname" : "香港特别行政区",
+	"id" : 810000,
+	"parentid" : 0
+}, {
+	"areaname" : "澳门特别行政区",
+	"id" : 820000,
+	"parentid" : 0
+} ]

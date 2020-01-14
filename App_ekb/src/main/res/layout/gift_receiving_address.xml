@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/immersion_status"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f2f2f2"
+    android:orientation="vertical">
+
+    <include layout="@layout/app_base_title" />
+
+    <LinearLayout
+        android:id="@+id/ll_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingLeft="56px"
+        android:layout_marginTop="36px"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="130px"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="所在地址"
+                android:gravity="center_vertical"
+                android:textColor="#999999"
+                android:textSize="56px"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="56px"
+                android:gravity="center_vertical"
+                android:layout_alignParentRight="true"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/tv_region"
+                    android:layout_width="156dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="56px"
+                    android:textColor="#666666"
+                    android:gravity="right"
+                    android:text="请选择"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="56px"
+                    android:src="@mipmap/find_jiantou"/>
+            </LinearLayout>
+
+         </RelativeLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#d1d1d1"/>
+
+
+        <RelativeLayout
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="32dp"
+            android:layout_marginRight="56px"
+            android:gravity="center_vertical"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/ev_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="48px"
+                android:paddingBottom="48px"
+                android:hint="请详细填写地址，以防物品不能及时送达"
+                android:textColorHint="#a0a0a0"
+                android:background="@null"
+                android:textSize="52px"
+                android:layout_toLeftOf="@+id/iv_clear"
+                android:textColor="#666666"/>
+
+            <ImageView
+                android:id="@+id/iv_clear"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/icon_close"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="保存"
+        android:textSize="56px"
+        android:layout_marginTop="128px"
+        android:textColor="@color/white"
+        android:layout_marginLeft="56px"
+        android:layout_marginRight="56px"
+        android:background="@drawable/bg_corner_red"/>
+
+</LinearLayout>

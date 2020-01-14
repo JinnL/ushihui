@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="bottom"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            style="@style/padding_left_right"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_150"
+            android:background="@color/white">
+
+            <ImageView
+                android:id="@+id/iv_sku_logo"
+                android:layout_width="@dimen/dp_110"
+                android:layout_height="@dimen/dp_110"
+                android:layout_centerVertical="true"
+                tools:src="@color/primary" />
+
+            <ImageView
+                android:id="@+id/ib_sku_close"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="@dimen/dp_15"
+                android:clickable="true"
+                android:src="@drawable/icon_pop_close" />
+
+            <TextView
+                android:id="@+id/tv_sku_selling_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_15"
+                android:layout_marginTop="@dimen/dp_64"
+                android:layout_toRightOf="@+id/iv_sku_logo"
+                android:textColor="@color/color_base"
+                android:textSize="@dimen/sp_15"
+                tools:text="￥372.00" />
+
+            <TextView
+                android:id="@+id/tv_sku_quantity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_15"
+                android:layout_marginTop="@dimen/dp_88"
+                android:layout_toRightOf="@+id/iv_sku_logo"
+                android:textColor="@color/text_99"
+                android:textSize="@dimen/sp_12"
+                tools:text="库存88888件" />
+
+            <TextView
+                android:id="@+id/tv_sku_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_15"
+                android:layout_marginTop="@dimen/dp_109"
+                android:layout_toRightOf="@+id/iv_sku_logo"
+                android:text="请选择 颜色分类"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/sp_12" />
+
+
+        </RelativeLayout>
+
+        <include layout="@layout/line_color_ee" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.wuhenzhizao.sku.view.SkuSelectScrollView
+                    android:id="@+id/scroll_sku_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp" />
+
+                <include layout="@layout/line_color_ee" />
+
+                <LinearLayout
+                    style="@style/padding_left_right"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_58"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/layout_width_0dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="购买数量" />
+
+
+                    <TextView
+                        android:id="@+id/btn_sku_quantity_minus"
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
+                        android:background="@drawable/com_sku_quantity_minus_selector"
+                        android:enabled="false"
+                        android:gravity="center"
+                        android:padding="0dp"
+                        android:text="－"
+                        android:textColor="@drawable/quantity_operator_text_selector"
+                        android:textSize="18dp" />
+
+                    <EditText
+                        android:id="@+id/et_sku_quantity_input"
+                        android:layout_width="40dp"
+                        android:layout_height="28dp"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"
+                        android:background="@drawable/com_sku_quantity_input_selector"
+                        android:ellipsize="end"
+                        android:gravity="center"
+                        android:imeOptions="actionDone"
+                        android:inputType="number"
+                        android:maxLength="5"
+                        android:maxLines="1"
+                        android:maxWidth="100dp"
+                        android:minWidth="21dp"
+                        android:text="1"
+                        android:textColor="@color/comm_text_gray_dark"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/btn_sku_quantity_plus"
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
+                        android:layout_marginRight="15dp"
+                        android:background="@drawable/com_sku_quantity_plus_selector"
+                        android:gravity="center"
+                        android:padding="0dp"
+                        android:text="＋"
+                        android:textColor="@drawable/quantity_operator_text_selector"
+                        android:textSize="18dp" />
+
+
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+        <Button
+            android:id="@+id/btn_submit"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_48"
+            android:background="@drawable/bg_base"
+            android:gravity="center"
+            android:text="确定"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#b5555555"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="960px"
+        android:layout_height="1244px"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+
+        android:paddingLeft="40px" />
+    <!--    android:src="@mipmap/zadan2_bg"-->
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="700px"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView2"
+        android:layout_centerHorizontal="true"
+
+        android:paddingRight="400px"
+        android:textColor="#f38274" />
+    <!--android:background="@drawable/xu_line" -->
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/imageView2"
+        android:layout_below="@+id/textView1" />
+    <!-- android:src="@mipmap/zadan_jiaxi_g"-->
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imageView1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="360px" />
+    <!--   android:src="@mipmap/zadan_xi"-->
+    <TextView
+        android:id="@+id/tv_use"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="22px"
+
+        android:paddingBottom="22px"
+        android:paddingLeft="240px"
+        android:paddingRight="240px"
+        android:paddingTop="22px"
+        android:text="立即使用"
+        android:textColor="#ffffff" />
+    <!--  android:background="@drawable/bg_btn_corner"-->
+    <TextView
+        android:id="@+id/iv_regist"
+        android:layout_width="match_parent"
+        android:layout_height="180px"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/imageView1"
+        android:layout_marginTop="160px"
+        android:background="@null"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/imageView2"
+        android:layout_alignTop="@+id/imageView2"
+        android:layout_marginLeft="120px"
+        android:layout_marginTop="86px"
+        android:text="+"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#f15c42"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/tv_rate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView2"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_toRightOf="@+id/textView2"
+        android:text="1"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#f15c42"
+        android:textSize="34sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tv_rate"
+        android:layout_alignBottom="@+id/tv_rate"
+        android:layout_toRightOf="@+id/tv_rate"
+        android:text="%"
+        android:textColor="#f15c42"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tv_biao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/imageView2"
+        android:layout_below="@+id/textView2"
+        android:layout_marginLeft="36px"
+        android:layout_marginTop="20px"
+        android:text="限中胜--期使用"
+        android:textColor="#f38274"
+        android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/imageView3"
+        android:layout_alignTop="@+id/imageView3"
+        android:layout_marginLeft="120px"
+        android:layout_marginTop="86px"
+        android:text="+"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#a49e92"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/tv_rate_fei"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView6"
+        android:layout_alignBottom="@+id/textView6"
+        android:layout_toRightOf="@+id/textView6"
+        android:text="1"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#a49e92"
+        android:textSize="34sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tv_rate_fei"
+        android:layout_toRightOf="@+id/tv_rate_fei"
+        android:text="%"
+        android:textColor="#a49e92"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tv_biao_fei"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/imageView3"
+        android:layout_below="@+id/tv_rate_fei"
+        android:layout_marginLeft="36px"
+        android:layout_marginTop="20px"
+        android:text="限中胜--期使用"
+        android:textColor="#a49e92"
+        android:textSize="10sp" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imageView3"
+        android:layout_centerHorizontal="true" />
+    <!--android:src="@mipmap/zuofei"-->
+</RelativeLayout>

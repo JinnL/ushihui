@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/immersion_status"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#efefef"
+    android:orientation="vertical">
+
+    <include layout="@layout/app_base_title" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#cccccc"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp">
+
+        <ImageView
+            android:id="@+id/img_logo"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/bg_corner_white"
+            android:src="@mipmap/dr_logo"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_version"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:gravity="center"
+        android:text="版本 x.x.x"
+        android:textColor="#FFC9C4C3"
+        android:textSize="12sp"
+        />
+
+    <LinearLayout
+        android:id="@+id/ll_new_function"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="17dp"
+        android:background="@drawable/bg_ll_person"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/jieju"
+            android:layout_marginLeft="@dimen/jieju"
+            android:layout_marginTop="@dimen/jieju"
+            android:text="当前版本"
+            android:textColor="#FF333333"
+            android:textSize="14sp" />
+        <!--新功能介绍-->
+        <TextView
+            android:id="@+id/tv_curren_version"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/jieju"
+            android:layout_weight="1"
+            android:drawablePadding="14dp"
+
+            android:gravity="right"
+            android:text=" x.x.x"
+            android:textColor="#FFC9C4C3"
+            android:textSize="14sp"/>
+        <!-- android:drawableRight="@mipmap/icon_rightto"-->
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/ll_go_estimate"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/bg_ll_person"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/jieju"
+            android:layout_marginLeft="@dimen/jieju"
+            android:layout_marginTop="@dimen/jieju"
+            android:text="去评价"
+            android:textColor="#FF333333"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginRight="@dimen/jieju"
+            android:layout_weight="1"
+            android:drawablePadding="14dp"
+            android:drawableRight="@mipmap/icon_rightto"
+            android:gravity="right"
+            android:text="您的鼓励 是我们的动力"
+            android:textColor="#FFC9C4C3"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#d2d2d2" />
+
+    <LinearLayout
+        android:id="@+id/ll_goto_zm"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/bg_ll_person"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/jieju"
+            android:layout_marginLeft="@dimen/jieju"
+            android:layout_marginTop="@dimen/jieju"
+            android:text="走进小行家"
+            android:textColor="#FF333333"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/jieju"
+            android:layout_weight="1"
+            android:drawablePadding="10px"
+            android:drawableRight="@mipmap/icon_rightto"
+            android:gravity="right"
+            android:textColor="#999999"
+            android:textSize="40px" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#d2d2d2" />
+
+    <LinearLayout
+        android:id="@+id/ll_company_qualification"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/bg_ll_person"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/jieju"
+            android:layout_marginLeft="@dimen/jieju"
+            android:layout_marginTop="@dimen/jieju"
+            android:text="公司资质"
+            android:textColor="#FF333333"
+            android:textSize="14sp"
+            /> />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/jieju"
+            android:layout_weight="1"
+            android:drawablePadding="10px"
+            android:drawableRight="@mipmap/icon_rightto"
+            android:gravity="right"
+            android:textColor="#999999"
+            android:textSize="40px" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_telPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="客服电话："
+            android:textColor="#FF746D6D"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="服务时间：09:00-17:00 (工作日)"
+            android:textColor="#FF746D6D"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="40dp"
+            android:text="QQ群：389589323"
+            android:textColor="#FF746D6D"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="浙ICP备15045248号-2"
+            android:textColor="#FFC9C4C3"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/fillStatusBarView"
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+
+    <include layout="@layout/app_base_title"
+
+        />
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/refreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:srlAccentColor="@android:color/white"
+        app:srlEnableHeaderTranslationContent="true"
+        app:srlEnableLoadMore="false"
+        app:srlPrimaryColor="@color/colorPrimary">
+
+        <com.scwang.smartrefresh.header.BezierCircleHeader
+            android:id="@+id/refreshLayout_head"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:fadeScrollbars="false"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:orientation="vertical">
+
+                <!--平台公告-->
+                <LinearLayout
+                    android:id="@+id/rl_notice"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_72"
+                    android:layout_marginLeft="@dimen/dp_9"
+                    android:layout_marginRight="@dimen/dp_9"
+                    android:background="@drawable/bg_marqueeview_find"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingBottom="@dimen/dp_9">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp_15"
+                        android:layout_marginRight="@dimen/dp_15"
+                        android:src="@drawable/icon_find_oil" />
+
+                    <com.ekabao.oil.ui.view.MarqueeView
+                        android:id="@+id/marqueeView"
+                        style="@style/layout_width_0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/dp_10"
+                        app:mvAnimDuration="1000"
+                        app:mvInterval="3000"
+                        app:mvSingleLine="true"
+                        app:mvTextColor="@color/primary"
+                        app:mvTextSize="@dimen/sp_12" />
+
+                    <TextView
+                        android:id="@+id/tv_address"
+                        style="@style/padding_left_right"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/dp_20"
+                        android:clickable="true"
+                        android:drawableLeft="@drawable/icon_find_address"
+                        android:drawablePadding="@dimen/dp_5"
+                        android:text="北京"
+                        android:textColor="@color/text_black"
+                        android:textSize="@dimen/sp_12" />
+                </LinearLayout>
+
+
+                <!--福利专享-->
+
+                <LinearLayout
+                    style="@style/margin_left_right"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_72"
+                    android:background="@color/white"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/ib_find_gasstation"
+                        style="@style/layout_width_0dp"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/bg_find_gasstation" />
+
+                    <ImageButton
+                        android:id="@+id/ib_find_peccancy"
+                        style="@style/layout_width_0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/dp_10"
+                        android:background="@null"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/bg_find_peccancy" />
+
+
+                </LinearLayout>
+
+                <!--限时活动-->
+
+                <LinearLayout
+                    android:id="@+id/ll_news"
+                    style="@style/margin_left_right"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dp_15"
+                    android:layout_marginTop="@dimen/dp_24"
+                    android:clickable="true"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/layout_width_0dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="公司动态"
+                        android:textColor="@color/text_black"
+                        android:textSize="@dimen/sp_17" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/icon_arrow" />
+                </LinearLayout>
+
+
+                <com.ekabao.oil.ui.view.ListInScroll
+                    android:id="@+id/lv_news"
+                    style="@style/margin_left_right"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:divider="#EEEEEE"
+                    android:dividerHeight="0dp"
+                    android:scrollbars="none" />
+
+
+                <ImageButton
+                    android:id="@+id/ib_find_safe"
+
+                    style="@style/margin_left_right"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_15"
+                    android:background="@null"
+                    android:paddingBottom="@dimen/dp_20"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/bg_find_safe" />
+
+
+            </LinearLayout>
+
+
+        </ScrollView>
+
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+
+</LinearLayout>

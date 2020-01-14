@@ -1,0 +1,549 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_safe"
+                android:fitsSystemWindows="true"
+                android:scaleType="fitXY"
+
+                />
+            <!--<include layout="@layout/app_base_title" />-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:padding="@dimen/dp_15">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:drawableLeft="@drawable/icon_safe_productintroduction"
+                    android:drawablePadding="@dimen/dp_7"
+                    android:text="产品介绍"
+                    android:textColor="@color/primary"
+                    android:textSize="@dimen/sp_15" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_15"
+                    android:lineSpacingExtra="1.5dp"
+                    android:text="        油实惠以车主人群刚性需求作为中心点，整合自身线上和线下资源，为车主提供一站式服务，让广大车主享受优惠、高效、快捷的在线加油服务，并在此基础上不断延展相关配套服务，提供更加贴心服务。"
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/sp_12" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:padding="@dimen/dp_15">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:drawableLeft="@drawable/icon_safe_chanpin_tedian"
+                    android:drawablePadding="@dimen/dp_7"
+                    android:text="产品特点"
+                    android:textColor="@color/primary"
+                    android:textSize="@dimen/sp_15" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_15"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        style="@style/layout_width_0dp"
+                        android:background="@drawable/shape_rectangle_fa_10"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="@dimen/dp_11"
+                            android:drawablePadding="@dimen/dp_10"
+                            android:drawableTop="@drawable/icon_safe_2"
+                            android:text="一次购买，每月到账"
+                            android:textColor="@color/text_black"
+                            android:textSize="@dimen/sp_12"
+
+                            />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        style="@style/layout_width_0dp"
+                        android:layout_marginLeft="@dimen/dp_5"
+                        android:background="@drawable/shape_rectangle_fa_10"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="@dimen/dp_11"
+                            android:drawablePadding="@dimen/dp_10"
+                            android:drawableTop="@drawable/icon_safe_3"
+                            android:text="价格优惠，贴心服务"
+                            android:textColor="@color/text_black"
+                            android:textSize="@dimen/sp_12"
+
+                            />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dp_14"
+                    android:layout_marginTop="@dimen/dp_5"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        style="@style/layout_width_0dp"
+                        android:background="@drawable/shape_rectangle_fa_10"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="@dimen/dp_11"
+                            android:drawablePadding="@dimen/dp_10"
+                            android:drawableTop="@drawable/icon_safe_4"
+                            android:text="在线支付，方便快捷"
+                            android:textColor="@color/text_black"
+                            android:textSize="@dimen/sp_12"
+
+                            />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        style="@style/layout_width_0dp"
+                        android:layout_marginLeft="@dimen/dp_5"
+                        android:background="@drawable/shape_rectangle_fa_10"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="@dimen/dp_11"
+                            android:drawablePadding="@dimen/dp_10"
+                            android:drawableTop="@drawable/icon_safe_1"
+                            android:text="专款专用，安全保障"
+                            android:textColor="@color/text_black"
+                            android:textSize="@dimen/sp_12"
+
+                            />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:padding="@dimen/dp_15">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:drawableLeft="@drawable/icon_safe_jiayouqia"
+                    android:drawablePadding="@dimen/dp_7"
+                    android:text="目前支持的加油卡"
+                    android:textColor="@color/primary"
+                    android:textSize="@dimen/sp_15" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_15"
+                    android:orientation="horizontal">
+
+
+                    <ImageView
+                        style="@style/layout_width_0dp"
+                        android:src="@drawable/bg_safe_2" />
+
+                    <ImageView
+                        style="@style/layout_width_0dp"
+                        android:layout_marginLeft="@dimen/dp_5"
+                        android:src="@drawable/bg_safe_3" />
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:text="目前仅支持中石化、中石油个人记名主卡"
+                    android:textColor="@color/text_99"
+                    android:textSize="@dimen/sp_12" />
+
+            </LinearLayout>
+            <!--资金安全保障-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:padding="@dimen/dp_15">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:drawableLeft="@drawable/icon_safe_zijinanquan"
+                    android:drawablePadding="@dimen/dp_7"
+                    android:text="资金安全保障"
+                    android:textColor="@color/primary"
+                    android:textSize="@dimen/sp_15" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:src="@drawable/bg_safe_8" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/dp_15"
+                    android:text="第三方平台"
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/sp_15" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/dp_5"
+                    android:lineSpacingExtra="1.5dp"
+                    android:text="用户充值的资金均进入第三方平台，保障资金专款专用，安全且可靠。"
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/sp_12" />
+
+
+                <Button
+                    android:id="@+id/bt_xieyi"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="@dimen/dp_192"
+                    android:layout_height="@dimen/dp_29"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="@dimen/dp_11"
+                    android:layout_marginTop="@dimen/dp_24"
+                    android:background="@drawable/shape_bt_large"
+                    android:text="查看资金监管协议 >"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp_13"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+            <!--多重安全-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:padding="@dimen/dp_15">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:drawableLeft="@drawable/icon_safe_anquan"
+                    android:drawablePadding="@dimen/dp_7"
+                    android:text="多重安全"
+                    android:textColor="@color/primary"
+                    android:textSize="@dimen/sp_15" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_15"
+                    android:background="@drawable/shape_rectangle_fa_10">
+
+                    <ImageView
+                        android:layout_width="@dimen/dp_53"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/dp_18"
+                        android:src="@drawable/bg_safe_6" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginLeft="@dimen/dp_91"
+                        android:layout_marginTop="@dimen/dp_11"
+                        android:text="信息安全"
+                        android:textColor="@color/text_black"
+                        android:textSize="@dimen/sp_15" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="@dimen/dp_18"
+                        android:layout_marginLeft="@dimen/dp_91"
+                        android:layout_marginRight="@dimen/dp_19"
+                        android:layout_marginTop="@dimen/dp_36"
+                        android:text="采用加密传输技术，保护用户隐私，从流程上确保用户信息不被泄露。"
+                        android:textColor="@color/text_99"
+                        android:textSize="@dimen/sp_11" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_15"
+                    android:background="@drawable/shape_rectangle_fa_10">
+
+                    <ImageView
+                        android:layout_width="@dimen/dp_53"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/dp_18"
+                        android:src="@drawable/bg_safe_5" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginLeft="@dimen/dp_91"
+                        android:layout_marginTop="@dimen/dp_11"
+                        android:text="数据安全"
+                        android:textColor="@color/text_black"
+                        android:textSize="@dimen/sp_15" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="@dimen/dp_18"
+                        android:layout_marginLeft="@dimen/dp_91"
+                        android:layout_marginRight="@dimen/dp_19"
+                        android:layout_marginTop="@dimen/dp_36"
+                        android:text="采取引入阿里云技术，加强各种措施保护数据。"
+                        android:textColor="@color/text_99"
+                        android:textSize="@dimen/sp_11" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_15"
+                    android:background="@drawable/shape_rectangle_fa_10">
+
+                    <ImageView
+                        android:layout_width="@dimen/dp_53"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/dp_18"
+                        android:src="@drawable/bg_safe_7" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginLeft="@dimen/dp_91"
+                        android:layout_marginTop="@dimen/dp_11"
+                        android:text="支付安全"
+                        android:textColor="@color/text_black"
+                        android:textSize="@dimen/sp_15" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="@dimen/dp_18"
+                        android:layout_marginLeft="@dimen/dp_91"
+                        android:layout_marginRight="@dimen/dp_19"
+                        android:layout_marginTop="@dimen/dp_36"
+                        android:text="支付资金通过第三方支付机构，严格保障资金安全。"
+                        android:textColor="@color/text_99"
+                        android:textSize="@dimen/sp_11" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_15"
+                    android:background="@drawable/shape_rectangle_fa_10">
+
+                    <ImageView
+                        android:layout_width="@dimen/dp_53"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/dp_18"
+                        android:src="@drawable/bg_safe_1" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginLeft="@dimen/dp_91"
+                        android:layout_marginTop="@dimen/dp_11"
+                        android:text="产品安全"
+                        android:textColor="@color/text_black"
+                        android:textSize="@dimen/sp_15" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="@dimen/dp_18"
+                        android:layout_marginLeft="@dimen/dp_91"
+                        android:layout_marginRight="@dimen/dp_19"
+                        android:layout_marginTop="@dimen/dp_36"
+                        android:text="加油产品均来自于加油龙头企业中国石油和中国石化。"
+                        android:textColor="@color/text_99"
+                        android:textSize="@dimen/sp_11" />
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+            <!--套餐充值及到账流程-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:padding="@dimen/dp_15">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:drawableLeft="@drawable/icon_safe_chongzhi"
+                    android:drawablePadding="@dimen/dp_7"
+                    android:text="套餐充值及到账流程"
+                    android:textColor="@color/primary"
+                    android:textSize="@dimen/sp_15" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_43"
+                    android:layout_marginTop="@dimen/dp_15"
+                    android:background="@drawable/shape_rectangle_fa_10"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/dp_15"
+                    android:text="举个例子：车主选择12月，8折套餐，充值单月500元"
+                    android:textColor="@color/text_99"
+                    android:textSize="@dimen/sp_12" />
+
+                <TextView
+                    android:layout_width="@dimen/dp_58"
+                    android:layout_height="@dimen/dp_19"
+                    android:layout_marginTop="@dimen/dp_15"
+                    android:background="@color/primary"
+                    android:gravity="center"
+                    android:text="计算公式"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp_12" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/dp_15"
+                    android:text="支付金额=500元 x 12月 x 0.8（折扣）=4800元"
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/sp_12" />
+
+                <TextView
+                    android:layout_width="@dimen/dp_58"
+                    android:layout_height="@dimen/dp_19"
+                    android:layout_marginTop="@dimen/dp_15"
+                    android:background="@color/primary"
+                    android:gravity="center"
+                    android:text="到账时间"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp_12" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dp_19"
+                    android:layout_marginTop="@dimen/dp_17"
+                    android:src="@drawable/bg_safe_4" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="@dimen/dp_19"
+                    android:layout_marginTop="@dimen/dp_19"
+                    android:text="— 已经到底部 —"
+                    android:textColor="@color/text_99"
+                    android:textSize="@dimen/sp_12" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <WebView
+        android:id="@+id/wv_safe"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <include
+        layout="@layout/app_base_title"
+        android:visibility="gone" />
+
+</FrameLayout>

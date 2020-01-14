@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    style="@style/immersion_status"
+    >
+
+    <include layout="@layout/app_base_title" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="短信验证码已发送至"
+            android:textColor="#666666"
+            android:textSize="40px"
+            android:layout_gravity="center"
+            android:layout_marginTop="80px"
+            />
+
+        <TextView
+            android:id="@+id/tv_bankphone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="--"
+            android:textColor="#333333"
+            android:textSize="54px"
+            android:layout_gravity="center"
+            android:layout_marginTop="20px"
+            />
+
+    <RelativeLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        android:layout_marginTop="60px"
+        >
+
+        <EditText
+            android:id="@+id/code_et"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:hint="请输入短信验证码"
+            android:inputType="number"
+            android:maxLength="6"
+            android:singleLine="true"
+            android:textColor="#333333"
+            android:textSize="44px"
+            android:gravity="center"
+            android:textCursorDrawable="@null"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true">
+            <requestFocus />
+        </EditText>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:gravity="center"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/code_et"
+            android:layout_toEndOf="@+id/code_et"
+            android:layout_marginLeft="180px"
+            android:layout_marginStart="180px">
+            <TextView
+                android:id="@+id/tv_getsmg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="重新获取"
+                android:textSize="36px"
+                android:textColor="@color/base_red_color"
+                android:visibility="gone"
+                />
+            <com.mcz.xhj.yz.dr_view.CircleTextProgressbar
+                android:id="@+id/tv_red_progress_text"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:onClick="onClick"
+                />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#d2d2d2"
+        android:layout_marginLeft="80px"
+        android:layout_marginRight="80px"
+        android:layout_marginTop="20px"
+        ></View>
+    <Button
+        android:id="@+id/bt_ok"
+        android:layout_width="match_parent"
+        android:layout_height="112px"
+        android:layout_marginLeft="56px"
+        android:layout_marginRight="56px"
+        android:layout_marginTop="156px"
+        android:background="@drawable/bg_btn_corner"
+        android:padding="0dp"
+        android:text="确认"
+        android:textColor="#ffffff" />
+
+</LinearLayout>

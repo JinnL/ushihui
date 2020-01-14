@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cl_notice"
+    android:layout_width="match_parent"
+    android:layout_marginLeft="@dimen/dp_10"
+    android:layout_marginRight="@dimen/dp_10"
+    android:layout_height="@dimen/dp_40"
+    android:background="@drawable/bg_white_round"
+    android:elevation="@dimen/dp_3">
+
+    <TextView
+        android:id="@+id/tv_notice"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_40"
+        android:background="@drawable/bg_home_notice"
+        android:drawableLeft="@drawable/icon_home_notice"
+        android:drawablePadding="@dimen/dp_5"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/dp_10"
+        android:paddingRight="@dimen/dp_10"
+        android:text="平台通知"
+        android:textColor="#e95d30"
+        android:textSize="@dimen/sp_14"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.ekabao.oil.ui.view.MarqueeView
+        android:id="@+id/marqueeView"
+        style="@style/layout_width_0dp"
+        android:layout_height="@dimen/dp_40"
+        android:background="@color/white"
+        android:paddingLeft="@dimen/dp_10"
+        app:layout_constraintLeft_toRightOf="@id/tv_notice"
+        app:layout_constraintRight_toLeftOf="@id/iv_info_more"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:mvAnimDuration="1000"
+        app:mvInterval="3000"
+        app:mvSingleLine="true"
+        app:mvTextColor="@color/text_gray"
+        app:mvTextSize="@dimen/sp_13" />
+
+    <ImageView
+        android:id="@+id/iv_info_more"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_40"
+        android:padding="@dimen/dp_10"
+        android:src="@drawable/icon_arrow"
+        app:layout_constraintBottom_toBottomOf="@id/tv_notice"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tv_notice" />
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_segment_title"
+        android:layout_width="match_parent"
+        android:layout_height="130px"
+        android:background="@color/base_title_color"
+        >
+
+        <ImageView
+            android:id="@+id/img_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/login_fanhui"
+            android:paddingLeft="56px"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/title_sellout"
+                style="@style/layout_wrap"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="55dp"
+                android:text="已售罄"
+                android:textColor="#666666"
+                android:textSize="18sp" />
+
+
+            <TextView
+                android:id="@+id/title_repayed"
+                style="@style/layout_wrap"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:paddingRight="56px"
+                android:text="已还款"
+                android:textColor="#666666"
+                android:textSize="18sp"
+                android:visibility="visible" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/view_line_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="#cccccc"
+            android:visibility="visible"/>
+    </RelativeLayout>
+
+</LinearLayout>

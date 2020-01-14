@@ -1,0 +1,48 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:background="@color/transparent"
+    android:orientation="vertical">
+    <!-- Title -->
+
+
+    <LinearLayout
+        android:layout_width="@dimen/dp_264"
+        android:layout_height="@dimen/dp_192"
+        android:background="@drawable/shape_rectangle_white_10"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="@dimen/dp_48"
+            android:layout_height="@dimen/dp_48"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dp_44"
+            android:src="@drawable/dialog_pay_success" />
+
+        <TextView
+            android:id="@+id/dialog_title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_10"
+            android:text="支付成功"
+            android:textColor="@color/primary"
+            android:textSize="@dimen/sp_18" />
+
+        <TextView
+            android:id="@+id/dialog_content_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_10"
+            android:text="即将为您跳转至订单详情"
+            android:textColor="@color/text_99"
+            android:textSize="@dimen/sp_12" />
+    </LinearLayout>
+    <!-- content -->
+
+
+</LinearLayout>

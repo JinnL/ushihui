@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        style="@style/padding_left_right"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/tv_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/dp_15"
+            android:textColor="@color/text_black"
+            android:textSize="14sp"
+            tools:text="-200000.00" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/tv_money"
+            android:layout_alignBaseline="@+id/tv_money"
+            android:maxLines="1"
+            android:textColor="@color/text_black"
+            android:textSize="14sp"
+            tools:text="优企金融No.2341" />
+
+        <TextView
+            android:id="@+id/tv_fit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_name"
+            android:layout_marginBottom="@dimen/dp_15"
+            android:maxLines="1"
+            android:layout_marginTop="@dimen/dp_12"
+            android:textColor="@color/text_99"
+            android:textSize="14sp"
+            tools:text="2018/06/18 10:33:23" />
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/tv_money"
+            android:layout_alignBaseline="@+id/tv_fit"
+            android:layout_marginBottom="@dimen/dp_12"
+            android:textColor="@color/text_99"
+            android:textSize="14sp"
+            tools:text="余额 201519.10" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_0_5"
+            android:layout_below="@+id/tv_time"
+            android:background="@color/line_e6" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

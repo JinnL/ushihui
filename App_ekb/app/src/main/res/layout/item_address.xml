@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:background="#ffffff"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="11dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="9dp"
+        android:layout_marginTop="7dp">
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="姓名"
+            android:textColor="#FF333333"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_phonenum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="13666666666"
+            android:textColor="#FF666666"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_detail_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="7dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:text="这里是详细地址 这里是详细地址 这里是详细地址 这里是详细地址 这里是详细地址"
+        android:textColor="#FF666666"
+        android:textSize="12sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#efefef" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="9dp"
+        android:gravity="center_vertical">
+
+        <CheckBox
+            android:id="@+id/cb_default_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:background="#ffffff"
+            android:button="@null"
+            android:drawableLeft="@drawable/checked_address"
+            android:drawablePadding="4dp"
+            android:gravity="center"
+            android:text="设为默认地址"
+            android:textColor="#FF333333"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_delete_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="24dp"
+            android:drawableLeft="@drawable/address_delete"
+            android:drawablePadding="4dp"
+            android:gravity="center"
+            android:text="删除"
+            android:textColor="#FF333333"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_edit_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/tv_delete_address"
+            android:drawableLeft="@drawable/address_edit"
+            android:drawablePadding="4dp"
+            android:gravity="center"
+            android:text="编辑"
+            android:textColor="#FF333333"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+</LinearLayout>

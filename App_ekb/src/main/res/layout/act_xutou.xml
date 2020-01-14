@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/immersion_status"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/base_title_color"
+    android:orientation="vertical" >
+
+    <include layout="@layout/app_base_title" />
+    <in.srain.cube.views.ptr.PtrClassicFrameLayout
+        android:id="@+id/ptr_myassets"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#f2f2f2"
+        android:orientation="vertical"
+        >
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#f2f2f2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FFFFFF"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="40px"
+                android:text="请选择想要领取的现金金额"
+                android:textColor="#333333"
+                android:textSize="40px" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2px"
+                android:layout_marginLeft="56px"
+                android:layout_marginRight="56px"
+                android:background="#f2f2f2"></View>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="688px"
+                android:layout_centerInParent="true"
+                android:background="#ffffff"
+                android:clipChildren="false">
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/mViewPager"
+                    android:layout_width="match_parent"
+                    android:layout_height="680px"
+                    android:layout_gravity="center"
+                    android:clipChildren="false"
+                    android:clipToPadding="false"
+                    android:paddingLeft="340px"
+                    android:paddingRight="340px"></android.support.v4.view.ViewPager>
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginLeft="56px"
+                android:layout_marginRight="56px"
+                android:layout_marginTop="40px"
+                android:background="@mipmap/bg_roll"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <com.mcz.xhj.yz.dr_view.MarqueeView
+                    android:id="@+id/marqueeView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    app:mvAnimDuration="1000"
+                    app:mvInterval="3000"
+                    app:mvSingleLine="true"
+                    app:mvTextColor="#666666"
+                    app:mvTextSize="14sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="20px"
+                android:layout_marginBottom="40px"
+                android:layout_marginTop="40px"
+                android:background="#f2f2f2" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="新手标到期后继续投资"
+                    android:textColor="#333333"
+                    android:textSize="40px"
+                    android:layout_marginLeft="56px"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_title_day"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="--"
+                    android:textColor="@color/base_red_color"
+                    android:textSize="40px" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="天产品，即可领取"
+                    android:textColor="#333333"
+                    android:textSize="40px" />
+
+                <TextView
+                    android:id="@+id/tv_title_money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="--"
+                    android:textColor="@color/base_red_color"
+                    android:textSize="40px" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="元"
+                    android:textColor="#333333"
+                    android:textSize="40px" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#d2d2d2"
+                android:layout_marginLeft="56px"
+                android:layout_marginRight="56px"
+                android:layout_marginTop="30px"
+                ></View>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="120px"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="56px"
+                    android:text="新手标到期投资金额"
+                    android:textColor="#808080"
+                    android:textSize="40px"
+                    android:layout_weight="1"
+                    />
+                <TextView
+                    android:id="@+id/tv_money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="56px"
+                    android:text="--"
+                    android:textColor="#4d4d4d"
+                    android:textSize="40px" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#d2d2d2"
+                android:layout_marginLeft="56px"
+                android:layout_marginRight="56px"
+                ></View>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="120px"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="56px"
+                    android:text="投资期限"
+                    android:textColor="#808080"
+                    android:textSize="40px"
+                    android:layout_weight="1"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_day"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="56px"
+                    android:text="--"
+                    android:textColor="#4d4d4d"
+                    android:textSize="40px" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#d2d2d2"
+                android:layout_marginLeft="56px"
+                android:layout_marginRight="56px"
+                ></View>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="120px"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="56px"
+                    android:text="年化收益"
+                    android:textColor="#808080"
+                    android:textSize="40px"
+                    android:layout_weight="1"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_rate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="56px"
+                    android:text="--"
+                    android:textColor="#4d4d4d"
+                    android:textSize="40px" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#d2d2d2"
+                android:layout_marginLeft="56px"
+                android:layout_marginRight="56px"
+                ></View>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="120px"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="56px"
+                    android:text="预计收益"
+                    android:textColor="#808080"
+                    android:textSize="40px"
+                    android:layout_weight="1"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_earn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="56px"
+                    android:text="--"
+                    android:textColor="#4d4d4d"
+                    android:textSize="40px" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#d2d2d2"
+                android:layout_marginLeft="56px"
+                android:layout_marginRight="56px"
+                ></View>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="120px"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="56px"
+                    android:text="现金红包"
+                    android:textColor="#808080"
+                    android:textSize="40px"
+                    android:layout_weight="1"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_red"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="56px"
+                    android:text="--"
+                    android:textColor="#4d4d4d"
+                    android:textSize="40px" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#f2f2f2">
+
+                <TextView
+                    android:id="@+id/tv_xutou"
+                    android:layout_width="match_parent"
+                    android:layout_height="112px"
+                    android:layout_below="@+id/tv_linqu"
+                    android:layout_marginLeft="56px"
+                    android:layout_marginRight="56px"
+                    android:layout_marginTop="80px"
+                    android:background="@drawable/bg_btn_corner"
+                    android:gravity="center"
+                    android:text="续投领取现金红包"
+                    android:textColor="#ffffff"
+                    android:textSize="48px" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_giveup"
+                android:layout_width="match_parent"
+                android:layout_height="120px"
+                android:layout_below="@+id/tv_giveup"
+                android:background="#f2f2f2"
+                android:gravity="center"
+                android:text="放弃机会?"
+                android:textColor="@color/base_red_color"
+                android:textSize="36px" />
+
+            <TextView
+                android:id="@+id/tv_empty1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#f2f2f2"
+                android:paddingLeft="68px"
+                android:paddingTop="40px"
+                android:text="友情提示 :"
+                android:textColor="#333333"
+                android:textSize="36px" />
+
+            <TextView
+                android:id="@+id/tv_empty2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#f2f2f2"
+                android:lineSpacingExtra="20px"
+                android:paddingLeft="72px"
+                android:paddingTop="38px"
+                android:text="@string/xutoutishi"
+                android:textColor="#787878"
+                android:textSize="32px" />
+
+        </LinearLayout>
+    </ScrollView>
+    </in.srain.cube.views.ptr.PtrClassicFrameLayout>
+</LinearLayout>

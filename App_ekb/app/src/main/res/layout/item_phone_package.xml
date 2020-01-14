@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <!--先不用了-->
+    <LinearLayout
+        android:id="@+id/ll_background"
+        android:layout_width="@dimen/dp_105"
+        android:layout_height="@dimen/dp_67"
+        android:layout_centerVertical="true"
+        android:layout_margin="@dimen/dp_2_5"
+        android:background="@drawable/shape_oilcard_check"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_17"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_discount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/sp_15"
+                tools:text="9.2折" />
+
+            <TextView
+                android:id="@+id/tv_olddiscount"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_5"
+                android:textColor="@color/text_99"
+                android:textSize="@dimen/sp_11"
+                tools:text="9.2折" />
+
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/tv_month"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_99"
+            android:textSize="@dimen/sp_11"
+            tools:text="3个月加油套餐" />
+
+    </LinearLayout>
+
+</LinearLayout>

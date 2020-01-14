@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/app_base_title" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_16"
+        android:layout_marginTop="@dimen/dp_36"
+        android:text="补全身份信息"
+        android:textColor="@color/text_black"
+        android:textSize="@dimen/sp_20" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_16"
+        android:layout_marginTop="@dimen/dp_5"
+        android:text="开户名与身份证信息保持一致"
+        android:textColor="@color/text_66"
+        android:textSize="@dimen/sp_14" />
+
+    <EditText
+        android:id="@+id/et_name"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:layout_marginLeft="@dimen/dp_18"
+        android:layout_marginRight="@dimen/dp_18"
+        android:layout_marginTop="@dimen/dp_33"
+        android:ems="10"
+        android:hint="开户姓名"
+        android:imeOptions="actionNext"
+        android:inputType="none"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:textColor="@color/text_black"
+        android:textColorHint="@color/text_cc"
+        android:textCursorDrawable="@drawable/shape_edittext_cursor"
+        android:textSize="18sp"
+        android:theme="@style/MyEditText" />
+
+    <EditText
+        android:id="@+id/et_idcard"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:layout_marginLeft="@dimen/dp_18"
+        android:layout_marginRight="@dimen/dp_18"
+        android:hint="身份证号"
+        android:imeOptions="actionGo"
+        android:inputType="none"
+        android:maxLines="1"
+        android:maxLength="22"
+        android:singleLine="true"
+        android:textColor="@color/text_black"
+        android:textColorHint="@color/text_cc"
+        android:textCursorDrawable="@drawable/shape_edittext_cursor"
+        android:textSize="18sp"
+
+        android:theme="@style/MyEditText" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_66">
+
+        <TextView
+            android:id="@+id/tv_login"
+            style="@style/bt_large_match"
+            android:text="下一步" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "E:\\android\\App_oil\\PushSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout_upush_notification.xml.flat",
+        "source": "E:\\android\\App_oil\\PushSDK\\build\\intermediates\\packaged_res\\debug\\layout\\upush_notification.xml"
+    },
+    {
+        "merged": "E:\\android\\App_oil\\PushSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout_upush_bar_image_notification.xml.flat",
+        "source": "E:\\android\\App_oil\\PushSDK\\build\\intermediates\\packaged_res\\debug\\layout\\upush_bar_image_notification.xml"
+    }
+]

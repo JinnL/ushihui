@@ -1,0 +1,106 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="@dimen/dp_283"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_rectangle_white"
+        android:orientation="vertical">
+        <!--  android:background="@drawable/alert_bg"-->
+        <!-- Title -->
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_15"
+            android:layout_marginTop="@dimen/dp_15"
+            android:text="可退金额"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/sp_15"
+            android:visibility="visible" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_26"
+            android:gravity="center_horizontal"
+            android:text="确认要退订吗？"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/sp_17"
+            android:visibility="visible" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_42"
+            android:layout_marginRight="@dimen/dp_42"
+            android:layout_marginTop="@dimen/dp_5"
+            android:gravity="center_horizontal"
+            android:lineSpacingMultiplier="1.3"
+            android:text="(退订将无法享受下单时的折扣和优惠，资金将退至我的-账户余额中)"
+            android:textColor="@color/primary"
+            android:textSize="@dimen/sp_12"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/tv_content"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_10"
+            android:gravity="center_horizontal"
+            android:paddingLeft="@dimen/dp_32"
+            android:paddingRight="@dimen/dp_32"
+            android:text="可退金额=支付金额-月充值额*已充月数 "
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/sp_13"
+            android:visibility="visible" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="@dimen/dp_26"
+            android:background="@color/line_e6" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_47"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_cacel"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="取消"
+                android:textColor="@color/text_99"
+                android:textSize="@dimen/sp_17" />
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:background="@color/line_e6" />
+
+            <TextView
+                android:id="@+id/tv_sure"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="确认"
+                android:textColor="@color/text_blue"
+                android:textSize="@dimen/sp_17" />
+        </LinearLayout>
+
+        <!-- button pannel -->
+        <!-- <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#b2b2b2" /> -->
+    </LinearLayout>
+</LinearLayout>

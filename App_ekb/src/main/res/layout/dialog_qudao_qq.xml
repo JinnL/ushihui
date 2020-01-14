@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/immersion_status"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    >
+   <!--android:background="#b5555555"-->
+    <LinearLayout
+        android:layout_width="940px"
+        android:layout_height="880px"
+        android:layout_centerHorizontal="true"
+        android:background="@mipmap/tiyan_red_open_bg"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/tv_open"
+            android:layout_width="220px"
+            android:layout_height="220px"
+            android:text="拆"
+            android:background="@drawable/bg_corner_yellow_yuan"
+            android:gravity="center"
+            android:layout_marginTop="200px"
+            android:textSize="90px"
+            android:textColor="@color/base_title_color"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:text="哎呦，亲您终于挖到大金矿啦~\n聚胜先送您一个体验金红包"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100px"
+            android:textColor="#ffffff"
+            android:textSize="40px"
+            android:gravity="center"
+            android:lineSpacingExtra="30px"
+            />
+    </LinearLayout>
+
+</RelativeLayout>

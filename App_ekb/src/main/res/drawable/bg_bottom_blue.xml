@@ -1,0 +1,39 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_checked="true">
+        <layer-list>
+            <item><shape>
+                    <solid android:color="#FE7633" />
+
+                    <padding android:bottom="6px"/>
+            </shape></item>
+            <item><shape>
+                    <solid android:color="#FFFFFF" />
+            </shape></item>
+        </layer-list>
+    </item>
+    <item android:state_checked="false" >
+         <layer-list>
+            <item><shape>
+                    <solid android:color="#FFFFFF" />
+
+                    <padding android:bottom="6px"/>
+            </shape></item>
+            <item><shape>
+                    <solid android:color="#FFFFFF" />
+            </shape></item>
+        </layer-list>
+    </item>
+	<item android:drawable="@mipmap/icon_rb_off">
+	    <layer-list>
+            <item><shape>
+                    <solid android:color="#FFFFFF" />
+
+                    <padding android:bottom="6px"/>
+            </shape></item>
+            <item><shape>
+                    <solid android:color="#FFFFFF" />
+            </shape></item>
+        </layer-list>
+	</item>
+   
+</selector>

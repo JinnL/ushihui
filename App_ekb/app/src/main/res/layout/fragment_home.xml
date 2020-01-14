@@ -1,0 +1,506 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/app_base_title"
+        android:visibility="gone" />
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/refreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:srlAccentColor="@android:color/white"
+        app:srlEnableHeaderTranslationContent="true"
+        app:srlEnableLoadMore="false"
+        app:srlPrimaryColor="@color/colorPrimary">
+
+        <!--<com.scwang.smartrefresh.header.BezierCircleHeader-->
+            <!--android:id="@+id/refreshLayout_head"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content" />-->
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fadeScrollbars="false"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:orientation="vertical">
+
+                <!--轮播图-->
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_231"
+                    android:background="@color/white">
+                    <!--262px-->
+
+
+                    <com.jude.rollviewpager.RollPagerView
+                        android:id="@+id/rpv_banner"
+                        app:rollviewpager_hint_paddingBottom="26dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_201" />
+                    <!--平台公告-->
+                    <LinearLayout
+                        android:id="@+id/rl_notice"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_59"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginLeft="@dimen/dp_5"
+                        android:layout_marginRight="@dimen/dp_5"
+                        android:background="@drawable/bg_marqueeview"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/dp_26"
+                            android:layout_marginRight="@dimen/dp_10"
+                            android:src="@drawable/icon_home_notice" />
+
+                        <com.ekabao.oil.ui.view.MarqueeView
+                            android:id="@+id/marqueeView"
+                            style="@style/layout_width_0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/dp_25"
+                            app:mvAnimDuration="1000"
+                            app:mvInterval="3000"
+                            app:mvSingleLine="true"
+                            app:mvTextColor="@color/primary"
+                            app:mvTextSize="@dimen/sp_12" />
+
+                        <TextView
+                            android:id="@+id/tv_notice"
+                            style="@style/padding_left_right"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:clickable="true"
+                            android:text="更多"
+                            android:textColor="#6CA3FF"
+                            android:textSize="@dimen/sp_12"
+                            android:visibility="gone" />
+                    </LinearLayout>
+                    <!--android:background="@drawable/shape_rectangle_empty_13"-->
+                </RelativeLayout>
+
+
+                <!--安全保障 平台介绍 新人福利-->
+
+                <com.lijiankun24.shadowlayout.ShadowLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    app:shadowColor="#0c000000"
+                    app:shadowDx="0dp"
+                    app:shadowDy="6dp"
+                    app:shadowRadius="10dp"
+                    app:shadowSide="bottom" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_224"
+                    android:background="@color/white"
+                    android:orientation="horizontal"
+                    android:paddingBottom="@dimen/dp_14"
+                    android:paddingLeft="@dimen/dp_6"
+                    android:paddingRight="@dimen/dp_6">
+
+                    <!--油卡套餐-->
+                    <ImageButton
+                        android:id="@+id/ib_oilcard_package"
+                        android:layout_width="@dimen/dp_173"
+                        android:scaleType="fitXY"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        android:src="@drawable/bg_oilcard_package" />
+
+                    <!--油卡直冲-->
+                    <ImageButton
+                        android:id="@+id/ll_card"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_108"
+                        android:layout_toRightOf="@+id/ib_oilcard_package"
+                        android:layout_alignParentRight="true"
+                        android:background="@null"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/bg_home_oilcard_recharge" />
+
+                    <!--领取油卡-->
+                    <ImageButton
+                        android:id="@+id/ll_register"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@+id/ll_card"
+                        android:layout_toRightOf="@+id/ib_oilcard_package"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:background="@null"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/bg_home_oilcard_get" />
+
+                    <LinearLayout
+                        android:id="@+id/ll_about"
+                        style="@style/layout_width_0dp"
+                        android:clickable="true"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:layout_width="@dimen/dp_42"
+                            android:layout_height="@dimen/dp_42"
+                            android:layout_gravity="center_horizontal"
+                            android:drawablePadding="8px"
+                            android:drawableTop="@drawable/icon_home_about"
+                            android:gravity="center_horizontal"
+                            android:textColor="@color/text_black"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            style="@style/layout_wrap"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="@dimen/dp_5"
+                            android:text="关于我们"
+                            android:textColor="@color/text44"
+                            android:textSize="10sp" />
+
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+
+                <!--新人-->
+                <LinearLayout
+                    android:id="@+id/ll_newhand_product"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/windowBackground"
+                        android:orientation="horizontal"
+                        android:paddingLeft="@dimen/dp_12"
+                        android:paddingRight="@dimen/dp_12"
+                        android:paddingTop="@dimen/dp_14">
+
+                        <TextView
+                            style="@style/layout_width_0dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="新手专享"
+                            android:textColor="@color/text_black"
+                            android:textSize="18sp"
+                            android:textStyle="normal" />
+
+                        <TextView
+                            style="@style/layout_wrap"
+
+                            android:text="超高收益  限投一次"
+                            android:textColor="@color/text_66"
+                            android:textSize="12sp" />
+
+                    </LinearLayout>
+
+
+                    <include
+                        layout="@layout/line_color_ee"
+                        android:visibility="gone" />
+
+                    <!--新人专享-->
+                    <com.lijiankun24.shadowlayout.ShadowLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        app:shadowColor="#0c000000"
+                        app:shadowDx="0dp"
+                        app:shadowDy="6dp"
+                        app:shadowRadius="10dp"
+                        app:shadowSide="all">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/shape_rectangle_white_6"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                style="@style/layout_wrap"
+                                android:layout_marginTop="@dimen/dp_18"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal"
+                                android:paddingLeft="@dimen/dp_18">
+
+                                <TextView
+                                    android:id="@+id/tv_title_newpeople"
+                                    style="@style/layout_wrap"
+                                    android:text="新手专享"
+                                    android:textColor="@color/text_black"
+                                    android:textSize="16sp" />
+
+                                <TextView
+                                    android:id="@+id/tv_newpeople_limit"
+                                    style="@style/layout_wrap"
+                                    android:layout_marginLeft="28px"
+                                    android:background="@drawable/shape_rectangle_gold"
+                                    android:text="限额5万元"
+                                    android:textColor="@color/gold"
+                                    android:textSize="10sp" />
+
+                            </LinearLayout>
+
+                            <TextView
+                                android:id="@+id/tv_newpeople_interest"
+                                style="@style/layout_wrap"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginTop="@dimen/dp_19"
+                                android:text="0.0%"
+                                android:textColor="@color/text_red"
+                                android:textSize="30sp" />
+
+                            <TextView
+                                android:id="@+id/tv_newpeople_interest_time"
+                                style="@style/layout_wrap"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginTop="@dimen/dp_9"
+                                android:text="近3个月年化收益"
+                                android:textColor="@color/text_99"
+                                android:textSize="12sp" />
+
+                            <LinearLayout
+                                style="@style/layout_wrap"
+                                android:layout_width="match_parent"
+                                android:layout_marginTop="@dimen/dp_16"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/tv_newpeople_term"
+                                    style="@style/layout_width_0dp"
+                                    android:gravity="right"
+                                    android:paddingRight="66px"
+                                    android:text="出借期限  "
+
+                                    />
+
+                                <include layout="@layout/line_vertical_color_ee" />
+
+                                <TextView
+                                    android:id="@+id/tv_newpeople_total"
+                                    style="@style/layout_width_0dp"
+                                    android:gravity="left"
+                                    android:paddingLeft="28px"
+                                    android:text="剩余金额  " />
+
+
+                            </LinearLayout>
+
+                            <Button
+                                android:id="@+id/bt_newpeople_pay"
+                                style="?android:attr/borderlessButtonStyle"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/dp_38"
+                                android:layout_marginBottom="@dimen/dp_18"
+                                android:layout_marginLeft="@dimen/dp_55"
+                                android:layout_marginRight="@dimen/dp_55"
+                                android:layout_marginTop="@dimen/dp_19"
+                                android:background="@drawable/shape_rectangle_red_76px"
+                                android:text="立即出借"
+                                android:textColor="@color/white"
+                                android:textSize="18sp" />
+
+                            <include
+                                layout="@layout/line_color_ee"
+                                android:visibility="gone" />
+                        </LinearLayout>
+                    </com.lijiankun24.shadowlayout.ShadowLayout>
+
+
+                </LinearLayout>
+
+
+                <!--精选-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/dp_12"
+                    android:paddingRight="@dimen/dp_12"
+                    android:paddingTop="@dimen/dp_14"
+                    android:visibility="gone">
+
+                    <TextView
+                        style="@style/layout_width_0dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="油实惠精选"
+                        android:textColor="@color/text_black"
+                        android:textSize="18sp"
+                        android:textStyle="normal" />
+
+                    <TextView
+                        style="@style/layout_wrap"
+                        android:text="优选项目  放心出借"
+                        android:textColor="@color/text_66"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+                <com.ekabao.oil.ui.view.ListInScroll
+                    android:id="@+id/lv_product"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:divider="#EEEEEE"
+                    android:dividerHeight="0dp"
+                    android:scrollbars="none"
+                    android:visibility="gone" />
+
+                <!--  <include
+                      android:id="@+id/list_item1"
+                      layout="@layout/item_home_project"
+                      android:visibility="invisible" />
+
+                  <include
+                      android:id="@+id/list_item2"
+                      layout="@layout/item_home_project"
+                      android:visibility="invisible" />
+
+                  <include
+                      android:id="@+id/list_item3"
+                      layout="@layout/item_home_project"
+                      android:visibility="invisible" />-->
+                <!---->
+                <ImageButton
+                    android:id="@+id/ll_newpeople"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_91"
+                    android:background="@color/windowBackground"
+                    android:src="@drawable/bg_home_setmeal" />
+                <!--手机充值-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_49"
+                    android:background="@color/white"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:src="@drawable/bg_home_phone" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_100"
+                    android:background="@color/white"
+                    style="@style/padding_left_right"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingBottom="@dimen/dp_18">
+
+                    <RelativeLayout
+                        android:id="@+id/rl_oilcard_recharge"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="@dimen/dp_15"
+                        android:layout_weight="1"
+                        android:clickable="true">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/icon_home_recharge" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/dp_74"
+                            android:layout_marginTop="@dimen/dp_19"
+                            android:text="油卡直充"
+                            android:textSize="@dimen/sp_13"
+                            android:visibility="gone" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/dp_74"
+                            android:layout_marginTop="@dimen/dp_42"
+                            android:text="9.9折，快速到账"
+                            android:textColor="@color/text_99"
+                            android:textSize="@dimen/sp_10"
+                            android:visibility="gone" />
+
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="@dimen/dp_0_5"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="@dimen/dp_12"
+                        android:layout_marginTop="@dimen/dp_17"
+                        android:background="@color/text_dd"
+                        android:visibility="gone" />
+
+                    <RelativeLayout
+                        android:id="@+id/rl_novice_register"
+
+                        style="@style/layout_width_0dp"
+                        android:layout_height="match_parent"
+                        android:clickable="true">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/icon_home_register" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/dp_74"
+                            android:layout_marginTop="@dimen/dp_19"
+                            android:text="手机充值"
+                            android:textSize="@dimen/sp_13"
+                            android:visibility="gone" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/dp_74"
+                            android:layout_marginTop="@dimen/dp_42"
+                            android:text="充话费，享优惠"
+                            android:textColor="@color/text_99"
+                            android:textSize="@dimen/sp_10"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </ScrollView>
+
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+
+</LinearLayout>

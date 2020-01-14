@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/immersion_status"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_color"
+    android:orientation="vertical">
+
+
+
+    <include layout="@layout/app_base_title" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#cccccc" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#f2f2f2"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="84px"
+            android:background="@drawable/bg_ll_person"
+            android:gravity="center_vertical"
+            android:paddingLeft="56px"
+            android:text="常见问题分类"
+            android:textSize="36px"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1px">
+
+
+
+            <RelativeLayout
+                android:id="@+id/ll_renzheng"
+                android:layout_width="0dp"
+                android:layout_height="300px"
+                android:layout_weight="1"
+                android:background="@drawable/bg_ll_person"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/img_cunguan"
+                    android:layout_width="108px"
+                    android:layout_height="108px"
+                    android:layout_centerHorizontal="true"
+                    android:src="@mipmap/find_callcenter_renzheng" />
+
+                <TextView
+                    android:id="@+id/tx_cunguan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/img_cunguan"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="8dp"
+                    android:text="认证注册"
+                    android:textColor="@color/text1"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+
+
+            <RelativeLayout
+                android:id="@+id/ll_anquan"
+                android:layout_width="0dp"
+                android:layout_height="300px"
+                android:layout_weight="1"
+                android:background="@drawable/bg_ll_person"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/img_huodong"
+                    android:layout_width="108px"
+                    android:layout_height="108px"
+                    android:layout_centerHorizontal="true"
+                    android:src="@mipmap/find_callcenter_anquan" />
+
+                <TextView
+                    android:id="@+id/tv_huodong"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/img_huodong"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="8dp"
+                    android:text="安全保障"
+                    android:textColor="@color/text1"
+                    android:textSize="12sp"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/ll_chongzhi"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/bg_ll_person"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/img_guanyu"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="8dp"
+                    android:text="充值提现"
+                    android:textColor="@color/text1"
+                    android:textSize="12sp" />
+
+                <ImageView
+                    android:id="@+id/img_guanyu"
+                    android:layout_width="100px"
+                    android:layout_height="100px"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:src="@mipmap/find_callcenter_chongzhi" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/ll_touzi"
+                android:layout_width="0dp"
+                android:layout_height="300px"
+                android:layout_weight="1"
+                android:background="@drawable/bg_ll_person"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/img_kefu"
+                    android:layout_width="108px"
+                    android:layout_height="108px"
+                    android:layout_centerHorizontal="true"
+                    android:src="@mipmap/find_callcenter_touzi" />
+
+                <TextView
+                    android:id="@+id/tv_kefu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/img_kefu"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="8dp"
+                    android:text="投资福利"
+                    android:textColor="@color/text1"
+                    android:textSize="12sp"/>
+            </RelativeLayout>
+
+
+
+            <RelativeLayout
+                android:id="@+id/ll_chanpin"
+                android:layout_width="0dp"
+                android:layout_height="300px"
+                android:layout_weight="1"
+                android:background="@drawable/bg_ll_person"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/img_anquan"
+                    android:layout_width="108px"
+                    android:layout_height="108px"
+                    android:layout_centerHorizontal="true"
+                    android:src="@mipmap/find_callcenter_chanpin" />
+
+                <TextView
+                    android:id="@+id/tv_anquan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/img_anquan"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="8dp"
+                    android:text="产品介绍"
+                    android:textColor="@color/text1"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/ll_qita"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/bg_ll_person"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/img_qidai"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="8dp"
+                    android:text="其他问题"
+                    android:textColor="@color/text1"
+                    android:textSize="12sp" />
+
+                <ImageView
+                    android:id="@+id/img_qidai"
+                    android:layout_width="108px"
+                    android:layout_height="108px"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:src="@mipmap/find_callcenter_qita" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="84px"
+            android:layout_marginTop="24px"
+            android:background="@drawable/bg_ll_person"
+            android:gravity="center_vertical"
+            android:paddingLeft="56px"
+            android:text="热门问题"
+            android:textSize="32px" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ExpandableListView
+                android:id="@+id/expandablelistview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="1px"
+                android:childDivider="#F1F1F1"
+                android:divider="#F1F1F1"
+                android:dividerHeight="1px" />
+
+            <LinearLayout
+                android:id="@+id/ll_norecord"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/ico_record" />
+
+                <!--<TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="暂无记录" />-->
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

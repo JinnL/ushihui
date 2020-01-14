@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    style="@style/immersion_status"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    >
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/iv_act_xutou"
+        android:layout_width="860px"
+        android:layout_height="1020px"
+        fresco:failureImage="@mipmap/logo_default"
+        fresco:failureImageScaleType="centerInside"
+        fresco:actualImageScaleType="fitXY"
+        fresco:placeholderImage="@mipmap/logo_default"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        android:id="@+id/iv_close"
+        android:layout_width="90px"
+        android:layout_height="90px"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        android:drawableRight="@mipmap/doubledan_close"
+        android:layout_alignTop="@+id/iv_act_xutou"
+        android:layout_alignRight="@+id/iv_act_xutou"
+        android:layout_alignEnd="@+id/iv_act_xutou" />
+
+</RelativeLayout>

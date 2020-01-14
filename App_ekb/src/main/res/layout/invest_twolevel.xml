@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/immersion_status"
+    android:background="#f2f2f2"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_segment_title"
+        android:layout_width="match_parent"
+        android:layout_height="130px"
+        android:background="@color/base_title_color"
+        >
+
+        <ImageView
+            android:id="@+id/title_leftimageview"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/login_fanhui"
+            android:paddingLeft="56px"
+            android:paddingRight="56px"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/ll_sellout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginRight="55dp"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/title_sellout"
+                    style="@style/layout_wrap"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:text="已售罄"
+                    android:textColor="#FF8347"
+                    android:textSize="18sp" />
+                <ImageView
+                    android:id="@+id/img_sellout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:src="@mipmap/line_sellout"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_repayed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/title_repayed"
+                    style="@style/layout_wrap"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="已还款"
+                    android:textColor="#333333"
+                    android:textSize="18sp"
+                    android:visibility="visible" />
+
+                <ImageView
+                    android:id="@+id/img_repayed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:src="@mipmap/line_sellout"
+                    android:visibility="gone"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="#cccccc"
+            android:visibility="visible"/>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="1px"
+        android:background="#d2d2d2" />
+
+    <in.srain.cube.views.ptr.PtrClassicFrameLayout
+        android:id="@+id/ptr_invest"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20px"
+        android:background="#f2f2f2"
+        android:orientation="vertical">
+
+        <ListView
+            android:id="@+id/lv_invest"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#f2f2f2"
+            android:divider="#00000000"
+            android:dividerHeight="16px"
+            android:scrollbars="none" />
+    </in.srain.cube.views.ptr.PtrClassicFrameLayout>
+</LinearLayout>

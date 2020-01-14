@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/immersion_status"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/base_title_color"
+    android:orientation="vertical"
+     >
+    <include layout="@layout/app_base_title" />
+	
+    <LinearLayout
+        android:id="@+id/ptr_myassets"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#f2f2f2"
+        android:orientation="vertical" 
+        >
+	<LinearLayout 
+	    android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" 
+	    >
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="40px"
+            android:background="#d2d2d2" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200px"
+            android:background="#ffffff"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24px"
+                    android:text="累计投资金额(元)"
+                    android:textColor="#a0a0a0"
+                    android:textSize="32px" />
+
+                <TextView
+                    android:id="@+id/tv_invest_amount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24px"
+                    android:text="000,000"
+                    android:textColor="@color/base_title_color"
+                    android:textSize="48px" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="3px"
+                android:layout_height="100px"
+                android:background="#f2f2f2" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24px"
+                    android:text="累计收益金额(元)"
+                    android:textColor="#a0a0a0"
+                    android:textSize="32px" />
+
+                <TextView
+                    android:id="@+id/tv_shouyi_amount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24px"
+                    android:text="000,000"
+                    android:textColor="@color/base_title_color"
+                    android:textSize="48px" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#d2d2d2" />
+		<LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" 
+            android:orientation="vertical"
+            android:background="#ffffff"
+            android:layout_marginTop="40px"
+            android:layout_weight="1"
+            >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" 
+            android:gravity="center_vertical"
+            android:background="#ffffff"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="我的资产" 
+                android:textColor="#333333"
+                android:textSize="48px"
+                android:layout_marginLeft="56px"
+                android:layout_marginTop="40px"
+                />
+            <com.github.mikephil.charting.charts.PieChart
+		        android:id="@+id/chart"
+		        android:layout_width="match_parent"
+		        android:layout_height="660px"
+		        android:layout_marginTop="60px"
+		        android:layout_marginBottom="60px"
+		        />
+            <LinearLayout 
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:paddingLeft="56px"
+                >
+                <View 
+                    android:layout_width="24px"
+                    android:layout_height="24px"
+                    android:background="#e2c398"
+                    />
+                <TextView 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20px"
+                    android:text="可用余额(元):"
+                    />
+                <TextView 
+                    android:id="@+id/tv_balance_money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="--"
+                    />
+            </LinearLayout>
+            <LinearLayout 
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="40px"
+                android:paddingLeft="56px"
+                android:gravity="center_vertical"
+                >
+                <View 
+                    android:layout_width="24px"
+                    android:layout_height="24px"
+                    android:background="#ffb593"
+                    />
+                <TextView
+                    android:paddingLeft="20px" 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="冻结金额(元):"
+                    />
+                <TextView 
+                    android:id="@+id/tv_winter_money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="--"
+                    />
+            </LinearLayout>
+            <LinearLayout 
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="40px"
+                android:paddingLeft="56px"
+                android:gravity="center_vertical"
+                >
+                <View 
+                    android:layout_width="24px"
+                    android:layout_height="24px"
+                    android:background="#a2ace8"
+                    />
+                <TextView 
+                    android:paddingLeft="20px"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="待收本金(元):"
+                    />
+                <TextView 
+                    android:id="@+id/tv_invest_money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="--"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+		<!-- <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#d2d2d2" 
+            android:layout_marginLeft="56px"
+            />
+
+		<LinearLayout
+		    android:layout_width="match_parent"
+		    android:layout_height="112px"
+		    android:gravity="center_vertical"
+		     >
+
+			<TextView
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:text="可用余额(元)" 
+			    android:textSize="40px"
+			    android:textColor="#787878"
+			    android:layout_marginLeft="56px"
+			    />
+
+			<TextView
+			    android:id="@+id/tv_balance_money"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:text="000,000" 
+			    android:textSize="40px"
+			    android:textColor="#333333"
+			    android:layout_marginLeft="100px"
+			    />
+
+		</LinearLayout>
+		<View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#d2d2d2" 
+            android:layout_marginLeft="56px"
+            />
+		<LinearLayout
+		    android:layout_width="match_parent"
+		    android:layout_height="112px"
+		    android:gravity="center_vertical"
+		     >
+
+			<TextView
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:text="冻结金额(元)" 
+			    android:textSize="40px"
+			    android:textColor="#787878"
+			    android:layout_marginLeft="56px"
+			    />
+
+			<TextView
+			    android:id="@+id/tv_winter_money"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:text="000,000" 
+			    android:textSize="40px"
+			    android:textColor="#333333"
+			    android:layout_marginLeft="100px"
+			    />
+
+		</LinearLayout>
+		<View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#d2d2d2" 
+            android:layout_marginLeft="56px"
+            />
+		<LinearLayout
+		    android:layout_width="match_parent"
+		    android:layout_height="112px"
+		    android:gravity="center_vertical"
+		     >
+
+			<TextView
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:text="待收本金(元)" 
+			    android:textSize="40px"
+			    android:textColor="#787878"
+			    android:layout_marginLeft="56px"
+			    />
+
+			<TextView
+			    android:id="@+id/tv_invest_money"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:text="000,000" 
+			    android:textSize="40px"
+			    android:textColor="#333333"
+			    android:layout_marginLeft="100px"
+			    />
+
+		</LinearLayout>
+		<View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#d2d2d2" 
+            android:layout_marginLeft="56px"
+            />
+		<LinearLayout
+		    android:layout_width="match_parent"
+		    android:layout_height="112px"
+		    android:gravity="center_vertical"
+		     >
+
+			<TextView
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:text="资产总额(元)" 
+			    android:textSize="40px"
+			    android:textColor="#787878"
+			    android:layout_marginLeft="56px"
+			    />
+
+			<TextView
+			    android:id="@+id/tv_amount"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:text="000,000" 
+			    android:textSize="78px"
+			    android:textColor="#fe7634"
+			    android:layout_marginLeft="100px"
+			    />
+
+		</LinearLayout>-->
+		</LinearLayout> 
+		<LinearLayout 
+		    android:layout_width="match_parent"
+	      android:layout_height="wrap_content"
+	      android:orientation="vertical" 
+	      android:background="#ffffff"
+		    >
+		<LinearLayout
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:gravity="center_vertical"
+		    >
+
+			<View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#d2d2d2" 
+            android:layout_marginLeft="56px"
+            android:layout_weight="1"
+            />
+			<ImageView
+			    android:id="@+id/imageView1"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:src="@mipmap/ico_bulb"
+			    android:padding="10px"
+			    />
+			<View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#d2d2d2" 
+            android:layout_marginRight="56px"
+            android:layout_weight="1"
+            />
+		</LinearLayout>
+		<TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="资产总额 =可用余额 +冻结金额+待收本金"
+                android:textSize="32px"
+                android:textColor="#666666"
+                android:layout_marginLeft="20px"
+                android:gravity="center"
+                android:layout_marginTop="32px"
+                android:layout_marginBottom="72px"
+                 />
+		</LinearLayout>
+		</LinearLayout>
+		
+    </LinearLayout>
+
+</LinearLayout>

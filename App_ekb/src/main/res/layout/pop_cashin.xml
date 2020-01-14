@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/immersion_status"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical" 
+    android:id="@+id/ll_popcash"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="732px"
+        android:layout_marginLeft="50px"
+        android:layout_marginRight="50px"
+        android:background="@drawable/bg_corner"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/bt_cancel"
+                android:layout_width="0dp"
+                android:layout_height="132px"
+                android:layout_weight="1"
+                android:background="@drawable/alert_left_btn_selector"
+                android:padding="0dp"
+                android:text="取消"
+                android:textColor="#a0a0a0"
+                android:textSize="56px" />
+
+            <Button
+                android:id="@+id/bt_cashok"
+                android:layout_width="0dp"
+                android:layout_height="132px"
+                android:layout_weight="1"
+                android:background="@drawable/alert_right_btn_selector"
+                android:padding="0dp"
+                android:text="确定"
+                android:textColor="#ffffff"
+                android:textSize="56px" />
+        </LinearLayout>
+		<View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#d2d2d2" 
+            android:layout_above="@+id/ll"
+            />
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="44px"
+            android:gravity="center"
+            android:text="确认充值"
+            android:textColor="#333333"
+            android:textSize="56px" />
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/textView1"
+            android:layout_marginTop="44px"
+            android:background="#d2d2d2"
+            >
+
+        </View>
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="132px"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/linearLayout2"
+            android:layout_marginTop="48px"
+            android:background="@drawable/bg_corner_blackline"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="visible" 
+            android:layout_marginLeft="48px"
+            android:layout_marginRight="48px"
+            >
+
+            <EditText
+                android:id="@+id/code_et"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="请输入短信验证码"
+                android:inputType="number"
+                android:maxLength="6"
+                android:paddingLeft="18px"
+                android:singleLine="true"
+                android:textColor="#333333"
+                android:textSize="48px" >
+
+                <requestFocus />
+            </EditText>
+
+            <com.mcz.xhj.yz.dr_view.TimeButton
+                android:id="@+id/tv_getcode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="18px"
+                android:background="@null"
+                android:textColor="@drawable/textcolor_msg"
+                android:textSize="48px" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/view"
+            android:layout_marginTop="96px"
+            android:paddingLeft="18px" 
+            android:layout_marginLeft="48px"
+            android:layout_marginRight="48px"
+            >
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="充值金额(元)："
+                android:textColor="#666666"
+                android:textSize="48px" />
+
+            <TextView
+                android:id="@+id/tv_cashmonoy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="00000"
+                android:textColor="#666666"
+                android:textSize="48px" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/immersion_status"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/rl_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_call_center_top"
+            android:fitsSystemWindows="true"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/dp_100">
+
+            <RelativeLayout
+                android:id="@+id/rl_title"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/topbar_height"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/title_lefttextview"
+                    style="@style/layout_wrap"
+                    android:layout_centerVertical="true"
+                    android:drawableLeft="@drawable/fanhui_white"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="56px"
+                    android:text="返回"
+                    android:textColor="@android:color/white"
+                    android:textSize="52px"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/title_leftimageview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="@dimen/dp_15"
+                    android:paddingRight="@dimen/dp_15"
+                    android:src="@drawable/fanhui_white" />
+
+                <TextView
+                    android:id="@+id/title_centertextview"
+                    style="@style/layout_wrap"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dp_50"
+                    android:layout_marginRight="@dimen/dp_50"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="问题解答"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp_18" />
+
+                <ImageView
+                    android:id="@+id/title_centerimageview"
+                    style="@style/layout_wrap"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/logo_title"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/title_righttextview"
+                    style="@style/layout_wrap"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:paddingRight="@dimen/dp_12"
+                    android:text="右侧文字"
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/sp_16"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/title_rightimageview"
+                    style="@style/layout_wrap"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="@dimen/dp_15"
+                    android:paddingRight="@dimen/dp_15"
+                    android:src="@drawable/icon_request"
+                    android:visibility="gone" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_oil_card_recharge"
+                android:layout_width="@dimen/dp_0"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:drawableTop="@drawable/find_callcenter_renzheng"
+                android:drawablePadding="@dimen/dp_10"
+                android:gravity="center_horizontal"
+                android:padding="@dimen/dp_10"
+                android:text="油卡充值"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@id/tv_phone_recharge"
+                app:layout_constraintTop_toBottomOf="@id/rl_title" />
+
+            <TextView
+                android:id="@+id/tv_phone_recharge"
+                android:layout_width="@dimen/dp_0"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:drawableTop="@drawable/ic_call_center_recharge_phone"
+                android:drawablePadding="@dimen/dp_10"
+                android:gravity="center_horizontal"
+                android:padding="@dimen/dp_10"
+                android:text="话费充值"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                app:layout_constraintLeft_toRightOf="@id/tv_oil_card_recharge"
+                app:layout_constraintRight_toLeftOf="@id/tv_mall"
+                app:layout_constraintTop_toBottomOf="@id/rl_title" />
+
+            <TextView
+                android:id="@+id/tv_mall"
+                android:layout_width="@dimen/dp_0"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:drawableTop="@drawable/ic_call_center_mall_problem"
+                android:drawablePadding="@dimen/dp_10"
+                android:gravity="center_horizontal"
+                android:padding="@dimen/dp_10"
+                android:text="商城问题"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                app:layout_constraintLeft_toRightOf="@id/tv_phone_recharge"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/rl_title" />
+
+            <TextView
+                android:id="@+id/tv_sale"
+                android:layout_width="@dimen/dp_0"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:drawableTop="@drawable/find_callcenter_touzi"
+                android:drawablePadding="@dimen/dp_10"
+                android:gravity="center_horizontal"
+                android:padding="@dimen/dp_10"
+                android:text="服务售后"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@id/tv_account"
+                app:layout_constraintTop_toBottomOf="@id/tv_oil_card_recharge" />
+
+            <TextView
+                android:id="@+id/tv_account"
+                android:layout_width="@dimen/dp_0"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/find_callcenter_chanpin"
+                android:drawablePadding="@dimen/dp_10"
+                android:gravity="center_horizontal"
+                android:padding="@dimen/dp_10"
+                android:text="账号管理"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                app:layout_constraintLeft_toRightOf="@id/tv_sale"
+                app:layout_constraintRight_toLeftOf="@id/tv_other"
+                app:layout_constraintTop_toBottomOf="@id/tv_phone_recharge" />
+
+            <TextView
+                android:id="@+id/tv_other"
+                android:layout_width="@dimen/dp_0"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/find_callcenter_qita"
+                android:drawablePadding="@dimen/dp_10"
+                android:gravity="center_horizontal"
+                android:padding="@dimen/dp_10"
+                android:text="其他问题"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                app:layout_constraintLeft_toRightOf="@id/tv_account"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_mall" />
+
+        </android.support.constraint.ConstraintLayout>
+
+    </LinearLayout>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:layout_marginTop="@dimen/dp_080"
+        android:layout_marginRight="@dimen/dp_20"
+        android:layout_marginBottom="@dimen/dp_40"
+        app:cardCornerRadius="@dimen/dp_10"
+        app:cardElevation="@dimen/dp_10">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="bottom"
+                android:paddingLeft="@dimen/dp_20"
+                android:paddingTop="@dimen/dp_20"
+                android:paddingBottom="@dimen/dp_10"
+                android:src="@drawable/ic_normal_problem"
+                android:text="常见问题"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/sp_16" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ExpandableListView
+                    android:id="@+id/expandablelistview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="1px"
+                    android:childDivider="#F1F1F1"
+                    android:divider="#F1F1F1"
+                    android:scrollbars="none"
+                    android:dividerHeight="1px" />
+
+                <LinearLayout
+                    android:id="@+id/ll_norecord"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ico_record" />
+
+                    <!--<TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="暂无记录" />-->
+                </LinearLayout>
+
+            </RelativeLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

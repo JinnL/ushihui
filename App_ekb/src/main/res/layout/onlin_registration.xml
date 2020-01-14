@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    style="@style/immersion_status"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/base_title_color"
+    android:orientation="vertical">
+
+    <include layout="@layout/app_base_title" />
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/sd_open"
+        android:layout_width="match_parent"
+        android:layout_height="680px"
+        fresco:actualImageScaleType="fitXY"
+        />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="56px"
+                android:layout_marginRight="56px">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="您的姓名"
+                    android:layout_marginTop="56px"
+                    android:textColor="#333333"
+                    android:textSize="48px"/>
+
+                <EditText
+                    android:id="@+id/ev_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="32px"
+                    android:textColor="#333333"
+                    android:textSize="48px"
+                    android:hint="请输入您的姓名"
+                    android:paddingLeft="24px"
+                    android:maxLines="1"
+                    android:textColorHint="#999999"
+                    android:background="@drawable/bg_corner_blackline"/>
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="性别"
+                    android:textSize="48px"
+                    android:textColor="#333333"
+                    android:layout_marginTop="56px" />
+                <RadioGroup android:id="@+id/radioGroup"
+                    android:contentDescription="性别"
+                    android:layout_marginTop="24px"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/radioMale"
+                        android:text=" 男"
+                        android:textSize="42px"
+                        android:textColor="#333333"
+                        android:button="@null"
+                        android:background="@null"
+                        android:drawableLeft="@drawable/radiobutton"
+                        />
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/radioFemale"
+                        android:textSize="42px"
+                        android:textColor="#333333"
+                        android:button="@null"
+                        android:layout_marginTop="12px"
+                        android:background="@null"
+                        android:drawableLeft="@drawable/radiobutton"
+                        android:text=" 女"/>
+                </RadioGroup>
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="地区"
+                    android:textSize="48px"
+                    android:textColor="#333333"
+                    android:layout_marginTop="56px" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_diqu"
+                    android:layout_width="match_parent"
+                    android:background="@drawable/bg_corner_blackline"
+                    android:layout_marginTop="24px"
+                    android:layout_height="40dp">
+
+                    <TextView
+                        android:id="@+id/tv_diqu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="24px"
+                        android:text="请输入"
+                        android:textSize="48px"
+                        android:layout_centerVertical="true"/>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="56px"
+                        android:src="@mipmap/spinner_down"/>
+                </RelativeLayout>
+
+
+
+                <Button
+                    android:id="@+id/btn_baoming"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:text="报名参加"
+                    android:textSize="56px"
+                    android:textColor="@color/white"
+                    android:layout_marginRight="56px"
+                    android:layout_marginLeft="56px"
+                    android:enabled="false"
+                    android:background="@drawable/bg_corner_gray"
+                    android:layout_marginTop="52dp"
+                    android:layout_marginBottom="52dp"
+                    />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="#b5555555"
+    android:orientation="vertical">
+
+
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/iv_pic_act"
+        android:layout_width="286dp"
+        android:layout_height="356dp"
+        fresco:failureImage="@mipmap/logo_default"
+        fresco:failureImageScaleType="centerInside"
+        fresco:actualImageScaleType="fitXY"
+        fresco:placeholderImage="@mipmap/logo_default"
+        />
+
+    <TextView
+        android:id="@+id/peron_login_close"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableRight="@mipmap/person_close"
+        android:layout_marginRight="320px"
+        />
+
+</LinearLayout>

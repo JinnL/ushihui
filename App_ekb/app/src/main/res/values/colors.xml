@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ffffff</color>
+    <color name="colorPrimaryDark">#ffffff</color>
+    <color name="colorAccent">#FF6571</color>
+    <color name="windowBackground">#F5F5F5</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="red">#D43C33</color>
+    <color name="empty">#0c000000</color>
+    <color name="backgroud">#fbfcfd</color>
+    <color name="gray">#ffcccccc</color>
+    <color name="transparent">#00000000</color>
+
+    <color name="sdk_color_pwd_line">#60000000</color>
+
+    <color name="gold">#D39B0F</color>
+    <color name="base_red_color">#ff5111</color>
+
+    <color name="line_ee">#EEEEEE</color>
+    <color name="line_dd">#DDDDDD</color>
+    <color name="line_e6">#E6E6E6</color>
+    <color name="line_f2">#F2F4F6</color>
+    <color name="line_red">#EE4845</color>
+    <color name="line_f5">#F5F5F5</color>
+    <color name="line_f6">#F6F6F6</color>
+
+    <color name="text1">#3A3B3C</color>
+    <color name="text_black">#373A41</color>
+    <color name="text_red">#FF4146</color>
+    <!-- <color name="text_blue">#1E9DFF</color>-->
+    <color name="text_blue">#155CFC</color>
+    <color name="text_gold">#DAB267</color>
+    <color name="text_gold2">#FB9446</color>
+
+    <color name="text_gray">#9B9EA5</color>
+
+    <color name="text_99">#999999</color>
+    <color name="text_cc">#CCCCCC</color>
+    <color name="text_b6">#B6B6B6</color>
+    <color name="text_66">#666666</color>
+    <color name="text_33">#333333</color>
+    <color name="text_aa">#AAAAAA</color>
+    <color name="text_bb">#BBBBBB</color>
+    <color name="text_dd">#DDDDDD</color>
+    <color name="text4a">#4A4A4A</color>
+    <color name="text44">#444444</color>
+    <color name="title_black">#000000</color>
+    <color name="base_blue_color">#1798FB</color>
+
+    <!--按钮-->
+    <color name="bt_red">#FF623D</color>
+    <color name="bt_click_red">#FF947B</color>
+    <!--指示器-->
+    <color name="indicator">#949494</color>
+    <color name="indicator_select">#FF623D</color>
+
+    <!--标题栏背景色-->
+    <color name="toolbar_white">#FFFFFF</color>
+    <!--标题的文字颜色-->
+    <color name="title_center">#333333</color>
+    <color name="color_3">#333333</color>
+    <!--发送短信倒计时-->
+    <color name="sms">#FF4146</color>
+    <color name="sms_ss">#939393</color>
+
+    <!--大按钮的颜色-->
+
+    <color name="bt">#FF4146</color>
+    <color name="bt_click">#FF947B</color>
+
+    <!--主色调-->
+    <color name="primary">#FF7126</color>
+    <color name="color_base">#FC4E71</color>
+
+    <!--圆角背景填充-->
+    <color name="bg_fa">#FAFAFA</color>
+    <color name="bg_eb">#EBEBEB</color>
+
+    <color name="pop_black">#CACACC</color>
+    <color name="location_gray">#F0F0F2</color>
+    <color name="view_black">#373846</color>
+    <color name="bg_click">#F7741C</color>
+    <color name="tv_bule">#7dc8f7</color>
+    <color name="tv_bule_click">#5EB1FC</color>
+    <color name="car_gray">#D2D2D2</color>
+    <color name="tv_light">#B3B3B3</color>
+    <color name="car_red">#F31C4E</color>
+    <color name="text1A">#1A1A1A</color>
+    <color name="view_bg">#E3E3E6</color>
+    <color name="line_f3">#f3f3f3</color>
+    <color name="line_f9">#F9F9F9</color>
+    <color name="color_b2">#B2B2B2</color>
+    <!--透明度参照表；
+   00%=FF（不透明）    5%=F2    10%=E5    15%=D8    20%=CC    25%=BF
+     30%=B2    35%=A5    40%=99    45%=8c    50%=7F
+   55%=72    60%=66    65%=59    70%=4c    75%=3F
+   80%=33    85%=21    90%=19    95%=0c    100%=00（全透明）-->
+
+</resources>

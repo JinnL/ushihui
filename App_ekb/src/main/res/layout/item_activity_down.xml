@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:gravity="center_vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="56px"
+        android:paddingTop="20px"
+        android:paddingRight="56px"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="活动奖励："
+            android:textSize="40px" 
+            android:textColor="#787878"
+            />
+        <TextView
+            android:id="@+id/tv_gift"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="iPhone7"
+            android:textSize="40px" 
+            android:textColor="#090909"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="56px"
+        android:paddingRight="56px"
+        android:layout_marginTop="20px"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="我的幸运码："
+            android:textSize="40px" 
+            android:textColor="#787878"
+            />
+        <TextView
+            android:id="@+id/tv_gcode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="A1"
+            android:textSize="40px" 
+            android:textColor="#090909"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="查看中奖号" 
+        android:textSize="40px"
+        android:textColor="@color/base_title_color"
+        android:gravity="center"
+        android:padding="20px"
+        />
+
+</LinearLayout>

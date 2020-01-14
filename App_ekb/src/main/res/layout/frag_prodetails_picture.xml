@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F2F2F2"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:id="@+id/sv_pic"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20px"
+                android:background="#FFFFFF"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@mipmap/pro_detail_tvleft"
+                    android:drawablePadding="20px"
+                    android:lineSpacingMultiplier="1.5"
+                    android:padding="40px"
+                    android:text="金服周期"
+                    android:textColor="#666666"
+                    android:textSize="40px" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="#d2d2d2"></View>
+
+                <LinearLayout
+                    android:id="@+id/ll_pwd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="80px"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/tv_pwd1"
+                        android:layout_width="38px"
+                        android:layout_height="38px"
+                        android:background="@drawable/bg_corner_red_yuan"
+                        android:gravity="center"
+                        android:textColor="#ffffff" />
+
+                    <View
+                        android:id="@+id/tv_pwd_line"
+                        android:layout_width="280px"
+                        android:layout_height="6px"
+                        android:layout_margin="10px"
+                        android:background="#ff7c7c"></View>
+
+                    <TextView
+                        android:id="@+id/tv_pwd2"
+                        android:layout_width="38px"
+                        android:layout_height="38px"
+                        android:background="@drawable/bg_corner_red_yuan"
+                        android:gravity="center"
+                        android:textColor="#ffffff" />
+
+                    <View
+                        android:layout_width="280px"
+                        android:layout_height="6px"
+                        android:layout_margin="10px"
+                        android:background="#ff7c7c"></View>
+
+                    <TextView
+                        android:id="@+id/tv_pwd3"
+                        android:layout_width="38px"
+                        android:layout_height="38px"
+                        android:background="@drawable/bg_corner_red_yuan"
+                        android:gravity="center"
+                        android:textColor="#ffffff" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="80px"
+                    android:layout_marginTop="40px"
+                    android:gravity="center">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="开始计息"
+                            android:textColor="#666666"
+                            android:textSize="36px" />
+
+                        <TextView
+                            android:id="@+id/tv_start_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10px"
+                            android:gravity="center"
+                            android:text="2017-01-08"
+                            android:textColor="#aaaaaa"
+                            android:textSize="36px" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:layout_marginLeft="160px"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="预计募集完成"
+                            android:textColor="#666666"
+                            android:textSize="36px" />
+
+                        <TextView
+                            android:id="@+id/tv_ing_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="2017-01-08"
+                            android:textColor="#aaaaaa"
+                            android:textSize="36px"
+                            android:layout_marginTop="10px"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:layout_marginLeft="160px"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="预计回款日"
+                            android:textColor="#666666"
+                            android:textSize="36px" />
+
+                        <TextView
+                            android:id="@+id/tv_end_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="2017-01-08"
+                            android:textColor="#aaaaaa"
+                            android:textSize="36px"
+                            android:layout_marginTop="10px"
+                            />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20px"
+                android:background="#ffffff"
+                android:drawableLeft="@mipmap/pro_detail_tvleft"
+                android:drawablePadding="20px"
+                android:lineSpacingMultiplier="1.5"
+                android:padding="40px"
+                android:text="项目介绍"
+                android:textColor="#666666"
+                android:textSize="40px" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#d2d2d2"></View>
+
+            <TextView
+                android:id="@+id/tv_introduce"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:lineSpacingMultiplier="1.5"
+                android:padding="50px"
+                android:text="还款方式"
+                android:textColor="#777777"
+                android:textSize="36px" />
+
+            <LinearLayout
+                android:id="@+id/ll_yuanli"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20px"
+                android:background="#ffffff"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#ffffff"
+                    android:drawableLeft="@mipmap/pro_detail_tvleft"
+                    android:drawablePadding="20px"
+                    android:lineSpacingMultiplier="1.5"
+                    android:padding="40px"
+                    android:text="产品原理"
+                    android:textColor="#666666"
+                    android:textSize="40px" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="#d2d2d2"></View>
+
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:id="@+id/iv_yuanli"
+                    android:layout_width="999px"
+                    android:layout_height="777px"
+                    android:layout_marginBottom="40px"
+                    android:layout_marginTop="40px"
+                    fresco:actualImageScaleType="fitCenter"
+                    fresco:failureImage="@mipmap/logo_default"
+                    fresco:failureImageScaleType="centerInside"
+                    fresco:placeholderImage="@mipmap/default_yuanli" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20px"
+                android:background="#ffffff"
+                android:drawableLeft="@mipmap/pro_detail_tvleft"
+                android:drawablePadding="20px"
+                android:lineSpacingMultiplier="1.5"
+                android:padding="40px"
+                android:text="原债方企业资料"
+                android:textColor="#666666"
+                android:textSize="40px" />
+
+            <com.mcz.xhj.yz.dr_view.GridViewInScrollView
+                android:id="@+id/gv_frag_pro_picture"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:gravity="center"
+                android:horizontalSpacing="48px"
+                android:numColumns="2"
+                android:paddingLeft="80px"
+                android:paddingRight="80px"></com.mcz.xhj.yz.dr_view.GridViewInScrollView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20px"
+                android:background="#ffffff"
+                android:drawableLeft="@mipmap/pro_detail_tvleft"
+                android:drawablePadding="20px"
+                android:lineSpacingMultiplier="1.5"
+                android:padding="40px"
+                android:text="借款用途"
+                android:textColor="#666666"
+                android:textSize="40px" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#d2d2d2"></View>
+
+            <TextView
+                android:id="@+id/tv_introduce_bottem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:lineSpacingMultiplier="1.5"
+                android:padding="50px"
+                android:text="还款方式"
+                android:textColor="#777777"
+                android:textSize="36px" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20px"
+                android:background="#ffffff"
+                android:drawableLeft="@mipmap/pro_detail_tvleft"
+                android:drawablePadding="20px"
+                android:lineSpacingMultiplier="1.5"
+                android:padding="40px"
+                android:text="三方委托贷款合同"
+                android:textColor="#666666"
+                android:textSize="40px" />
+
+            <com.mcz.xhj.yz.dr_view.GridViewInScrollView
+                android:id="@+id/gv_frag_pro_picture_bottem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="200px"
+                android:background="#ffffff"
+                android:gravity="center"
+                android:horizontalSpacing="28px"
+                android:numColumns="3"
+                android:paddingLeft="40px"
+                android:paddingRight="40px"
+                ></com.mcz.xhj.yz.dr_view.GridViewInScrollView>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

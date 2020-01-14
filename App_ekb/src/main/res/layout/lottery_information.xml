@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/immersion_status"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/base_title_color"
+    android:orientation="vertical">
+    <include layout="@layout/app_base_title" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="146dp"
+        android:orientation="horizontal"
+        android:background="#f1f1f1">
+
+        <ImageView
+            android:layout_width="108dp"
+            android:layout_height="108dp"
+            android:layout_marginLeft="56px"
+            android:layout_gravity="center_vertical"
+            android:src="@mipmap/me_iphone7"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginLeft="56px">
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_marginTop="22dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="iphone 7"
+                android:textColor="#333333"
+                android:textSize="52px"/>
+
+            <TextView
+                android:id="@+id/tv_shuxing"
+                android:layout_marginTop="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="128G"
+                android:textSize="42px"/>
+
+            <TextView
+                android:id="@+id/tv_yanse"
+                android:layout_marginTop="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="颜色可自选"
+                android:textSize="42px"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/rl_zhongjiang"
+        android:layout_width="match_parent"
+        android:layout_height="128px"
+        android:layout_marginLeft="56px"
+        android:layout_marginRight="56px">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="中奖者信息"
+            android:textSize="48px"
+            android:textColor="#666666"
+            android:layout_centerVertical="true"/>
+        <TextView
+            android:id="@+id/tv_kaijiang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="--"
+            android:textColor="#333333"
+            android:layout_alignParentRight="true"
+            android:textSize="48px"
+            android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#d2d2d2"
+        android:layout_marginRight="56px"
+        android:layout_marginLeft="56px"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="56px"
+        android:layout_marginRight="56px">
+        <TextView
+            android:id="@+id/tv_xingyunmana"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="我的幸运码"
+            android:textSize="48px"
+            android:textColor="#666666"
+            android:layout_marginTop="56px"/>
+        <TextView
+            android:id="@+id/tv_xingyunma"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/tv_xingyunmana"
+            android:text="--"
+            android:textColor="#333333"
+            android:layout_marginLeft="168px"
+            android:layout_marginTop="52px"
+            android:layout_marginBottom="52px"
+            android:layout_alignParentRight="true"
+            android:gravity="right"
+            android:textSize="48px"
+            android:scrollbars="vertical"
+            android:fadeScrollbars="false"
+            android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#d2d2d2"
+        android:layout_marginRight="56px"
+        android:layout_marginLeft="56px"/>
+</LinearLayout>

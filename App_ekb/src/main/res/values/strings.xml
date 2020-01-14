@@ -1,0 +1,282 @@
+<resources>
+    <string name="app_name">小行家金服</string>
+
+    <string name="kefu_tel_num_work">400-819-8833</string>
+
+    <string name="weixin">xhjlc2018</string>
+    <string name="xieyi_pro_zhuanrang">权益转让及受让协议</string>
+    <string name="xieyi_pro_zhuce">请勾选平台注册协议</string>
+    <string name="xieyi_pro_goumai">请勾选借款协议</string>
+    <string name="phone_Wrong">请输入正确手机号码</string>
+    <string name="phone_TuiJian_Wrong">请输入正确的推荐人手机号码</string>
+    <string name="yaoqing">亲，国资控股的小行家给新人送礼啦，来就送888元现金红包！</string>
+    <string name="yaoqing2">注册即送888元现金红包！</string>
+    <string name="triple_title">小行家，国资控股金服平台</string>
+    <string name="triple_dec">注册就送888红包</string>
+    <string name="yuyue_renzheng">请先实名认证\n即可参与预约</string>
+    <string name="yuyue_end">预约已结束\n请等待新一期活动</string>
+    <string name="yuyue_success">恭喜 预约成功！\n新一期即将上线，敬请期待！</string>
+    <string name="xutoutishi">● 续投所获奖励不可与其他福利同时享受。\n● 投资金额即1天新手标到期后的投资本金，续投时不可修改金额。\n● 续投申请成功即视为您同意续投方案，不可取消，若有疑问请拨打400-819-8833。</string>
+    <string name="tiyantips">
+        • 仅限使用小行家体验金进行投资，标的为虚拟体验，可产生投资收益；
+        \n• 投资体验标无需实名认证，投资次日计息；
+        \n• 体验标投资到期后，所得收益以现金形式存入用户的平台账户，归用户所有，可提现；
+        \n• 体验金收益需完成一次真实投资后才可提现；
+        \n• 投资后体验金本金会由平台收回。本规则解释权归小行家所有；
+
+    </string>
+    <string name="tiyan_lizi"><Data><![CDATA[举个栗子：小明有50000元体验金，那么他的到期收益为50000*5%/360*1=<font color="#c5342a"><b>6.94元</b></font>]]></Data></string>
+    <string name="tiyan_weibangka"><Data><![CDATA[绑卡即可再领<font color="#c5342a"><b>10000元</b></font>体验金+<font color="#c5342a"><b>200元</b></font>红包]]></Data></string>
+    <string name="new_user_regist"><Data><![CDATA[<font color="#c5342a"><b>5888元</b></font><small>体验金和</small><font color="#c5342a"><b>166元</b></font><small>现金红包</small><br><small>已经放入您的账户</small>]]></Data></string>
+
+    <!-- yearend -->
+    <string name="yearend_first_share">分享才能领取哦~</string>
+    <string name="yearend_goreal">亲爱的，压岁钱要绑卡才能领哦~</string>
+    <string name="yearend_nofirst_share">可以分享压岁钱给朋友，壕一把~</string>
+    <string name="yearend_end_share">这位土豪，\n您发的压岁钱已被抢完!</string>
+    <string name="yearend_rule">1、本活动仅在小行家APP端进行，所有2017年1月27日前注册并绑卡的用户可参加。
+                                \n\n2、本活动所领取的压岁钱金额为体验金，可用于投资体验标为您赚取收益，到期本金回收，收益可随时提现。
+                                \n\n3、每位用户在除夕当天可获得总额18888元的压岁钱，大年初一当天可获得总额28888元的压岁钱，初二当天可获得总额15888元的压岁钱；每天所得的压岁钱须分享后才可领取，金额随机，若未在当天分享则压岁钱作废；已注册用户不可抢他人分享的压岁钱。
+                                \n\n4、新用户抢到压岁钱后在当天注册领取将成功存入账户，否则压岁钱失效；当天如未注册，仍可继续抢朋友分享的压岁钱。
+                                \n\n5、抢到的压岁钱（体验金）可在小行家App端“我的账户-体验金”中查看。
+                                \n\n6、额外福利：若您的好友成功注册领取了压岁钱，并在2017年2月6日前投资，您还将获得该好友首次投资的返现。
+                                \n\n* 本活动解释权归小行家所有，如有疑问请联系在线客服或拨打400-819-8833
+    </string>
+
+    <string name="find_center"> 小行家在线客服，竭诚为您服务
+                                \n客服电话：400-819-8833
+                                \nQQ群：434506386
+                                \n服务时间：工作日09:00~17:00
+    </string>
+
+    <string name="tiyan_explain">"   体验金是指小行家平台给新注册的人虚拟的投资钱，只能用来体验投资，按体验标的收益计算利息，项目到期后体验金会被平台收回，利息归用户所有。"</string>
+
+    <string name="error_tag_empty">tag不能为空</string>
+    <string name="error_tag_gs_empty">格式不对</string>
+
+    <!--小行家常见热门问题BEGIN-->
+    <string name="find_hot_question_one">小行家是一个什么样的网站？</string>
+    <string name="find_hot_answer_one">小行家是一家由国企国资控股的互联网金融信息中介平台。成立于2017年6月，隶属于杭州小行家信息服务有限公司，注册资金8000万元人民币。公司控股股东贵州华信天翔实业有限公司隶属于北京华信电子企业集团，是清华大学等六家企业直属的全民所有制企业。</string>
+
+    <string name="find_hot_question_two">如何计算金服预计总收益</string>
+    <string name="find_hot_answer_two">预计总收益=投资本金*预期年化收益率*金服期限/360</string>
+
+    <string name="find_hot_question_three">新手专享产品购买规则</string>
+    <string name="find_hot_answer_three">每位用户仅可购买一次新手标（最高投资金额2万元）。温馨提示：若已购买除新手标外的定期产品，无法购买新手标。</string>
+
+    <string name="find_hot_question_four">如何使用体验金？</string>
+    <string name="find_hot_answer_four">投资≥5000元的定期产品即可激活88888元体验金。激活体验金后，进入【我的账号】-【体验金】-【立即使用】购买体验标。温馨提醒：体验标的产品期限为1天，预期年化利率3.6%，所获收益8.88元。</string>
+
+    <string name="find_hot_question_five">提现是否有金额限制</string>
+    <string name="find_hot_answer_five">3元起提，单笔最高金额500万元整，单日单月无上限。</string>
+
+    <string name="find_hot_question_six">提现到账时间</string>
+    <string name="find_hot_answer_six">1) 工作日：9:00-17:00（2小时内到账）；工作日：17:00-次日9:00 (次日11:00前到账）；周末及节假日顺延至工作日第一天11:00前到账。具体到账时间视银行而定。</string>
+
+    <string name="find_hot_question_seven">如何绑定银行卡</string>
+    <string name="find_hot_answer_seven">您完成实名认证后，即同时完成银行卡绑定。为了保障您的账户资金安全，平台仅支持同卡进出，一个账户仅支持同时绑定一张银行卡。</string>
+
+    <string name="find_hot_question_eight">如何更换银行卡</string>
+    <string name="find_hot_answer_eight">您需要准备以下凭证：身份证正反面照片各一张、新银行卡正面照片及原银行卡正面照片各一张、手持身份证正面照片及手持新银行卡正面照片各一张。（注：若银行卡丢失，需提供原银行卡挂失证明或原银行卡的交易流水；若其它原因，则仍需提供原银行卡照片）。
+凭证要求清晰、真实、有效。准备齐全后，联系客服热线：400-819-8833。处理时间：1个工作日。</string>
+
+    <string name="find_hot_question_nine">如何更换手机号</string>
+    <string name="find_hot_answer_nine">您需要准备以下凭证：凭证：手持身份证正面照片1张，身份证正反面照片各1张，证明新手机号是本人的资料（可以是网上营业厅带有用户信息和号码的截图）。
+凭证要求清晰、真实、有效。准备齐全后，联系客服热线：400-819-8833。处理时间：1个工作日。</string>
+
+    <string name="find_hot_question_ten">未收到手机验证码怎么办</string>
+    <string name="find_hot_answer_ten">短信验证码一般在60秒内可以收到，如果长时间未收到，请确认是否被手机软件拦截。如未拦截，请确认手机号是否输入正确，如正确，可在60秒后，重新点击【获取验证码】。若以上方法无法解决，请联系客服热线：400-819-8833。</string>
+
+    <!--小行家常见热门问题END-->
+
+    <string name="find_renzheng_ques_one">如何注册成为小行家的会员？</string>
+    <string name="find_renzheng_ans_one">您点击注册，填写手机号、填写注册手机号接收的验证码、设置6-18位的登录密码，即可注册成功。
+    </string>
+    <string name="find_renzheng_ques_two"> 如何完成实名认证？</string>
+    <string name="find_renzheng_ans_two">移动端：您进入【我的】-【安全中心】，完成实名认证即可。官网端：您进入www.hongyajinrong.com,然后点击【我的账户】-【账户管理】-【安全认证】，完成实名认证即可。
+    </string>
+    <string name="find_renzheng_ques_three">同一身份信息是否支持绑定多个账户？</string>
+    <string name="find_renzheng_ans_three">同一身份信息只能认证一个小行家账户。
+    </string>
+    <string name="find_renzheng_ques_four">设置交易密码收不到验证码怎么办？</string>
+    <string name="find_renzheng_ans_four">建议关闭呼叫转移功能。</string>
+
+    <string name="find_cunguan_ques_one">什么是银行存管？</string>
+    <string name="find_cunguan_ans_one">银行存管是指按照有关法律、法规的规定，客户交易结算资金统一交由独立于平台的第三方存管机构来存管。第三方存管机构是指具备第三方存管资格的商业银行。存管银行按照法律、法规的要求，负责客户资金的存取与资金交收，平台交易操作保持不变。
+    </string>
+    <string name="find_cunguan_ques_two"> 为什么需要银行存管？</string>
+    <string name="find_cunguan_ans_two">根据《关于促进互联网金融健康发展的指导意见》“（十四）客户资金第三方存管制度。除另有规定外，从业机构应当选择符合条件的银行业金融机构作为资金存管机构，对客户资金进行管理和监督，实现客户资金与从业机构自身资金分账管理。”银行存管是指用户在P2P平台上的交易资金交由银行进行管理，平台无法接触交易资金的一种资金管理模式。借款人、投资人和平台通过在银行方开设存管账户，来实现交易和资金的结算。
+    </string>
+    <string name="find_cunguan_ques_three">银行存管有什么优势？</string>
+    <string name="find_cunguan_ans_three">1)系统分账监管
+\n小行家接入恒丰银行存管系统后，将由恒丰银行对您的交易资金及平台自有运营资金进行分账监管，二者完全独立且相互隔离，平台无法触碰您的资金。
+\n2)用户资金存管
+\n您进行的充值、绑卡、提现等每一笔与资金有关的操作，均需通过恒丰银行资金存管账户，由恒丰银行对您的资金信息进行管理，避免您的资金出现被挪用风险。
+\n3)用户授权操作
+\n您需要开通恒丰银行存管账户，并在恒丰银行存管页面单独设立交易密码。在进行任何与资金相关操作时，系统会验证密码，在得到您的授权后，由银行根据交易指令进行资金划转。
+\n4)交易真实有效
+\n恒丰银行根据合同约定及您发出的交易指令，对交易流程进行管理并对所有资金流水进行存档记录，确保借贷双方的资金流转和债权关系清晰明确。
+    </string>
+    <string name="find_cunguan_ques_four">如何开通银行存管账户？</string>
+    <string name="find_cunguan_ans_four">新用户：新用户注册账户成功后，进入我的账户-选择账户管理-安全认证前往恒丰银行页面开通存管账户，存管账户开通需用户提供真实姓名、身份证号、银行卡号、银行卡预留手机号码，并设置恒丰银行存管账户交易密码。开通成功后会自动跳转回小行家金服页面。
+老用户（有待收待还）：存管上线后，未激活恒丰银行存管账户的老用户在登录小行家网站或APP用户端后，进入我的账户-可通过指引前往恒丰银行页面开通存管账户，按照流程操作依次进行银行预留手机号填写、交易密码设置，即可成功激活存管账户。
+</string>
+    <string name="find_cunguan_ques_five">银行存管上线以后对我们的资金有什么影响？</string>
+    <string name="find_cunguan_ans_five">存管后您的交易资金将直接流向恒丰银行，由银行进行监管，平台无法触碰您的账户资金；您进行的任何充值、绑卡、提现等与资金相关的操作，均在恒丰银行存管页面进行，由银行对您的资金信息进行管理，资金及操作更加安全无忧。
+    </string>
+    <string name="find_cunguan_ques_six">银行存管上线后对提现有什么影响？</string>
+    <string name="find_cunguan_ans_six">银行存管后小行家平台会分为平台账户和存管账户，平台账户保留用户原账号下的账户余额，只可用于提现，目前到账时间为工作日16点前的提现申请当天到账；工作日16点后的提现申请，顺延至下个工作日（具体到账时间以银行处理时间为准）。
+存管账户提现恒丰银行会在收到提现申请的当日受理，下一个工作日到账，即T+1；遇双休日、国家法定节假日，到账日期顺延。
+ </string>
+
+    <string name="find_anquan_ques_one">平台是否有接入存管？</string>
+    <string name="find_anquan_ans_one">目前平台正在积极的与恒丰、天府、渤海、厦门四家银行商讨银行存管事宜。暂未确定是与哪一家进行合作。预计会在今年8月底开始技术对接。建议您保持关注哦。</string>
+    <string name="find_anquan_ques_two">平台安全保障？</string>
+    <string name="find_anquan_ans_two">第一、我们是一家国企国资控股的互联网金融信息中介平台。公司控股股东贵州华信天翔实业有限公司隶属于北京华信电子企业集团，是清华大学等六家企业直属的全民所有制企业。
+\n第二、我们有强大、严格的风险管理体系执行力度。资产项目筛选从准入、贷前尽调、贷中审核、贷后跟踪、法律合同等流程均按银行级风险审查标准严格执行。
+\n第三、平台仅支持同卡进出，防范资金盗刷、盗卡风险。
+\n第四、公司聘请了钜柚律师事务所作为小行家的常年法律顾问，对业务合同的起草与审查、金融产品风控控制等多方面提供法律支持。
+\n第五、平台通过与阿里云技术合作，在用户信息安全方面实现技术安全保障。
+    </string>
+    <string name="find_anquan_ques_three">公司的法定代表人是谁？</string>
+    <string name="find_anquan_ans_three">我们公司的法定代表人是沈振胜。
+    </string>
+    <string name="find_anquan_ques_four">借款项目如何审核与管理？</string>
+    <string name="find_anquan_ans_four">小行家推荐的每一款产品均有相对应的资产，对借款企业信息进行详细的披露，同时对借款企业进行贷前贷中贷后管理。
+    </string>
+    <string name="find_anquan_ques_five">平台风控如何？</string>
+    <string name="find_anquan_ans_five">1.层层审核，仅筛选优质借款人。规范筛选优质项目，实地考核审查。
+\n2.全程监管，保障资金安全。贷后监控管理，签订法律协议。
+\n3.多重防线，有效抵御风险，快速专业催款，足额抵押变现。追缴清收。
+    </string>
+    <string name="find_anquan_ques_six">平台是否有取得icp经营许可证？</string>
+    <string name="find_anquan_ans_six">平台已经拿到icp备案，目前正在申请icp经营许可证，预计会在9月底上线。
+    </string>
+
+    <string name="find_chongzhi_ques_one">如何充值？</string>
+    <string name="find_chongzhi_ans_one">您进入【我的账号】-【快速充值】-【输入充值金额】-【输入银行预留手机号及验证码】,完成充值。
+    </string>
+    <string name="find_chongzhi_ques_two">充值金额限制？</string>
+    <string name="find_chongzhi_ans_two">充值金额最少3元，银行充值限额以充值页面实际展示为准。
+    </string>
+    <string name="find_chongzhi_ques_three">如何提现？
+    </string>
+    <string name="find_chongzhi_ans_three">您进入【我的账号】-【提现】-【输入提现金额】，完成提现。
+    </string>
+    <string name="find_chongzhi_ques_four">提现到账时间？</string>
+    <string name="find_chongzhi_ans_four">工作日：9:00-17:00（2小时内到账）；工作日：17:00-次日9:00 (次日11:00前到账）；周末及节假日顺延至工作日第一天11:00前到账。具体到账时间视银行而定。
+    </string>
+    <string name="find_chongzhi_ques_five">提现收费规则？</string>
+    <string name="find_chongzhi_ans_five">每位用户每月可享受2次免费提现，超出后提现手续费为2元/笔。（提现失败不计入免费次数）
+    </string>
+    <string name="find_chongzhi_ques_six">富友支付是什么样的平台？</string>
+    <string name="find_chongzhi_ans_six">富友第三方支付平台持有央行颁发的支付业务许可证，富友属于银联成员,受当地银监会监管，同时富友和银监会同时受央行监管，目前在我国的第三方支付平台中占据着重要的一席之地。
+    </string>
+    <string name="find_chongzhi_ques_seven">提现怎么收费？</string>
+    <string name="find_chongzhi_ans_seven">每个月前两笔提现免手续费，之后每笔提现费用2元，不限金额大小。
+    </string>
+    <string name="find_chongzhi_ques_eight">可以提现至别人的银行账户吗？</string>
+    <string name="find_chongzhi_ans_eight">为了保障平台用户的资金安全，用户在平台充值和提现必须使用同一张银行借记卡（即只能是用户注册时绑定的银行卡），不可以提现至别人的账户的。
+    </string>
+    <string name="find_chongzhi_ques_nine">何种情况会造成提现失败？</string>
+    <string name="find_chongzhi_ans_nine">1. 提现的银行卡在平台预留的银行信息有误；
+                            \n2. 绑定银行卡进行了注销。
+                            \n如不属上述情况，可咨询在线客服，询问具体原因。
+    </string>
+    <string name="find_chongzhi_ques_ten">投资后能不能提前收款？</string>
+    <string name="find_chongzhi_ans_ten">投资人成功投标后是无法申请提前收款的。投资成功后，金额是有一个固定期限的，固定期结束后，才能获得返还
+    </string>
+
+    <string name="find_touzi_ques_one">注册成功是否有福利？</string>
+    <string name="find_touzi_ans_one">您成功注册后，即送888元现金红包。
+    </string>
+    <string name="find_touzi_ques_two">平台是否有活动？</string>
+    <string name="find_touzi_ans_two">平台陆续会推出活动，具体可进入【首页】或【活动中心】进行查看。
+    </string>
+    <string name="find_touzi_ques_three">复投是否有复投红包？</string>
+    <string name="find_touzi_ans_three">复投不定时会有红包，用户可随时关注平台及资金账户。
+    </string>
+    <string name="find_touzi_ques_four">平台是否有优惠活动？</string>
+    <string name="find_touzi_ans_four">活动专区会推出优惠活动，将用户投资的利益最大化。
+    </string>
+
+    <string name="find_chanpin_ques_one">如何使用体验金？</string>
+    <string name="find_chanpin_ans_one">投资≥5000元的定期产品即可激活88888元体验金。激活体验金后，进入【我的账号】-【体验金】-【立即使用】购买体验标。温馨提醒：体验标的产品期限为1天，预期年化利率3.6%，所获收益8.88元。
+    </string>
+    <string name="find_chanpin_ques_two">新手专享产品购买规则？</string>
+    <string name="find_chanpin_ans_two">每位用户仅可购买一次新手标（最高投资金额2万元）。温馨提示：若已购买除新手标外的定期产品，无法购买新手标。
+    </string>
+    <string name="find_chanpin_ques_three">金服产品还款到账时间？</string>
+    <string name="find_chanpin_ans_three">本金和收益会在产品到期日的次日回款至您在平台的账户余额中。到账会有短信通知。（一般会在回款当日12点前入账）
+    </string>
+    <string name="find_chanpin_ques_four">平台对接的资产？</string>
+    <string name="find_chanpin_ans_four">目前平台对接的是企业信用贷，精选优质借款企业，借款用途主要用于企业经营流动资金周转。具体您可以点击对应金服产品查看项目信息及资金保障。
+    </string>
+    <string name="find_chanpin_ques_five">平台是否还有其他产品？</string>
+    <string name="find_chanpin_ans_five">小行家会不定期推出优惠活动，为用户推出优惠产品，使用户的收益最大化。用户可以随时关注平台活动。
+    </string>
+    <!--<string name="find_chanpin_ques_six">什么是新手标？</string>-->
+    <!--<string name="find_chanpin_ans_six">针对在小行家注册的新用户，最低100元起投，投资周期是1天，预期基础年化收益率112%+3%.仅能购买一次。-->
+    <!--</string>-->
+    <string name="find_chanpin_ques_six">什么是体验标？</string>
+    <string name="find_chanpin_ans_six">针对在小行家注册的新用户，使用小行家的体验金进行投资，标的为虚拟体验，可产生投资收益。体验金收益需要完成一次真实投资后才可提现。
+    </string>
+
+    <string name="find_other_ques_one">公司地址在哪？</string>
+    <string name="find_other_ans_one">浙江省杭州市萧山区民和路836号保亿中心B座2002室
+    </string>
+    <string name="find_other_ques_two">小行家是一个什么样的平台？</string>
+    <string name="find_other_ans_two">小行家是一家由国企国资控股的互联网金融信息中介平台。成立于2017年6月，隶属于杭州小行家信息服务有限公司，注册资金8000万元人民币。公司控股股东贵州华信天翔实业有限公司隶属于北京华信电子企业集团，是清华大学等六家企业直属的全民所有制企业。
+    </string>
+    <string name="find_other_ques_three">平台是否支持注销账号？</string>
+    <string name="find_other_ans_three">平台不支持注销账号。
+    </string>
+    <string name="find_other_ques_four">投标后什么时候开始计息？</string>
+    <string name="find_other_ans_four">投资第二天开始计息，产品满标后第二天起息。
+    </string>
+    <string name="find_other_ques_five">如何找回登录密码？</string>
+    <string name="find_other_ans_five">1.点击登录页面的忘记密码链接。  
+                                \n2.填写注册时使用的手机号码，点击获取验证码。
+                                \n3.输入发送手机上的验证码和新设的密码，完成重置密码设置。
+    </string>
+    <string name="find_other_ques_six">平台目前有几种还款方式？</string>
+    <string name="find_other_ans_six">目前平台的还款方式有一种：“到期一次性还清本息”。
+    </string>
+    <string name="find_other_ques_seven">投资回款有短信通知吗？</string>
+    <string name="find_other_ans_seven">平台投资回款有短信通知的服务。
+    </string>
+    <string name="find_other_ques_eight">APP软件出现闪退有哪些情况及解决方案？</string>
+    <string name="find_other_ans_eight"> 情况：1. 页面不断加载 。 2.没有网络。 3.手机硬件和软件不兼容。
+                                     \n解决方案：1.建议退出APP重新登录 2. 卸载APP重新下载安装  3.重启手机在网络环境好的情况下尝试 。
+                                    \n若以上方法都不能解决，及时联系客服提交技术处理。
+    </string>
+
+
+    <string name="find_remen_ques_one">如何注册成为小行家的会员？</string>
+    <string name="find_remen_ans_one">1.请登录http://www.hongyajinrong.com，然后点击右上角的“注册”，根据  指引一步步操作即可。
+                                       \n 2.关注微信公众号“小行家官微”，进行注册也可以。
+                                       \n 3.请到appstore 或者应用宝上直接搜索“小行家”，下载手机应用进行注册也可以。"
+
+    </string>
+    <string name="find_remen_ques_two">什么是银行存管？</string>
+    <string name="find_remen_ans_two">银行存管是指按照有关法律、法规的规定，客户交易结算资金统一交由独立于平台的第三方存管机构来存管。第三方存管机构是指具备第三方存管资格的商业银行。存管银行按照法律、法规的要求，负责客户资金的存取与资金交收，平台交易操作保持不变。
+    </string>
+    <string name="find_remen_ques_three">平台是否有第三方托管？</string>
+    <string name="find_remen_ans_three">"小行家是由富友支付托管。富友支付即上海富友金融服务集团股份有限公司是一家具有高新技术企业资质的大型金融综合服务集团公司。公司拥有银行卡收单、互联网支付、预付卡发行与受理、基金支付、跨境支付、商业保理等金融经营牌照和资质。"
+    </string>
+    <string name="find_remen_ques_four">如何充值？</string>
+    <string name="find_remen_ans_four">进入“我的账户”，点击【充值】按钮，进入充值页面，选择支付方式，并输入相应的信息进行充值。
+    </string>
+    <string name="find_remen_ques_five">注册是否有红包？</string>
+    <string name="find_remen_ans_five">成功注册投资即送888元新人专享现金红包。
+    </string>
+    <string name="find_remen_ques_six">财胜90是怎么样的产品，收益是多少？</string>
+    <string name="find_remen_ans_six">财胜90的产品：最低1000元起投，产品总额30万，投资周期是90天，预期基础年化收益率8.5%.（投资就有机会抽中iphone7）
+    </string>
+    <string name="find_remen_ques_seven">投标前需要注意什么？</string>
+    <string name="find_remen_ans_seven">投标前请认真分析所投资标的详细信息（起投金额，年化利率，投资期限等），以确定您所要投的标符合您的风险承受能力和所要求的投资回报率。
+    </string>
+
+    <string name="invint_has_paiming">保持住,马上就可获取大奖了!</string>
+    <string name="invint_no_paiming">赶紧用洪荒之力召唤您的好友~</string>
+</resources>

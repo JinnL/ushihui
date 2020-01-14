@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/immersion_status"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical" 
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50px"
+        android:layout_marginRight="50px"
+        android:background="@drawable/bg_corner_red"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="280px"
+            android:background="@mipmap/bg_tv_conpons"
+            android:orientation="vertical" 
+            android:layout_margin="20px"
+            >
+
+            <ImageView
+                android:id="@+id/iv_close"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:padding="20px"
+                android:src="@mipmap/conpons_close" />
+
+            <TextView
+                android:id="@+id/tv_notice_huikuan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="您有3笔投资即将到期回款"
+                android:textColor="#ffffff"
+                android:textSize="70px" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_notice_huikuan"
+                android:layout_centerHorizontal="true"
+                android:text="我们提前为你准备了另一份惊喜"
+                android:textColor="#fef3f3"
+                android:textSize="40px" />
+        </RelativeLayout>
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="1050px"
+            android:background="@mipmap/bg_cash_conp"
+            android:orientation="vertical"
+            android:layout_marginBottom="80px"
+            >
+		<ListView
+            android:id="@+id/lv_conpons"
+            android:layout_width="match_parent"
+            android:layout_height="0px"
+            android:layout_weight="1"
+            android:divider="#fff0bd"
+            android:dividerHeight="10dp"
+            android:padding="50px"
+            android:layout_marginBottom="40px"
+            >
+        </ListView>
+        <View 
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#fa804e"
+            android:visibility="gone"
+            />
+        <TextView 
+            android:id="@+id/tv_cash_out"
+            android:layout_width="match_parent"
+            android:layout_height="140px"
+            android:text="放弃机会，继续提现"
+            android:textSize="48px"
+            android:textColor="#fa804e"
+            android:gravity="center"
+            android:visibility="gone"
+            />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

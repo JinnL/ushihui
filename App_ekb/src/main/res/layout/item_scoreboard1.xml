@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_item1"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:background="@drawable/shape_rectangle_red_empty_4"
+    android:orientation="horizontal">
+<!-- android:background="@drawable/bg_corner_yellow_light"-->
+    <RelativeLayout
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginLeft="9dp"
+        android:layout_marginRight="13dp"
+        android:layout_marginTop="6dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/img_avatar"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/avatar_default2" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="3dp"
+            android:src="@mipmap/img_crown_first" />
+
+        <TextView
+            android:id="@+id/tv_rank_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:background="@mipmap/img_score_first"
+            android:gravity="center"
+            android:text="No.*"
+            android:textSize="9dp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="9dp"
+            android:text="*"
+            android:textColor="#FF051856"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_jifen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="积分：*"
+            android:textColor="#FFFF5111"
+            android:textSize="13sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_award"
+        android:layout_width="100dp"
+        android:layout_height="match_parent"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/shape_rectangle_red_empty_4"
+        android:gravity="center"
+        android:orientation="vertical">
+<!-- android:background="@drawable/bg_corner_yellow1"-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:text="奖品"
+            android:textColor="@color/text1"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_award"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="暂未获得"
+            android:textColor="@color/text1"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

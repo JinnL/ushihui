@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:id="@+id/sv_pic"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="39dp"
+                android:layout_marginTop="28dp"
+                android:background="#ffffff"
+                android:drawablePadding="20px"
+                android:lineSpacingMultiplier="1.5"
+                android:text="业务模式"
+                android:textColor="@color/text1"
+                android:textSize="18sp" />
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/iv_yuanli"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_marginBottom="40px"
+                android:layout_marginTop="40px"
+                fresco:actualImageScaleType="fitXY"
+                fresco:failureImage="@mipmap/logo_default"
+                fresco:failureImageScaleType="centerInside"
+                fresco:placeholderImage="@mipmap/default_yuanli" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="39dp"
+                android:layout_marginTop="28dp"
+                android:background="#ffffff"
+                android:drawablePadding="20px"
+                android:lineSpacingMultiplier="1.5"
+                android:text="审核项目"
+                android:textColor="#ff333333"
+                android:textSize="18dp"
+                android:visibility="gone" />
+
+            <com.mcz.xhj.yz.dr_view.GridViewInScrollView
+                android:id="@+id/gv_frag_company_picture"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:gravity="center"
+                android:horizontalSpacing="48px"
+                android:numColumns="2"
+                android:paddingLeft="80px"
+                android:paddingRight="80px"
+                android:paddingTop="20dp"
+                android:verticalSpacing="20dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="39dp"
+                android:layout_marginTop="28dp"
+                android:background="#ffffff"
+                android:drawablePadding="20px"
+                android:lineSpacingMultiplier="1.5"
+                android:text="相关产品资料"
+                android:textColor="#ff333333"
+                android:textSize="18dp" />
+
+            <com.mcz.xhj.yz.dr_view.GridViewInScrollView
+                android:id="@+id/gv_frag_pro_picture"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40px"
+                android:background="#ffffff"
+                android:gravity="center"
+                android:horizontalSpacing="48px"
+                android:numColumns="2"
+                android:paddingLeft="80px"
+                android:paddingRight="80px" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="31dp"
+                android:layout_marginRight="24dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/bg_corner_gray2"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:lineSpacingMultiplier="1.5"
+                    android:text="产品说明"
+                    android:textColor="@color/text1"
+                    android:textSize="18dp" />
+
+                <com.mcz.xhj.yz.dr_view.ListInScroll
+                    android:id="@+id/lv_product_introduce"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="30dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="10dp"
+                    android:divider="@color/transparent"
+                    android:dividerHeight="1dp"
+                    android:scrollbars="none" />
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="40dp"
+                android:background="#ffffff"
+                android:lineSpacingMultiplier="1.5"
+                android:text="债务人概况"
+                android:textColor="@color/text1"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/tv_borrower"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="11dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="14dp"
+                android:text=" "
+                android:textColor="@color/text76"
+                android:textSize="14dp" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="39dp"
+                android:layout_marginTop="40dp"
+                android:lineSpacingMultiplier="1.5"
+                android:text="承兑方概况"
+                android:textColor="@color/text1"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/tv_accept"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="14dp"
+                android:text=" "
+                android:textColor="@color/text76"
+                android:textSize="14dp" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="39dp"
+                android:layout_marginTop="40dp"
+                android:lineSpacingMultiplier="1.5"
+                android:text="还款来源"
+                android:textColor="@color/text1"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/tv_repaySource"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="14dp"
+                android:text=" "
+                android:textColor="@color/text76"
+                android:layout_marginBottom="80dp"
+                android:textSize="14dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

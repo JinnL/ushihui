@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_deadline"
+            style="@style/layout_padding_24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="52px"
+            android:text="出借期限"
+            android:textColor="@color/text_black"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_amount"
+            style="@style/layout_padding_24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30px"
+            android:text="项目金额"
+            android:textColor="@color/text_black"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_interestType"
+            style="@style/layout_padding_24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30px"
+            android:text="计息方式"
+            android:textColor="@color/text_black"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_repayType"
+            style="@style/layout_padding_24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30px"
+            android:text="回款方式"
+            android:textColor="@color/text_black"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_rate"
+            style="@style/layout_padding_24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="48px"
+            android:layout_marginTop="30px"
+            android:text="近3个月年化收益"
+            android:textColor="@color/text_black"
+            android:textSize="15sp" />
+
+        <include layout="@layout/line_color_ee" />
+
+        <TextView
+            style="@style/layout_padding_24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="48px"
+            android:layout_marginTop="36px"
+            android:text="项目简介"
+            android:textColor="@color/text_black"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_content"
+            style="@style/layout_padding_24"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="48px"
+            android:textColor="@color/text_66"
+            android:textSize="14sp" />
+
+        <include layout="@layout/line_color_ee" />
+
+        <TextView
+            style="@style/layout_padding_24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="36px"
+            android:layout_marginTop="48px"
+            android:text="还款来源"
+            android:textColor="@color/text_black"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_repaySource"
+            style="@style/layout_padding_24"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="46px"
+            android:textColor="@color/text_66"
+            android:textSize="14sp" />
+
+        <include layout="@layout/line_color_ee" />
+
+        <TextView
+            style="@style/layout_padding_24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="36px"
+            android:layout_marginTop="48px"
+            android:text="资料清单"
+            android:textColor="@color/text_black"
+            android:textSize="15sp" />
+
+        <com.ekabao.oil.ui.view.ListInScroll
+            android:id="@+id/lv_product_pic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@null" />
+    </LinearLayout>
+</ScrollView>

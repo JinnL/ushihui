@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        style="@style/margin_left_right"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_237"
+       >
+
+        <ImageView
+            android:id="@+id/iv_goods"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_168"
+            android:scaleType="fitXY"
+            android:background="@drawable/shape_rectangle_white_4"
+            tools:src="@mipmap/ic_launcher" />
+
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_goods"
+            android:layout_marginTop="@dimen/dp_10"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/sp_15"
+            tools:text="德国德朗士 多功能加热破壁机家用料理热破壁机家" />
+
+        <TextView
+            android:id="@+id/tv_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/dp_15"
+            android:textColor="@color/primary"
+            android:textSize="@dimen/sp_15"
+            tools:text="￥17258.00" />
+
+        <TextView
+            android:id="@+id/tv_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="@dimen/dp_15"
+            android:maxLines="1"
+            android:textColor="@color/text_bb"
+            android:textSize="@dimen/sp_12"
+            tools:text="￥26622.00" />
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

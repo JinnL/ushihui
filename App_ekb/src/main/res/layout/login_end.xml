@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/immersion_status"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/base_title_color">
+
+    <include layout="@layout/app_base_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="200px"
+            app:srcCompat="@mipmap/regist_end" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="70px"
+            android:layout_marginTop="70px"
+            android:gravity="center"
+            android:text="恭喜您注册成功！"
+            android:textColor="#333333"
+            android:textSize="64px" />
+
+        <TextView
+            android:id="@+id/tv_newr_shuom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:lineSpacingExtra="24px"
+            android:text="888元红包\n已经放入您的账户"
+            android:textColor="#666666"
+            android:textSize="48px" />
+
+        <Button
+            android:id="@+id/btn_again_lingqu"
+            android:layout_width="match_parent"
+            android:layout_height="128px"
+            android:layout_marginLeft="128px"
+            android:layout_marginRight="128px"
+            android:layout_marginTop="124px"
+            android:background="@drawable/bg_btn_corner"
+            android:gravity="center"
+            android:padding="0dp"
+            android:text="立即激活"
+            android:textColor="#ffffff"
+            android:textSize="48px" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="48px"
+            android:gravity="center_horizontal"
+            android:lineSpacingExtra="24px"
+            android:text="赶紧认证信息，让小聚认识你"
+            android:visibility="gone" />
+
+    </LinearLayout>
+</LinearLayout>

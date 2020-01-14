@@ -1,0 +1,165 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowBackground">@color/windowBackground</item>
+    </style>
+
+    <style name="WellcomeActivityTheme" parent="AppTheme">
+        <item name="android:windowBackground">@drawable/logo_start</item>
+    </style>
+
+    <style name="FruitActivityTheme" parent="AppTheme">
+        <item name="android:windowBackground">@color/windowBackground</item>
+        <item name="colorPrimaryDark">@color/colorAccent</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="PrimaryActivityTheme" parent="AppTheme">
+        <item name="colorPrimaryDark">@color/primary</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+
+    <!-- 自定义对话框弹出动画 -->
+    <style name="dialogWindowAnim" mce_bogus="1" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/dialog_enter</item>
+        <item name="android:windowExitAnimation">@anim/dialog_exit</item>
+    </style>
+
+    <style name="Dialog_Fullscreen">
+        <!--背景颜色及透明程度-->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!--是否有标题 -->
+        <item name="android:windowNoTitle">true</item>
+        <!--是否浮现在activity之上-->
+        <item name="android:windowIsFloating">true</item>
+    </style>
+    <!-- 圆角alert对话框 -->
+    <style name="DialogNoTitleRoundCornerStyle" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:backgroundDimAmount">0</item>
+    </style>
+
+    <style name="layout_wrap">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="layout_width_0dp">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <style name="layout_match">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="layout_padding_24">
+        <item name="android:paddingLeft">@dimen/dp_12</item>
+        <item name="android:paddingRight">@dimen/dp_12</item>
+    </style>
+
+    <style name="padding_left_right">
+        <item name="android:paddingLeft">@dimen/dp_15</item>
+        <item name="android:paddingRight">@dimen/dp_15</item>
+    </style>
+
+    <style name="margin_left_right">
+        <item name="android:layout_marginLeft">@dimen/dp_15</item>
+        <item name="android:layout_marginRight">@dimen/dp_15</item>
+    </style>
+
+    <!--通用大图标   style=”?android:attr/borderlessButtonStyle”-->
+    <style name="bt_large_match" parent="@style/Widget.AppCompat.Button.Borderless">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/dp_44</item>
+        <item name="android:layout_marginLeft">@dimen/dp_67</item>
+        <item name="android:layout_marginRight">@dimen/dp_67</item>
+        <item name="android:background">@drawable/shape_bt_large</item>
+        <item name="android:textSize">@dimen/sp_18</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:gravity">center</item>
+        <item name="android:clickable">true</item>
+        <!--  <item name="style">?android:attr/borderlessButtonStyle</item>-->
+    </style>
+
+    <!-- 透明wait对话框 -->
+    <style name="DialogNoTitleStyleTranslucentBg" parent="android:style/Theme.Dialog">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+    </style>
+    <!--main 下面的按钮-->
+    <style name="viewpager_navigation_bar_tab_style">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">@dimen/dp_48</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center_horizontal|bottom</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:paddingBottom">@dimen/dp_3</item>
+        <item name="android:paddingTop">@dimen/dp_10</item>
+        <item name="android:textSize">10sp</item>
+        <item name="android:drawablePadding">@dimen/dp_4</item>
+        <item name="android:textColor">@color/text_black</item>
+    </style>
+
+    <!-- 沉浸状态栏的设置 -->
+    <style name="immersion_status" parent="layout_match">
+        <item name="android:clipToPadding">true</item>
+        <item name="android:fitsSystemWindows">true</item>
+    </style>
+
+
+    <style name="MyEditText" parent="Theme.AppCompat.Light">
+        <item name="colorControlNormal">@color/line_e6</item>
+        <item name="colorControlActivated">@color/line_e6</item>
+        <!--line_red-->
+        <item name="editTextBackground">@drawable/abc_edit_text_material</item>
+    </style>
+
+    <!--省市区选择器的-->
+    <style name="CityPickerAnim">
+        <item name="android:windowEnterAnimation">@anim/bottom_slide_in</item>
+        <item name="android:windowExitAnimation">@anim/bottom_slide_out</item>
+    </style>
+
+
+    <!-- 横线 -->
+    <style name="line_horizontal">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/dp_1</item>
+        <item name="android:background">@color/line_ee</item>
+    </style>
+
+
+    <style name="unbounded_ripple">
+    </style>
+    <!--油卡充值页面里面的套餐-->
+    <!--<style name="RadioButton_package">
+        <item name="android:layout_width">@dimen/dp_107</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@drawable/radiobutton_project_sort</item>
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@drawable/main_rb_text</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:layout_marginRight">@dimen/x18</item>
+    </style>-->
+
+
+</resources>
