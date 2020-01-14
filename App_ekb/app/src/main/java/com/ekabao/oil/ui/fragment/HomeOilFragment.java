@@ -75,8 +75,6 @@ public class HomeOilFragment extends BaseFragment implements View.OnClickListene
     RecyclerView rvCard;
     @BindView(R.id.rv_discount)
     RecyclerView rvDiscount;
-    //    @BindView(R.id.iv_test)
-//    ImageView ivTest;
     Unbinder unbinder;
 
     //banner
