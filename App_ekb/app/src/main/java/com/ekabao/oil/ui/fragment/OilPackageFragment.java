@@ -334,10 +334,24 @@ public class OilPackageFragment extends BaseFragment implements View.OnClickList
     }
 
 
+
+//    @Override
+//    public void setUserVisibleHint(boolean isVisibleToUser) {
+//        super.setUserVisibleHint(isVisibleToUser);
+//        if (isVisibleToUser&&preferences!=null) {
+//            pid = preferences.getInt("oid_pid", 0);
+//            meEtouRechargeAdapter.setPid(pid);
+//            meEtouRechargeAdapter.notifyDataSetChanged();
+//            //相当于Fragment的onResume，为true时，Fragment已经可见
+//        } else {
+//            //相当于Fragment的onPause，为false时，Fragment不可见
+//        }
+//    }
+
     @Override
-    public void setUserVisibleHint(boolean isVisibleToUser) {
-        super.setUserVisibleHint(isVisibleToUser);
-        if (isVisibleToUser&&preferences!=null) {
+    public void onHiddenChanged(boolean hidden) {
+        super.onHiddenChanged(hidden);
+        if (!hidden&&preferences!=null) {
             pid = preferences.getInt("oid_pid", 0);
             meEtouRechargeAdapter.setPid(pid);
             meEtouRechargeAdapter.notifyDataSetChanged();
@@ -345,11 +359,6 @@ public class OilPackageFragment extends BaseFragment implements View.OnClickList
         } else {
             //相当于Fragment的onPause，为false时，Fragment不可见
         }
-    }
-
-    @Override
-    public void onHiddenChanged(boolean hidden) {
-        super.onHiddenChanged(hidden);
     }
 
     private void showMonthText() {

@@ -346,7 +346,7 @@ public class WebViewActivity extends BaseActivity implements View.OnClickListene
                     startActivity(intent);
 
                     ClipboardManager cm = (ClipboardManager) getSystemService(Context.CLIPBOARD_SERVICE);
-                    ClipData clip = ClipData.newPlainText("gongzhonghao", getResources().getString(R.string.weixin));
+                    ClipData clip = ClipData.newPlainText("gongzh onghao", getResources().getString(R.string.weixin));
                     cm.setPrimaryClip(clip);
                 } catch (ActivityNotFoundException e) {
                     Toast.makeText(WebViewActivity.this, "检查到您手机没有安装微信，请安装后使用该功能", Toast.LENGTH_LONG).show();

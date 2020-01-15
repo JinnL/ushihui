@@ -1,77 +1,89 @@
-<?xml version="1.0" encoding="utf-8"?><!--<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"--><!--xmlns:app="http://schemas.android.com/apk/res-auto"--><!--xmlns:tools="http://schemas.android.com/tools"--><!--android:layout_width="@dimen/dp_146"--><!--android:layout_marginRight="@dimen/dp_10"--><!--android:layout_height="@dimen/dp_210"--><!--android:padding="@dimen/dp_4"--><!--android:background="@color/white">-->
-
-<!--<com.lijiankun24.shadowlayout.ShadowLayout--><!--android:layout_width="match_parent"--><!--android:layout_height="match_parent"--><!--app:shadowColor="#0c000000"--><!--app:shadowDx="0dp"--><!--app:shadowDy="8dp"--><!--app:shadowRadius="@dimen/dp_8"--><!--app:shadowSide="all">-->
-
-<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_width="@dimen/dp_136"
-    android:layout_height="@dimen/dp_206"
-    android:layout_marginRight="@dimen/dp_12"
-    android:layout_marginTop="@dimen/dp_10"
-    android:layout_marginBottom="@dimen/dp_10"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
 
-    app:cardCornerRadius="@dimen/dp_8"
-    app:cardElevation="@dimen/dp_5">
+>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+    <!--<com.lijiankun24.shadowlayout.ShadowLayout--><!--android:layout_width="match_parent"--><!--android:layout_height="match_parent"--><!--app:shadowColor="#0c000000"--><!--app:shadowDx="0dp"--><!--app:shadowDy="8dp"--><!--app:shadowRadius="@dimen/dp_8"--><!--app:shadowSide="all">-->
 
-        android:orientation="vertical">
+    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="@dimen/dp_136"
+        android:layout_height="@dimen/dp_206"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_marginRight="@dimen/dp_12"
+        android:layout_marginBottom="@dimen/dp_10"
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="@dimen/dp_15"
-            android:text="优惠套餐A"
-            android:textColor="#2D3135"
-            android:textSize="@dimen/dp_15" />
+        app:cardCornerRadius="@dimen/dp_8"
+        app:cardElevation="@dimen/dp_4">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="@dimen/dp_5"
-            android:text="2700元"
-            android:textColor="@color/primary"
-            android:textSize="@dimen/dp_28" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
 
-        <TextView
-            android:id="@+id/tv_original_price"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:text="原价3000元"
-            android:textColor="@color/text_99"
-            android:textSize="@dimen/dp_12" />
+            android:orientation="vertical">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginLeft="@dimen/dp_10"
-            android:layout_marginTop="@dimen/dp_10"
-            android:layout_marginRight="@dimen/dp_10"
-            android:text="赠送500元话费充值卡"
-            android:textColor="@color/text_66"
-            android:textSize="@dimen/dp_14" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dp_15"
+                android:text="优惠套餐A"
+                android:textColor="#2D3135"
+                android:textSize="@dimen/dp_15" />
 
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dp_5"
+                android:text="2700元"
+                android:textColor="@color/primary"
+                android:textSize="@dimen/dp_28" />
 
-        <TextView
-            android:layout_width="@dimen/dp_88"
-            android:layout_height="@dimen/dp_28"
-            android:layout_marginTop="@dimen/dp_20"
-            android:layout_gravity="center_horizontal"
-            android:gravity="center"
-            android:text="点击购买"
-            android:textColor="@color/text_99"
-            android:textSize="@dimen/dp_14" />
+            <TextView
+                android:id="@+id/tv_original_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="原价3000元"
+                android:textColor="@color/text_99"
+                android:textSize="@dimen/dp_12" />
 
-
-    </LinearLayout>
-
-</android.support.v7.widget.CardView><!--</com.lijiankun24.shadowlayout.ShadowLayout>-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginTop="@dimen/dp_10"
+                android:layout_marginRight="@dimen/dp_10"
+                android:text="赠送500元话费充值卡"
+                android:textColor="@color/text_66"
+                android:textSize="@dimen/dp_14" />
 
 
-    <!--</FrameLayout>-->
+            <TextView
+                android:layout_width="@dimen/dp_88"
+                android:layout_height="@dimen/dp_28"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dp_20"
+                android:gravity="center"
+                android:text="点击购买"
+                android:textColor="@color/text_99"
+                android:textSize="@dimen/dp_14" />
+
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView><!--</com.lijiankun24.shadowlayout.ShadowLayout>-->
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_marginTop="@dimen/dp_6"
+        android:elevation="@dimen/dp_4"
+        android:layout_height="wrap_content"
+        android:src="@drawable/home_hot" />
+
+</FrameLayout>

@@ -60,7 +60,7 @@ import butterknife.ButterKnife;
  * Created by lj on 2018/12/28.
  */
 public class HomePagerRecycleAdapter extends RecyclerView.Adapter {
-
+    //都塞进来，不怕堵啊？
 
     private static final String TAG = "HomepagerRecycleAdapter";
     private final Context mContext;

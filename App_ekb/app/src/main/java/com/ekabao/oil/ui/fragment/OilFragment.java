@@ -195,6 +195,8 @@ public class OilFragment extends BaseFragment {
         });*/
     }
 
+    public void setSellect(){}
+
     private ArrayList<BaseFragment> preparePageInfo() {
 
         LogUtils.e("preparePageInfo" + pid);

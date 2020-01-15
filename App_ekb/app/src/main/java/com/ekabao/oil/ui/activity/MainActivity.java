@@ -71,7 +71,7 @@ import okhttp3.Call;
 
 public class MainActivity extends BaseActivity {
 
-//    @BindView(R.id.fragment_content)
+    //    @BindView(R.id.fragment_content)
 //    FrameLayout fragmentContent;
 //    @BindView(R.id.tv_home)
 //    TextView tvHome;
@@ -87,8 +87,8 @@ public class MainActivity extends BaseActivity {
 //    LinearLayout llBottom;
 //    @BindView(R.id.main_red_circle)
 //    View mainRedCircle;
-@BindView(R.id.viewpager)
-NoScrollViewPager viewpager;
+    @BindView(R.id.viewpager)
+    NoScrollViewPager viewpager;
     @BindView(R.id.tabs)
     TabLayout tabLayout;
 
@@ -141,7 +141,7 @@ NoScrollViewPager viewpager;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        StatusBarUtil.setStatusBarLightMode(getWindow(), Color.TRANSPARENT,true);
+        StatusBarUtil.setStatusBarLightMode(getWindow(), Color.TRANSPARENT, true);
         home = HomeFragment.instance();
         invest = InvestFragment.instance();
         //profitFrag = ProfitFragment.instance();
@@ -152,7 +152,7 @@ NoScrollViewPager viewpager;
         //findFragment = FindFragment.instance();
 
         homemallFragment = HomeMallFragment.instance();
-        
+
         homeoilFragment = HomeOilFragment.instance();
 
         // welfareFragment = WelfareFragment.newInstance();
@@ -169,10 +169,9 @@ NoScrollViewPager viewpager;
         frags.add(oilFragment);
         frags.add(discoverFragment);
         frags.add(person);
-        setupViewPager(viewpager,frags);
+        setupViewPager(viewpager, frags);
 
     }
-
 
 
     /**
@@ -435,8 +434,6 @@ NoScrollViewPager viewpager;
         return hasNavigationBar;
 
     }
-
-
 
 
     /**
@@ -763,7 +760,6 @@ NoScrollViewPager viewpager;
 //    }
 
 
-
 //    /*重置底部按钮的颜色状态
 //    * 0xFF999999
 //    * */
@@ -1006,22 +1002,22 @@ NoScrollViewPager viewpager;
     /**
      * 设置油卡套餐
      */
-    public void setOilFragment(int Pid, int Money,int Month) {
+    public void setOilFragment(int Pid, int Money, int Month) {
 
 
-        pid=Pid;
-        money=Money;
-        month=Month;
+        pid = Pid;
+        money = Money;
+        month = Month;
 
-        LogUtils.e(Pid+"设置油卡套餐0000"+month);
+        LogUtils.e(Pid + "设置油卡套餐0000" + month);
         if (oilFragment != null) {
-            oilFragment.setOilPackageFragment(pid, money,month);
+            oilFragment.setOilPackageFragment(pid, money, month);
             LogUtils.e("设置油卡套餐11111");
         }
     }
 
     public void setCheckedFram(int i) {
-        switchFragment(i-1);
+        switchFragment(i - 1);
     }
 
 

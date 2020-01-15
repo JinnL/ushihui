@@ -60,33 +60,39 @@ import okhttp3.Call;
  */
 public class HomeOilFragment extends BaseFragment implements View.OnClickListener {
 
-
-    //    @BindView(R.id.rv_home)
-//    RecyclerView rvHome;
+    //布局刷新控件
     @BindView(R.id.refreshLayout)
     SmartRefreshLayout refreshLayout;
+    //banner
     @BindView(R.id.rpv_banner)
     RollPagerView rpvBanner;
+
     @BindView(R.id.rv_btn)
     RecyclerView rvBtn;
+    //公告
     @BindView(R.id.marqueeView)
     MarqueeView marqueeView;
+    //
     @BindView(R.id.rv_card)
     RecyclerView rvCard;
+    //
     @BindView(R.id.rv_discount)
     RecyclerView rvDiscount;
+    // 绑定
     Unbinder unbinder;
 
-    //banner
-    private List<HomeBannerBean> banners;
 
-
+    // 缓存处理
     private SharedPreferences preferences = LocalApplication.sharereferences;
-
+    // 实体油卡
     private HomeOilCardAdapter mHomeOilCardAdapter;
+    //banner 下面的按钮
     private HomeBtnAdapter mHomeBtnAdapter;
-
+    //banner
     private HomeBannerAdapter mHomeBannerAdapter;
+    //banner 数据源
+    private List<HomeBannerBean> banners;
+    //加油福利
     private HomeDiscountAdapter mHomeDiscountAdapter;
 
     public static HomeOilFragment instance() {
@@ -275,15 +281,15 @@ public class HomeOilFragment extends BaseFragment implements View.OnClickListene
                                 @Override
                                 public void onItemClick(BaseQuickAdapter adapter, View view, int position) {
                                     String title = mHomeBtnAdapter.getItem(position).getTitle();
-                                    if(TextUtils.equals(title,"油卡套餐")){
-                                        ((MainActivity)getActivity()).switchFragment(1);
-                                    }else if(TextUtils.equals("领取油卡",title)){
+                                    if (TextUtils.equals(title, "油卡套餐")) {
+                                        ((MainActivity) getActivity()).switchFragment(1);
+                                    } else if (TextUtils.equals("领取油卡", title)) {
                                         mContext.startActivity(new Intent(mContext, OilCardBuyActivity.class)
                                                 //  .putExtra("is_presell_plan", true)
                                                 // .putExtra("startDate", isSellingList.get(0).getStartDate())
                                                 //.putExtra("pid", bean1.getId())
                                                 .putExtra("money", 1000));
-                                    }else if(TextUtils.equals("手机充值",title)){
+                                    } else if (TextUtils.equals("手机充值", title)) {
                                         if (preferences.getString("uid", "").equalsIgnoreCase("")) {
                                             //MobclickAgent.onEvent(mContext, UrlConfig.point + 36 + "");
                                             // startActivity(new Intent(mContext, LoginActivity.class));
@@ -291,7 +297,7 @@ public class HomeOilFragment extends BaseFragment implements View.OnClickListene
                                         } else {
                                             mContext.startActivity(new Intent(mContext, PhoneRechargeActivity.class));
                                         }
-                                    }else {
+                                    } else {
                                         mContext.startActivity(new Intent(mContext, CustomerServiceActivity.class));
                                     }
                                 }
@@ -319,7 +325,6 @@ public class HomeOilFragment extends BaseFragment implements View.OnClickListene
                     }
                 });
     }
-
 
 
     /**

@@ -8,7 +8,7 @@ import com.ekabao.oil.ui.view.recyclerview.BaseQuickAdapter;
 import com.ekabao.oil.ui.view.recyclerview.BaseViewHolder;
 
 /**
- * desc:
+ * desc:实体油卡
  * author:tonglj
  * Create date: 2020/1/10
  */
