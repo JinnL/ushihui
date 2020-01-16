@@ -198,14 +198,14 @@ public class PersonFragment extends BaseFragment implements View.OnClickListener
                     .placeholder(R.drawable.icon_head_default)
                     .error(R.drawable.icon_head_default)
                     .into(imgAvatar);*/
-            tvPhone.setText("登录/注册");
+            tvPhone.setText("点击登录/注册");
 
             tvTotalAssets.setText("****");
             tvProfit.setText("****");
             tvBalanceMoney.setText("****");
 
-            tvCouponsNum.setText("0张");
-            tvOilCardNum.setText("0张");
+            tvCouponsNum.setText("0");
+            tvOilCardNum.setText("0");
 
             //viewTopbarWhite.setVisibility(View.VISIBLE);
             llNoLogin.setVisibility(View.VISIBLE);
@@ -229,7 +229,7 @@ public class PersonFragment extends BaseFragment implements View.OnClickListener
     protected void initParams() {
 
         if (preferences.getString("uid", "").equalsIgnoreCase("")) {
-            tvPhone.setText("登录/注册");
+            tvPhone.setText("点击登录/注册");
             //viewTopbarWhite.setVisibility(View.VISIBLE);
 
             llNoLogin.setVisibility(View.VISIBLE);
@@ -872,7 +872,7 @@ public class PersonFragment extends BaseFragment implements View.OnClickListener
 
                             if (oilCardBeans.size() > 0) {
 
-                                tvOilCardNum.setText(oilCardBeans.size() + "张");
+                                tvOilCardNum.setText(oilCardBeans.size() );
 
 
                                 llListOilcard.setVisibility(View.VISIBLE);
@@ -965,12 +965,12 @@ public class PersonFragment extends BaseFragment implements View.OnClickListener
 
                         if (couponsBeans.size() > 0) {
 
-                            tvCouponsNum.setText(couponsBeans.size() + "张");
+                            tvCouponsNum.setText(couponsBeans.size() );
                         } else {
-                            tvCouponsNum.setText("0张");
+                            tvCouponsNum.setText("0");
                         }
                     } else {
-                        tvCouponsNum.setText("0张");
+                        tvCouponsNum.setText("0");
                     }
                     //版本兼容
 //					for (int i = 0; i < lslbs.size(); i++) {
@@ -1166,8 +1166,8 @@ public class PersonFragment extends BaseFragment implements View.OnClickListener
             llNoLogin.setVisibility(View.VISIBLE);
 //            btLogin.setImageDrawable(getResources().getDrawable(R.drawable.icon_person_login));
 
-            tvCouponsNum.setText("0张");
-            tvOilCardNum.setText("0张");
+            tvCouponsNum.setText("0");
+            tvOilCardNum.setText("0");
 
         } else {
             //llNoLogin.setVisibility(View.GONE);

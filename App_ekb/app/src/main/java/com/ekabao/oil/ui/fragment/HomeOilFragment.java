@@ -250,10 +250,10 @@ public class HomeOilFragment extends BaseFragment implements View.OnClickListene
                                 TreeSet<HomeHostProduct> ts = new TreeSet<>();
                                 //2,将list集合中所有的元素添加到TrreSet集合中,对其排序,保留重复
                                 //
+
                                 ts.addAll(homeHostProducts);
-                                mHomeDiscountAdapter.setNewData(homeHostProducts);
-//                                TODO
-                                //  ts.addAll(homeHostProducts);
+
+                                mHomeDiscountAdapter.setNewData(homeHostProducts.subList(0,4));
 
 //                                homeHostProduct.clear();
 //

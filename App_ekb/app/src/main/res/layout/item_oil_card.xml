@@ -7,18 +7,15 @@
 
 >
 
-    <!--<com.lijiankun24.shadowlayout.ShadowLayout--><!--android:layout_width="match_parent"--><!--android:layout_height="match_parent"--><!--app:shadowColor="#0c000000"--><!--app:shadowDx="0dp"--><!--app:shadowDy="8dp"--><!--app:shadowRadius="@dimen/dp_8"--><!--app:shadowSide="all">-->
 
-    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
+    <android.support.v7.widget.CardView
         android:layout_width="@dimen/dp_136"
         android:layout_height="@dimen/dp_206"
         android:layout_marginTop="@dimen/dp_10"
         android:layout_marginRight="@dimen/dp_12"
         android:layout_marginBottom="@dimen/dp_10"
-
         app:cardCornerRadius="@dimen/dp_8"
-        app:cardElevation="@dimen/dp_4">
+        app:cardElevation="@dimen/dp_3">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -72,13 +69,14 @@
                 android:layout_marginTop="@dimen/dp_20"
                 android:gravity="center"
                 android:text="点击购买"
-                android:textColor="@color/text_99"
+                android:background="@drawable/bg_home_buy"
+                android:textColor="@color/white"
                 android:textSize="@dimen/dp_14" />
 
 
         </LinearLayout>
 
-    </android.support.v7.widget.CardView><!--</com.lijiankun24.shadowlayout.ShadowLayout>-->
+    </android.support.v7.widget.CardView>
     <ImageView
         android:layout_width="wrap_content"
         android:layout_marginTop="@dimen/dp_6"

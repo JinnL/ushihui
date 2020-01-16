@@ -381,4 +381,8 @@ public class LocalApplication extends Application {
             e.printStackTrace();
         }
     }
+
+    public static Context getContext(){
+        return context;
+    }
 }

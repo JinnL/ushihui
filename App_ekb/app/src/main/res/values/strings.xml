@@ -309,5 +309,6 @@
     <string name="invint_has_paiming">保持住,马上就可获取大奖了!</string>
     <string name="invint_no_paiming">赶紧用洪荒之力召唤您的好友~</string>
     <string name="give_gift">赠送%1$s</string>
+    <string name="please_add_oilCard">请添加油卡</string>
 
 </resources>
