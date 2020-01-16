@@ -9,6 +9,7 @@ import android.support.v7.widget.RecyclerView;
 import android.text.TextUtils;
 import android.util.Log;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.alibaba.fastjson.JSON;
@@ -78,6 +79,9 @@ public class HomeOilFragment extends BaseFragment implements View.OnClickListene
     //
     @BindView(R.id.rv_discount)
     RecyclerView rvDiscount;
+    //
+    @BindView(R.id.iv_discount)
+    ImageView ivDiscount;
     // 绑定
     Unbinder unbinder;
 
@@ -203,6 +207,14 @@ public class HomeOilFragment extends BaseFragment implements View.OnClickListene
                 activity.switchFragment(1);
             }
         });
+
+        ivDiscount.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                MainActivity activity = (MainActivity) getActivity();
+                activity.switchFragment(1);
+            }
+        });
     }
 
 
@@ -255,15 +267,6 @@ public class HomeOilFragment extends BaseFragment implements View.OnClickListene
 
                                 mHomeDiscountAdapter.setNewData(homeHostProducts.subList(0,4));
 
-//                                homeHostProduct.clear();
-//
-//                                homeHostProduct.addAll(ts);
-//                                LogUtils.e("homeHostProduct" + ts.size());
-//                                //homeHostProduct.addAll(ts);
-//                                //homeHostProduct =  homeHostProducts;
-//
-//
-//                                homepagerRecycleAdapter.setCenterBean(homeHostProduct);
 
 
                             }
@@ -303,10 +306,10 @@ public class HomeOilFragment extends BaseFragment implements View.OnClickListene
                                 }
                             });
 
-                        } else if ("9999".equals(obj.getString("errorCode"))) {
-                            ToastMaker.showShortToast("系统异常");
-                        } else if ("9998".equals(obj.getString("errorCode"))) {
-                            ToastMaker.showShortToast("系统异常");
+//                        } else if ("9999".equals(obj.getString("errorCode"))) {
+//                            ToastMaker.showShortToast("系统异常");
+//                        } else if ("9998".equals(obj.getString("errorCode"))) {
+//                            ToastMaker.showShortToast("系统异常");
 //                            new show_Dialog_IsLogin(MessageCenterActivity.this).show_Is_Login();
                         } else {
                             ToastMaker.showShortToast("系统异常");

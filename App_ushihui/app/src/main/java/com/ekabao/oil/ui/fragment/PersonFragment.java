@@ -138,8 +138,6 @@ public class PersonFragment extends BaseFragment implements View.OnClickListener
     TextView tvMessage;
     @BindView(R.id.tv_setting)
     TextView tvSetting;
-    @BindView(R.id.img_setting)
-    ImageView imgSetting;
     @BindView(R.id.tv_about)
     TextView tvAbout;
     @BindView(R.id.tv_call_phone)
@@ -1161,7 +1159,7 @@ public class PersonFragment extends BaseFragment implements View.OnClickListener
 
         if (preferences.getString("uid", "").equalsIgnoreCase("")) {
 //            imgAvatar.setImageResource(R.drawable.icon_person_default);
-            tvPhone.setText("登录/注册");
+            tvPhone.setText("点击登录/注册");
             //viewTopbarWhite.setVisibility(View.VISIBLE);
             llNoLogin.setVisibility(View.VISIBLE);
 //            btLogin.setImageDrawable(getResources().getDrawable(R.drawable.icon_person_login));

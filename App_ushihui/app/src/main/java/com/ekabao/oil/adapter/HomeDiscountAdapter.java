@@ -1,14 +1,11 @@
 package com.ekabao.oil.adapter;
 
-import android.graphics.Color;
-import android.graphics.Paint;
 import android.graphics.Typeface;
 import android.text.SpannableStringBuilder;
 import android.text.Spanned;
 import android.text.style.AbsoluteSizeSpan;
 import android.text.style.ForegroundColorSpan;
 import android.text.style.StyleSpan;
-import android.widget.TextView;
 
 import com.ekabao.oil.R;
 import com.ekabao.oil.bean.HomeHostProduct;

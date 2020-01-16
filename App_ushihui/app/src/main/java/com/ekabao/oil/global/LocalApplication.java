@@ -295,7 +295,7 @@ public class LocalApplication extends Application {
             @Override
             public RefreshHeader createRefreshHeader(@NonNull Context context, @NonNull RefreshLayout layout) {
                 //全局设置主题颜色
-                layout.setPrimaryColors(new int[]{0xffF4F4F4, 0xffEE4845});
+                layout.setPrimaryColors(new int[]{0xffF4F4F4, 0xffFF7126});
                 StoreHouseHeader storeHouseHeader = new StoreHouseHeader(context);
                 storeHouseHeader.initWithString("USHIHUI");
                 return storeHouseHeader;//指定为经典Header，默认是 贝塞尔雷达Header
