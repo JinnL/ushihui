@@ -35,13 +35,12 @@ android {
     }
     buildTypes {
         release {
-            minifyEnabled true
-            shrinkResources true
-            zipAlignEnabled true
+            minifyEnabled false
+//            shrinkResources true
+//            zipAlignEnabled true
             debuggable = true
             jniDebuggable = true
             signingConfig signingConfigs.release
-//            debuggable true
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
         debug {

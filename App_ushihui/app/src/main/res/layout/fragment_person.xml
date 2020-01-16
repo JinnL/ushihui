@@ -96,6 +96,7 @@
                         android:layout_marginRight="@dimen/dp_15"
                         android:background="@drawable/shape_rectangle_f2_10"
                         android:clickable="true"
+                        android:visibility="gone"
                         android:gravity="center"
                         android:orientation="vertical">
 
@@ -194,7 +195,8 @@
                         android:clickable="true"
                         android:gravity="center_horizontal"
                         android:orientation="vertical"
-                        android:visibility="gone">
+                        android:visibility="gone"
+                       >
 
                         <TextView
                             android:id="@+id/tv_balance_money"
