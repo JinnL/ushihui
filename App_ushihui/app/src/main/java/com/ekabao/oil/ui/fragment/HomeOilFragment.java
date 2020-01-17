@@ -148,6 +148,7 @@ public class HomeOilFragment extends BaseFragment implements View.OnClickListene
 //        banners.add(b);
         mHomeBannerAdapter = new HomeBannerAdapter(rpvBanner, mContext, banners);
         rpvBanner.setAdapter(mHomeBannerAdapter);
+        rpvBanner.setPlayDelay(3000);
         rvDiscount.setLayoutManager(new GridLayoutManager(mContext, 2));
 
 

@@ -53,7 +53,7 @@ android {
     productFlavors {
         bbd {}
         yyb {}
-        ekabao {}
+        ushihui {}
         oppo {}
         vivo {}
         alibaba {}
