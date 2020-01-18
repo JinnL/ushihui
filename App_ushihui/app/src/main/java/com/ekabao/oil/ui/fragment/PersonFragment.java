@@ -870,7 +870,7 @@ public class PersonFragment extends BaseFragment implements View.OnClickListener
 
                             if (oilCardBeans.size() > 0) {
 
-                                tvOilCardNum.setText(oilCardBeans.size() );
+                                tvOilCardNum.setText(oilCardBeans.size()+"" );
 
 
                                 llListOilcard.setVisibility(View.VISIBLE);
